@@ -81,13 +81,13 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=MuhammadLutfiMuzakiiVY&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" height="180px" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=MuhammadLutfiMuzakiiVY&theme=tokyonight&hide_border=true" height="180px" alt="Streak Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=MuhammadLutfiMuzakiiVY&show_icons=true&theme=radical&count_private=true&include_all_commits=true" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=MuhammadLutfiMuzakiiVY&theme=radical" alt="Streak Stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadLutfiMuzakiiVY&layout=compact&theme=tokyonight&hide_border=true&langs_count=7" height="180px" alt="Top Languages" />
-  <img src="https://github-profile-trophy.vercel.app/?username=MuhammadLutfiMuzakiiVY&theme=tokyonight&no-bg=true&no-frame=true&margin-w=2&column=5" height="180px" alt="Trophies" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadLutfiMuzakiiVY&layout=compact&theme=radical&langs_count=7" alt="Top Languages" />
+  <img src="https://github-profile-trophy.vercel.app/?username=MuhammadLutfiMuzakiiVY&theme=radical&no-bg=true&margin-w=2&column=5" alt="Trophies" />
 </p>
 
 ---

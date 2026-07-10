@@ -7,24 +7,43 @@
     }
     @keyframes glitch {
       0% { transform: translate(0) }
-      20% { transform: translate(-2px, 1px) }
-      40% { transform: translate(-1px, -1px) }
-      60% { transform: translate(1px, 2px) }
+      20% { transform: translate(-3px, 1px) }
+      40% { transform: translate(-1px, -2px) }
+      60% { transform: translate(2px, 2px) }
       80% { transform: translate(1px, -1px) }
       100% { transform: translate(0) }
     }
-    @keyframes blink {
-      0%, 100% { opacity: 0.15; }
-      50% { opacity: 0.45; }
+    @keyframes disco-cyan-pink {
+      0% { stroke: #ff007f; filter: drop-shadow(0 0 12px #ff007f); }
+      33% { stroke: #00ffff; filter: drop-shadow(0 0 12px #00ffff); }
+      66% { stroke: #39ff14; filter: drop-shadow(0 0 12px #39ff14); }
+      100% { stroke: #ff007f; filter: drop-shadow(0 0 12px #ff007f); }
     }
-    .bg { fill: #0a0d16; }
-    .grid { stroke: #1f2937; stroke-width: 1; opacity: 0.35; }
-    .neon-line { stroke: #00f0ff; stroke-width: 2; opacity: 0.9; filter: drop-shadow(0 0 8px #00f0ff); }
-    .neon-purple { stroke: #bd00ff; stroke-width: 1.5; filter: drop-shadow(0 0 6px #bd00ff); }
-    .text-main { font-family: 'Courier New', Courier, monospace; font-weight: 900; fill: #ffffff; font-size: 44px; letter-spacing: 6px; filter: drop-shadow(0 0 10px #00f0ff); }
-    .text-sub { font-family: 'Courier New', Courier, monospace; fill: #bd00ff; font-size: 16px; letter-spacing: 3px; font-weight: 600; filter: drop-shadow(0 0 5px #bd00ff); }
-    .matrix-text { font-family: monospace; fill: #00f0ff; font-size: 11px; opacity: 0.2; animation: blink 3s infinite ease-in-out; }
-    .scan-line { stroke: #00f0ff; stroke-width: 2; opacity: 0.5; filter: drop-shadow(0 0 6px #00f0ff); animation: scan 4s infinite linear; }
+    @keyframes disco-purple-yellow {
+      0% { stroke: #9b5de5; filter: drop-shadow(0 0 10px #9b5de5); }
+      33% { stroke: #fee440; filter: drop-shadow(0 0 10px #fee440); }
+      66% { stroke: #ff007f; filter: drop-shadow(0 0 10px #ff007f); }
+      100% { stroke: #9b5de5; filter: drop-shadow(0 0 10px #9b5de5); }
+    }
+    @keyframes text-color-shift {
+      0% { fill: #ffffff; filter: drop-shadow(0 0 12px #ff007f); }
+      50% { fill: #00ffff; filter: drop-shadow(0 0 12px #00ffff); }
+      100% { fill: #ffffff; filter: drop-shadow(0 0 12px #ff007f); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.15; }
+      50% { opacity: 0.6; }
+    }
+    .bg { fill: #05050a; }
+    .grid { stroke: #1a1a2e; stroke-width: 1; opacity: 0.5; }
+    .neon-line { stroke: #ff007f; stroke-width: 2.5; fill: none; animation: disco-cyan-pink 6s infinite linear; }
+    .neon-purple { stroke: #9b5de5; stroke-width: 1.5; fill: none; opacity: 0.8; animation: disco-purple-yellow 6s infinite linear; }
+    .text-main { font-family: 'Courier New', Courier, monospace; font-weight: 900; font-size: 46px; letter-spacing: 8px; animation: text-color-shift 4s infinite linear, glitch 3s infinite; }
+    .text-sub { font-family: 'Courier New', Courier, monospace; fill: #39ff14; font-size: 16px; letter-spacing: 4px; font-weight: bold; filter: drop-shadow(0 0 6px #39ff14); }
+    .matrix-green { font-family: monospace; fill: #39ff14; font-size: 11px; opacity: 0.3; animation: pulse 3s infinite ease-in-out; }
+    .matrix-cyan { font-family: monospace; fill: #00ffff; font-size: 11px; opacity: 0.3; animation: pulse 4s infinite ease-in-out; }
+    .matrix-pink { font-family: monospace; fill: #ff007f; font-size: 11px; opacity: 0.3; animation: pulse 2.5s infinite ease-in-out; }
+    .scan-line { stroke: #39ff14; stroke-width: 2; opacity: 0.7; filter: drop-shadow(0 0 8px #39ff14); animation: scan 3s infinite linear; }
   </style>
   <rect class="bg" width="800" height="300" />
   
@@ -59,43 +78,43 @@
   </g>
   
   <!-- Cyber HUD details -->
-  <circle cx="400" cy="150" r="105" stroke="#bd00ff" stroke-width="1" fill="none" opacity="0.25" stroke-dasharray="10 5" />
-  <circle cx="400" cy="150" r="115" stroke="#00f0ff" stroke-width="1.5" fill="none" opacity="0.35" stroke-dasharray="25 15 5 15" />
-  <circle cx="400" cy="150" r="125" stroke="#00f0ff" stroke-width="0.5" fill="none" opacity="0.15" />
+  <circle cx="400" cy="150" r="105" stroke="#ff007f" stroke-width="1.5" fill="none" opacity="0.35" stroke-dasharray="10 5" />
+  <circle cx="400" cy="150" r="115" stroke="#00ffff" stroke-width="2" fill="none" opacity="0.5" stroke-dasharray="25 15 5 15" />
+  <circle cx="400" cy="150" r="125" stroke="#39ff14" stroke-width="0.5" fill="none" opacity="0.25" />
 
   <!-- Code / Binary rain backgrounds -->
   <g>
-    <text x="30" y="55" class="matrix-text">01001100 01010101 01010100 01000110 01001001</text>
-    <text x="30" y="85" class="matrix-text">SYSTEM_STATUS: ACTIVE_</text>
-    <text x="30" y="115" class="matrix-text">> PORT_SCANNER... [OK]</text>
-    <text x="30" y="145" class="matrix-text">> BYPASS_FIREWALL [GRANTED]</text>
-    <text x="30" y="175" class="matrix-text">> DECRYPT_PAYLOAD... 100%</text>
-    <text x="30" y="205" class="matrix-text">> LOG_READY: /dev/null</text>
+    <text x="30" y="55" class="matrix-cyan">01001100 01010101 01010100 01000110 01001001</text>
+    <text x="30" y="85" class="matrix-green">SYSTEM_STATUS: SECURE_</text>
+    <text x="30" y="115" class="matrix-green">&gt; PORT_SCANNER... [OK]</text>
+    <text x="30" y="145" class="matrix-pink">&gt; BYPASS_FIREWALL [GRANTED]</text>
+    <text x="30" y="175" class="matrix-cyan">&gt; DECRYPT_PAYLOAD... 100%</text>
+    <text x="30" y="205" class="matrix-green">&gt; LOG_READY: /dev/null</text>
     
-    <text x="535" y="55" class="matrix-text">C++ | PYTHON | GO | RUST</text>
-    <text x="535" y="85" class="matrix-text">IP: 127.0.0.1 [LOCALHOST]</text>
-    <text x="535" y="115" class="matrix-text">> RED_TEAM_OPS: RUNNING</text>
-    <text x="535" y="145" class="matrix-text">> VULN_SCANNING: COMPLETED</text>
-    <text x="535" y="175" class="matrix-text">01100100 01100101 01110110</text>
-    <text x="535" y="205" class="matrix-text">> ANTIGRAVITY_SYS: LINKED</text>
+    <text x="535" y="55" class="matrix-pink">C++ | PYTHON | GO | RUST</text>
+    <text x="535" y="85" class="matrix-cyan">IP: 127.0.0.1 [LOCALHOST]</text>
+    <text x="535" y="115" class="matrix-green">&gt; RED_TEAM_OPS: RUNNING</text>
+    <text x="535" y="145" class="matrix-pink">&gt; VULN_SCANNING: COMPLETED</text>
+    <text x="535" y="175" class="matrix-cyan">01100100 01100101 01110110</text>
+    <text x="535" y="205" class="matrix-green">&gt; ANTIGRAVITY_SYS: LINKED</text>
   </g>
 
   <!-- Glowing neon frames -->
   <rect x="15" y="15" width="770" height="270" fill="none" class="neon-line" />
-  <rect x="20" y="20" width="760" height="260" fill="none" class="neon-purple" opacity="0.6" />
+  <rect x="20" y="20" width="760" height="260" fill="none" class="neon-purple" />
   
   <!-- Scan line -->
   <line x1="17" y1="0" x2="783" y2="0" class="scan-line" />
   
   <!-- Central Text -->
-  <g style="animation: glitch 3.5s infinite;">
+  <g>
     <text x="400" y="145" dominant-baseline="middle" text-anchor="middle" class="text-main">LUTFI-DEV</text>
   </g>
   <text x="400" y="185" dominant-baseline="middle" text-anchor="middle" class="text-sub">CYBERSECURITY &amp; FULL-STACK</text>
 
   <!-- Corner tech accents -->
-  <path d="M 15 45 L 15 15 L 45 15" fill="none" stroke="#00f0ff" stroke-width="4" />
-  <path d="M 785 45 L 785 15 L 755 15" fill="none" stroke="#00f0ff" stroke-width="4" />
-  <path d="M 15 255 L 15 285 L 45 285" fill="none" stroke="#00f0ff" stroke-width="4" />
-  <path d="M 785 255 L 785 285 L 755 285" fill="none" stroke="#00f0ff" stroke-width="4" />
+  <path d="M 15 45 L 15 15 L 45 15" fill="none" stroke="#00ffff" stroke-width="4" />
+  <path d="M 785 45 L 785 15 L 755 15" fill="none" stroke="#00ffff" stroke-width="4" />
+  <path d="M 15 255 L 15 285 L 45 285" fill="none" stroke="#00ffff" stroke-width="4" />
+  <path d="M 785 255 L 785 285 L 755 285" fill="none" stroke="#00ffff" stroke-width="4" />
 </svg>
