@@ -81,13 +81,11 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=MuhammadLutfiMuzakiiVY&show_icons=true&theme=radical&count_private=true&include_all_commits=true" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=MuhammadLutfiMuzakiiVY&theme=radical" alt="Streak Stats" />
+  <img src="https://raw.githubusercontent.com/MuhammadLutfiMuzakiiVY/MuhammadLutfiMuzakiiVY/main/github-metrics.svg" width="100%" alt="Cyber Metrics Dashboard" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadLutfiMuzakiiVY&layout=compact&theme=radical&langs_count=7" alt="Top Languages" />
-  <img src="https://github-profile-trophy.vercel.app/?username=MuhammadLutfiMuzakiiVY&theme=radical&no-bg=true&margin-w=2&column=5" alt="Trophies" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MuhammadLutfiMuzakiiVY&bg_color=05050a&color=39ff14&line=ff007f&point=00ffff&area=true&hide_border=true" width="100%" alt="Cyber Telemetry Activity Graph" />
 </p>
 
 ---
