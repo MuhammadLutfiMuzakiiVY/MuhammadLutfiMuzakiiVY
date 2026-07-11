@@ -10,17 +10,36 @@
 
 ---
 
-### 👤 About Me
-```cyan
-[SYSTEM STATUS: ONLINE]
-[ROLE: FULL-STACK ENGINEER & CYBERSECURITY ANALYST]
-```
+### 👤 system_info.sh
 
-* 🚀 **Core Focus**: Developing secure, high-performance, and scalable full-stack applications while building advanced cybersecurity tools for red team operations.
-* 🛡️ **Cybersecurity Tools**: Currently engineering vulnerability scanners, web technology fingerprinting tools, and AI-integrated penetration testing frameworks.
-* 🤝 **Collaboration**: Looking to collaborate on open-source cybersecurity tools, ethical hacking automation, secure backend systems, and enterprise-grade fullstack platforms with real-time analytics.
-* 🌱 **Current Research**: Advanced exploitation techniques, machine learning for cyber threat detection, network protocol fuzzing, and optimization of distributed backend infrastructure.
-* ⚡ **Fun Fact**: *I build tools that protect systems — and break them first to understand how they fail. My journey blends curiosity, ethical hacking, and precision coding. (Yes, my cat often supervises my exploits at 3AM).*
+```bash
+lutfi@cyber-deck:~$ ./fetch_profile.sh
+
+  _     _   _ _____ _____ ___      ____  _______     __
+ | |   | | | |_   _|  ___|_ _|    |  _ \| ____\ \   / /
+ | |   | | | | | | | |_   | |_____| | | |  _|  \ \ / / 
+ | |___| |_| | | | |  _|  | |_____| |_| | |___  \ V /  
+ |_____|\___/  |_| |_|   |___|    |____/|_____|  \_/   
+                                                       
+┌────────────────────────────────────────────────────────────────────────┐
+│ [STATUS] Online & Staged                                               │
+│ [CLASS]  Full-Stack Engineer // Offensive Security Specialist          │
+├────────────────────────────────────────────────────────────────────────┤
+│                                                                        │
+│ * 🚀 Core Focus      : Developing secure, high-performance web systems │
+│                        and automated red-team tools.                   │
+│ * 🛡️ Cyber Arsenal  : Engineering custom scanners, web fingerprinters, │
+│                        and AI-assisted pentesting engines.             │
+│ * 🤝 Collabs         : Open-source cybersecurity tools, secure APIs,   │
+│                        and distributed microservices.                  │
+│ * 🌱 Researching     : Advanced exploitation, ML-based intrusion       │
+│                        detection, and protocol fuzzing.                │
+│ * ⚡ Fun Fact        : "I build tools that protect systems — and break │
+│                        them first to understand how they fail."        │
+│                        (My cat often supervises my exploits at 3 AM).  │
+│                                                                        │
+└────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
