@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="100%" height="260">
+  <defs>
+    <!-- Dark Abyss Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#02050A" />
+      <stop offset="50%" stop-color="#070D18" />
+      <stop offset="100%" stop-color="#010205" />
+    </linearGradient>
+
+    <!-- Matrix Green & Toxic Red Filters -->
+    <filter id="glowGreen" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <filter id="glowRed" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+
+    <!-- Scanline Pattern -->
+    <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1.5" opacity="0.4" />
+    </pattern>
+  </defs>
+
+  <!-- Frame Base -->
+  <rect width="900" height="260" rx="14" fill="url(#bgGrad)" stroke="#00FF41" stroke-width="1.8" filter="url(#glowGreen)" />
+  <rect width="900" height="260" rx="14" fill="url(#bgGrad)" stroke="#FF003C" stroke-width="0.8" />
+  <rect width="900" height="260" rx="14" fill="url(#scanlines)" />
+
+  <!-- FALLING MATRIX DIGITAL RAIN CODE STREAMS -->
+  <g font-family="'Courier New', monospace" font-size="12" fill="#00FF41" opacity="0.25">
+    <!-- Stream 1 -->
+    <text x="40" y="30">0 1 0 1 0 1 1 0<animate attributeName="y" values="-30;280" dur="4s" repeatCount="indefinite" /></text>
+    <text x="120" y="50">0x9F 0x4B 0x7E<animate attributeName="y" values="-50;290" dur="5.2s" repeatCount="indefinite" /></text>
+    <text x="250" y="10">SYSTEM_BREACH<animate attributeName="y" values="-20;270" dur="3.8s" repeatCount="indefinite" /></text>
+    <text x="380" y="40">1 0 0 1 1 0 1<animate attributeName="y" values="-40;280" dur="4.6s" repeatCount="indefinite" /></text>
+    <text x="520" y="20">0x00 0xFF 0x3C<animate attributeName="y" values="-30;290" dur="3.5s" repeatCount="indefinite" /></text>
+    <text x="680" y="60">ROOT_ACCESS_GRANTED<animate attributeName="y" values="-60;280" dur="6s" repeatCount="indefinite" /></text>
+    <text x="820" y="15">0 1 1 0 1 0 0<animate attributeName="y" values="-20;270" dur="4.1s" repeatCount="indefinite" /></text>
+  </g>
+
+  <!-- TOP TERMINAL HEADER BAR -->
+  <rect x="20" y="18" width="860" height="34" rx="6" fill="#050C1A" stroke="#00FF41" stroke-width="1" />
+  <circle cx="45" cy="35" r="5" fill="#FF003C" />
+  <circle cx="62" cy="35" r="5" fill="#FFB000" />
+  <circle cx="79" cy="35" r="5" fill="#00FF41" />
+  <text x="100" y="39" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#00FF41" letter-spacing="1">
+    root@muhammad-lutfi-muzaki:~# ./init_hacker_matrix.sh --mode=OVERLORD
+  </text>
+  <circle cx="855" cy="35" r="5" fill="#FF003C" filter="url(#glowRed)">
+    <animate attributeName="opacity" values="1;0.2;1" dur="0.8s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- MAIN MENACING TITLE WITH RED/GREEN GLITCH NEON -->
+  <!-- Shadow/Glitch layer Red -->
+  <text x="452" y="112" font-family="'JetBrains Mono', monospace" font-size="34" font-weight="900" fill="#FF003C" text-anchor="middle" letter-spacing="3" filter="url(#glowRed)" opacity="0.9">
+    ☠️ MUHAMMAD LUTFI MUZAKI ☠️
+    <animate attributeName="x" values="452;455;449;452" dur="0.4s" repeatCount="indefinite" />
+  </text>
+
+  <!-- Main Layer Green -->
+  <text x="450" y="110" font-family="'JetBrains Mono', monospace" font-size="34" font-weight="900" fill="#00FF41" text-anchor="middle" letter-spacing="3" filter="url(#glowGreen)">
+    ☠️ MUHAMMAD LUTFI MUZAKI ☠️
+  </text>
+
+  <!-- SUBTITLE -->
+  <text x="450" y="152" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold" fill="#00F0FF" text-anchor="middle" letter-spacing="2">
+    ⚡ OFFENSIVE RED TEAM SENTINEL • AI QUANT OVERLORD • SYSTEM ARCHITECT ⚡
+  </text>
+
+  <!-- SYSTEM WARNING STATUS BOX -->
+  <rect x="180" y="175" width="540" height="34" rx="6" fill="#120408" stroke="#FF003C" stroke-width="1.2" />
+  <text x="450" y="197" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#FF003C" text-anchor="middle" letter-spacing="1.5">
+    [STATUS: CRITICAL] ☠️ ROOT EXPLOIT ACTIVE • 100,000V VOLTAGE CHARGED
+  </text>
+
+  <!-- TERMINAL PROMPT FOOTER -->
+  <text x="30" y="238" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" fill="#00FF41">
+    [root@blackhat-sentinel]# <tspan fill="#F8FAFC">exec payload_neural_hft.bin --force</tspan>
+  </text>
+  <!-- Blinking Cursor -->
+  <rect x="420" y="226" width="9" height="15" fill="#00FF41" filter="url(#glowGreen)">
+    <animate attributeName="opacity" values="1;0;1" dur="0.6s" repeatCount="indefinite" />
+  </rect>
+</svg>
