@@ -26,14 +26,21 @@
 
 ---
 
-### 📈⚡ QUANTITATIVE & TRADING TELEMETRY DASHBOARD
+### 📈⚡ QUANTITATIVE & LIVE ANIMATED TRADING DASHBOARD
+
+<div align="center">
+
+<!-- LIVE ANIMATED TRADING CHART SVG -->
+<img src="https://raw.githubusercontent.com/MuhammadLutfiMuzakiiVY/MuhammadLutfiMuzakiiVY/main/trading-chart-animated.svg" width="100%" alt="Live Animated Trading Chart" />
+
+</div>
 
 ```gdb
-📈 [QUANT TRADING TERMINAL] : ALGORITHMIC HIGH-FREQUENCY SUITE v4.2 (LIVE)
+📈 [QUANT TRADING TERMINAL] : ALGORITHMIC HIGH-FREQUENCY SUITE v4.2 (LIVE TELEMETRY)
 ===================================================================================
 [ASSET PAIR]    [LAST PRICE]   [24H CHANGE]  [TECHNICAL INDICATOR]  [ALGO SIGNAL]
-BTC / USDT      $98,450.00     +4.82% 🚀     RSI(14): 68.4 [BULLISH] [BUY / LONG]
-ETH / USDT      $3,420.50      +3.15% 📈     MACD: POSITIVE CROSS   [BUY / LONG]
+BTC / USDT      $98,540.00     +5.24% 🚀     RSI(14): 68.4 [BULLISH] [BUY / LONG]
+ETH / USDT      $3,450.20      +3.80% 📈     MACD: POSITIVE CROSS   [BUY / LONG]
 SOL / USDT      $215.80        +6.40% ⚡     EMA(200): ABOVE        [STRONG BUY]
 NVDA / USD      $138.25        +2.90% 🤖     AI SENTIMENT: 94%      [STRONG BUY]
 -----------------------------------------------------------------------------------
@@ -80,7 +87,7 @@ NVDA / USD      $138.25        +2.90% 🤖     AI SENTIMENT: 94%      [STRONG BU
         Halo! Saya <strong>Muhammad Lutfi Muzaki</strong>, Founder & Lead Full-Stack AI Developer di <strong>LITERA-AI</strong> serta Peneliti Teknologi di <strong>UNITECH</strong>. Memiliki passion mendalam dalam merancang sistem kecerdasan buatan super cepat, trading kuantitatif (Algorithmic Trading), pengamanan siber tingkat tinggi, dan infrastruktur cloud.
       </p>
       <ul>
-        <li>📈 <strong>Trading Quantitative:</strong> Pengembangan bot bot trading frekuensi tinggi, riset PineScript, & strategi arbitrasi.</li>
+        <li>📈 <strong>Trading Quantitative:</strong> Pengembangan bot trading frekuensi tinggi, riset PineScript, & strategi arbitrasi.</li>
         <li>⚡ <strong>Proyek Utama:</strong> Platform Edutek Adaptif LITERA-AI dengan Dynamic Difficulty Adjustment (DDA).</li>
         <li>🧠 <strong>Riset Utama:</strong> Hybrid CNN-LSTM, Large Language Models (LLM), & Local AI Agents (Ollama / ONNX).</li>
         <li>🛡️ <strong>Cybersecurity:</strong> PenTest, Automated Vulnerability Scanner, & Database SQL Injection Hardening.</li>
