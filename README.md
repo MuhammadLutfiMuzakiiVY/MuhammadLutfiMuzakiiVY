@@ -111,7 +111,7 @@ NVDA / USD      $139.80        +3.20% 🤖     AI SENTIMENT: 98.8%    [STRONG BU
 
 <table border="0">
   <tr>
-    <td width="65%" valign="top">
+    <td width="55%" valign="top">
       <h3>⚡ Architecting Lightning-Fast & Secure Autonomous Systems</h3>
       <p>
         Halo! Saya <strong>Muhammad Lutfi Muzaki</strong>, Founder & Lead Full-Stack AI Developer di <strong>LITERA-AI</strong> serta Peneliti Teknologi di <strong>UNITECH</strong>. Memiliki passion mendalam dalam merancang sistem kecerdasan buatan super cepat, trading kuantitatif (Algorithmic Trading), pengamanan siber tingkat tinggi, dan infrastruktur cloud.
@@ -124,8 +124,8 @@ NVDA / USD      $139.80        +3.20% 🤖     AI SENTIMENT: 98.8%    [STRONG BU
         <li>⚡ <strong>Prinsip:</strong> <i>"Fast as lightning, precise as trading signals, secure as armor."</i></li>
       </ul>
     </td>
-    <td width="35%" align="center" valign="middle">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadLutfiMuzakiiVY&layout=compact&theme=cyberpunk&hide_border=true&bg_color=05050A&title_color=00FFFF&text_color=F8FAFC" alt="Top Languages" />
+    <td width="45%" align="center" valign="middle">
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=MuhammadLutfiMuzakiiVY&theme=cyberpunk" width="100%" alt="Top Languages Card" />
     </td>
   </tr>
 </table>
@@ -139,7 +139,7 @@ NVDA / USD      $139.80        +3.20% 🤖     AI SENTIMENT: 98.8%    [STRONG BU
 <table border="0">
   <tr>
     <td align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=MuhammadLutfiMuzakiiVY&show_icons=true&theme=cyberpunk&hide_border=true&bg_color=05050A&title_color=00FFFF&icon_color=00FFFF&text_color=F8FAFC&count_private=true" width="450" alt="GitHub Stats" />
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MuhammadLutfiMuzakiiVY&theme=cyberpunk" width="450" alt="Repos Per Language" />
     </td>
     <td align="center">
       <img src="https://github-readme-streak-stats.herokuapp.com/?user=MuhammadLutfiMuzakiiVY&theme=cyberpunk&hide_border=true&background=05050A&stroke=00FFFF&alarm=FF007F" width="450" alt="GitHub Streak" />
