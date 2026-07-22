@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 330" width="100%" height="330">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="100%" height="360">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#02050A" />
+      <stop offset="0%" stop-color="#010408" />
       <stop offset="50%" stop-color="#08101E" />
-      <stop offset="100%" stop-color="#010205" />
+      <stop offset="100%" stop-color="#000204" />
     </linearGradient>
 
     <!-- Glowing Filters -->
@@ -22,94 +22,94 @@
   </defs>
 
   <!-- Frame Base -->
-  <rect width="460" height="330" rx="14" fill="url(#bgGrad)" stroke="#00FF41" stroke-width="1.8" filter="url(#glowGreen)" opacity="0.9" />
-  <rect width="460" height="330" rx="14" fill="url(#bgGrad)" stroke="#FF003C" stroke-width="0.8" />
-  <rect width="460" height="330" rx="14" fill="url(#grid)" opacity="0.5" />
+  <rect width="480" height="360" rx="14" fill="url(#bgGrad)" stroke="#00FF41" stroke-width="2" filter="url(#glowGreen)" opacity="0.95" />
+  <rect width="480" height="360" rx="14" fill="url(#bgGrad)" stroke="#FF0000" stroke-width="1" />
+  <rect width="480" height="360" rx="14" fill="url(#grid)" opacity="0.55" />
 
   <!-- Header -->
-  <rect x="15" y="14" width="430" height="36" rx="8" fill="#06120A" stroke="#00FF41" stroke-width="1.2" />
-  <text x="30" y="37" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="900" fill="#00FF41">
-    ☠️ OFFENSIVE STACK &amp; QUANT TELEMETRY
+  <rect x="15" y="14" width="450" height="38" rx="8" fill="#040D07" stroke="#00FF41" stroke-width="1.4" />
+  <text x="30" y="38" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="900" fill="#00FF41" letter-spacing="1">
+    ☠️ OFFENSIVE ARSENAL &amp; SYSTEM EXPLOIT TELEMETRY
   </text>
-  <circle cx="425" cy="32" r="5" fill="#FF003C" filter="url(#glowRed)">
-    <animate attributeName="opacity" values="1;0.2;1" dur="0.7s" repeatCount="indefinite" />
+  <circle cx="445" cy="33" r="5" fill="#FF0000" filter="url(#glowRed)">
+    <animate attributeName="opacity" values="1;0.2;1" dur="0.6s" repeatCount="indefinite" />
   </circle>
 
-  <!-- Language 1: Python / AI / ML -->
-  <g transform="translate(25, 62)">
-    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#00FF41">🐍 Python (Offensive Exploits / AI / Quant)</text>
-    <text x="410" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#00FF41" text-anchor="end">35.4%</text>
-    <rect x="0" y="18" width="410" height="9" rx="4.5" fill="#031407" />
-    <rect x="0" y="18" width="145" height="9" rx="4.5" fill="#00FF41" filter="url(#glowGreen)">
-      <animate attributeName="width" values="145;155;138;145" dur="1.6s" repeatCount="indefinite" />
+  <!-- Language 1: Python -->
+  <g transform="translate(25, 66)">
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#00FF41">🐍 Python (Offensive Exploits / AI / Scrapers)</text>
+    <text x="430" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#00FF41" text-anchor="end">35.4%</text>
+    <rect x="0" y="18" width="430" height="9" rx="4.5" fill="#031407" />
+    <rect x="0" y="18" width="152" height="9" rx="4.5" fill="#00FF41" filter="url(#glowGreen)">
+      <animate attributeName="width" values="152;162;145;152" dur="1.5s" repeatCount="indefinite" />
     </rect>
   </g>
 
-  <!-- Language 2: C++ / Rust / Go -->
-  <g transform="translate(25, 94)">
-    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FF003C">☠️ C++ / Rust / Go (Kernel Exploits / HFT)</text>
-    <text x="410" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#FF003C" text-anchor="end">22.8%</text>
-    <rect x="0" y="18" width="410" height="9" rx="4.5" fill="#1A0409" />
-    <rect x="0" y="18" width="93" height="9" rx="4.5" fill="#FF003C" filter="url(#glowRed)">
-      <animate attributeName="width" values="93;102;88;93" dur="1.6s" repeatCount="indefinite" />
+  <!-- Language 2: C / C++ -->
+  <g transform="translate(25, 100)">
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FF0000">☠️ C / C++ (Kernel Exploits / Buffer Overflow)</text>
+    <text x="430" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#FF0000" text-anchor="end">22.8%</text>
+    <rect x="0" y="18" width="430" height="9" rx="4.5" fill="#1C0307" />
+    <rect x="0" y="18" width="98" height="9" rx="4.5" fill="#FF0000" filter="url(#glowRed)">
+      <animate attributeName="width" values="98;107;92;98" dur="1.5s" repeatCount="indefinite" />
     </rect>
   </g>
 
-  <!-- Language 3: Java & Ruby -->
-  <g transform="translate(25, 126)">
-    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FFB000">☕ Java / Ruby (Reverse Engineering / Payload)</text>
-    <text x="410" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#FFB000" text-anchor="end">14.2%</text>
-    <rect x="0" y="18" width="410" height="9" rx="4.5" fill="#140E03" />
-    <rect x="0" y="18" width="58" height="9" rx="4.5" fill="#FFB000">
-      <animate attributeName="width" values="58;65;53;58" dur="1.6s" repeatCount="indefinite" />
+  <!-- Language 3: Rust / Go -->
+  <g transform="translate(25, 134)">
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#00F0FF">⚡ Rust / Go (HFT Trading / Packet Sniffers)</text>
+    <text x="430" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#00F0FF" text-anchor="end">14.2%</text>
+    <rect x="0" y="18" width="430" height="9" rx="4.5" fill="#03141C" />
+    <rect x="0" y="18" width="61" height="9" rx="4.5" fill="#00F0FF">
+      <animate attributeName="width" values="61;68;55;61" dur="1.5s" repeatCount="indefinite" />
     </rect>
   </g>
 
-  <!-- Language 4: TypeScript / JavaScript -->
-  <g transform="translate(25, 158)">
-    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#00F0FF">🌐 TypeScript / JS (Web Exploit / XSS Payload)</text>
-    <text x="410" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#00F0FF" text-anchor="end">11.5%</text>
-    <rect x="0" y="18" width="410" height="9" rx="4.5" fill="#03131A" />
-    <rect x="0" y="18" width="47" height="9" rx="4.5" fill="#00F0FF">
-      <animate attributeName="width" values="47;54;42;47" dur="1.6s" repeatCount="indefinite" />
+  <!-- Language 4: Java -->
+  <g transform="translate(25, 168)">
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FFB000">☕ Java (Android Reverse Engineering / Decompile)</text>
+    <text x="430" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#FFB000" text-anchor="end">11.5%</text>
+    <rect x="0" y="18" width="430" height="9" rx="4.5" fill="#1C1403" />
+    <rect x="0" y="18" width="49" height="9" rx="4.5" fill="#FFB000">
+      <animate attributeName="width" values="49;56;44;49" dur="1.5s" repeatCount="indefinite" />
     </rect>
   </g>
 
-  <!-- Language 5: PHP / SQL -->
-  <g transform="translate(25, 190)">
-    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#9D00FF">🐘 PHP / Laravel (SQLi Audit / Hardening)</text>
-    <text x="410" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#9D00FF" text-anchor="end">7.6%</text>
-    <rect x="0" y="18" width="410" height="9" rx="4.5" fill="#10031A" />
-    <rect x="0" y="18" width="31" height="9" rx="4.5" fill="#9D00FF">
-      <animate attributeName="width" values="31;37;27;31" dur="1.6s" repeatCount="indefinite" />
+  <!-- Language 5: TypeScript / JS -->
+  <g transform="translate(25, 202)">
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FF007F">🌐 TypeScript / JS (Web Exploit / XSS Payloads)</text>
+    <text x="430" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#FF007F" text-anchor="end">7.6%</text>
+    <rect x="0" y="18" width="430" height="9" rx="4.5" fill="#1C0312" />
+    <rect x="0" y="18" width="32" height="9" rx="4.5" fill="#FF007F">
+      <animate attributeName="width" values="32;38;28;32" dur="1.5s" repeatCount="indefinite" />
     </rect>
   </g>
 
-  <!-- Language 6: SQL / PostgreSQL / Redis -->
-  <g transform="translate(25, 222)">
-    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FF007F">🗄️ SQL / PostgreSQL / Redis (DB Hardening)</text>
-    <text x="410" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#FF007F" text-anchor="end">4.8%</text>
-    <rect x="0" y="18" width="410" height="9" rx="4.5" fill="#1A0310" />
-    <rect x="0" y="18" width="20" height="9" rx="4.5" fill="#FF007F">
-      <animate attributeName="width" values="20;25;16;20" dur="1.6s" repeatCount="indefinite" />
+  <!-- Language 6: PHP / SQL -->
+  <g transform="translate(25, 236)">
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#9D00FF">🐘 PHP / SQL (SQL Injection Audit &amp; Hardening)</text>
+    <text x="430" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#9D00FF" text-anchor="end">4.8%</text>
+    <rect x="0" y="18" width="430" height="9" rx="4.5" fill="#12031C" />
+    <rect x="0" y="18" width="21" height="9" rx="4.5" fill="#9D00FF">
+      <animate attributeName="width" values="21;26;17;21" dur="1.5s" repeatCount="indefinite" />
     </rect>
   </g>
 
-  <!-- Language 7: PineScript (Quant Arbitrage) -->
-  <g transform="translate(25, 254)">
-    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#A3E635">📈 PineScript (Quant HFT Signals)</text>
-    <text x="410" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#A3E635" text-anchor="end">2.2%</text>
-    <rect x="0" y="18" width="410" height="9" rx="4.5" fill="#0E1403" />
-    <rect x="0" y="18" width="12" height="9" rx="4.5" fill="#A3E635">
-      <animate attributeName="width" values="12;16;9;12" dur="1.6s" repeatCount="indefinite" />
+  <!-- Language 7: PineScript -->
+  <g transform="translate(25, 270)">
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#A3E635">📈 PineScript (Quant Trading Signals &amp; Algo)</text>
+    <text x="430" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#A3E635" text-anchor="end">2.2%</text>
+    <rect x="0" y="18" width="430" height="9" rx="4.5" fill="#101C03" />
+    <rect x="0" y="18" width="13" height="9" rx="4.5" fill="#A3E635">
+      <animate attributeName="width" values="13;17;10;13" dur="1.5s" repeatCount="indefinite" />
     </rect>
   </g>
 
-  <!-- Language 8: Solidity / Web3 -->
-  <g transform="translate(25, 286)">
-    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#22D3EE">💎 Solidity / Web3 (DeFi Smart Contract Audit)</text>
-    <text x="410" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#22D3EE" text-anchor="end">1.5%</text>
-    <rect x="0" y="18" width="410" height="9" rx="4.5" fill="#031214" />
-    <rect x="0" y="18" width="8" height="9" rx="4.5" fill="#22D3EE" />
+  <!-- Language 8: Assembly x86_64 -->
+  <g transform="translate(25, 304)">
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FFFFFF">💎 Assembly x86_64 (Shellcode / Binary Patching)</text>
+    <text x="430" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="end">1.5%</text>
+    <rect x="0" y="18" width="430" height="9" rx="4.5" fill="#1C1C1C" />
+    <rect x="0" y="18" width="8" height="9" rx="4.5" fill="#FFFFFF" opacity="0.9" />
   </g>
 </svg>
