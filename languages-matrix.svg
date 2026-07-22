@@ -29,7 +29,7 @@
   <!-- Header -->
   <rect x="15" y="14" width="450" height="38" rx="8" fill="#040D07" stroke="#00FF41" stroke-width="1.4" />
   <text x="30" y="38" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="900" fill="#00FF41" letter-spacing="1">
-    ☠️ OFFENSIVE ARSENAL &amp; SYSTEM EXPLOIT TELEMETRY
+    ☠️ SECURITY ARSENAL &amp; CODE AUDIT MATRIX
   </text>
   <circle cx="445" cy="33" r="5" fill="#FF0000" filter="url(#glowRed)">
     <animate attributeName="opacity" values="1;0.2;1" dur="0.6s" repeatCount="indefinite" />
@@ -37,7 +37,7 @@
 
   <!-- Language 1: Python -->
   <g transform="translate(25, 66)">
-    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#00FF41">🐍 Python (Offensive Exploits / AI / Scrapers)</text>
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#00FF41">🐍 Python (Security Tools / AI Agents / Scrapers)</text>
     <text x="430" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#00FF41" text-anchor="end">35.4%</text>
     <rect x="0" y="18" width="430" height="9" rx="4.5" fill="#031407" />
     <rect x="0" y="18" width="152" height="9" rx="4.5" fill="#00FF41" filter="url(#glowGreen)">
@@ -47,7 +47,7 @@
 
   <!-- Language 2: C / C++ -->
   <g transform="translate(25, 100)">
-    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FF0000">☠️ C / C++ (Kernel Exploits / Buffer Overflow)</text>
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FF0000">☠️ C / C++ (Kernel Drivers / Memory Hardening)</text>
     <text x="430" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#FF0000" text-anchor="end">22.8%</text>
     <rect x="0" y="18" width="430" height="9" rx="4.5" fill="#1C0307" />
     <rect x="0" y="18" width="98" height="9" rx="4.5" fill="#FF0000" filter="url(#glowRed)">
@@ -57,7 +57,7 @@
 
   <!-- Language 3: Rust / Go -->
   <g transform="translate(25, 134)">
-    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#00F0FF">⚡ Rust / Go (HFT Trading / Packet Sniffers)</text>
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#00F0FF">⚡ Rust / Go (HFT Trading / Network Sniffers)</text>
     <text x="430" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#00F0FF" text-anchor="end">14.2%</text>
     <rect x="0" y="18" width="430" height="9" rx="4.5" fill="#03141C" />
     <rect x="0" y="18" width="61" height="9" rx="4.5" fill="#00F0FF">
@@ -67,7 +67,7 @@
 
   <!-- Language 4: Java -->
   <g transform="translate(25, 168)">
-    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FFB000">☕ Java (Android Reverse Engineering / Decompile)</text>
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FFB000">☕ Java (Android Security &amp; Reverse Engineering)</text>
     <text x="430" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#FFB000" text-anchor="end">11.5%</text>
     <rect x="0" y="18" width="430" height="9" rx="4.5" fill="#1C1403" />
     <rect x="0" y="18" width="49" height="9" rx="4.5" fill="#FFB000">
@@ -77,7 +77,7 @@
 
   <!-- Language 5: TypeScript / JS -->
   <g transform="translate(25, 202)">
-    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FF007F">🌐 TypeScript / JS (Web Exploit / XSS Payloads)</text>
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FF007F">🌐 TypeScript / JS (Web Security &amp; Full-Stack)</text>
     <text x="430" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#FF007F" text-anchor="end">7.6%</text>
     <rect x="0" y="18" width="430" height="9" rx="4.5" fill="#1C0312" />
     <rect x="0" y="18" width="32" height="9" rx="4.5" fill="#FF007F">
@@ -87,7 +87,7 @@
 
   <!-- Language 6: PHP / SQL -->
   <g transform="translate(25, 236)">
-    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#9D00FF">🐘 PHP / SQL (SQL Injection Audit &amp; Hardening)</text>
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#9D00FF">🐘 PHP / SQL (SQL Injection Prevention &amp; Hardening)</text>
     <text x="430" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#9D00FF" text-anchor="end">4.8%</text>
     <rect x="0" y="18" width="430" height="9" rx="4.5" fill="#12031C" />
     <rect x="0" y="18" width="21" height="9" rx="4.5" fill="#9D00FF">
@@ -97,7 +97,7 @@
 
   <!-- Language 7: PineScript -->
   <g transform="translate(25, 270)">
-    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#A3E635">📈 PineScript (Quant Trading Signals &amp; Algo)</text>
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#A3E635">📈 PineScript (Quant Trading Signals &amp; Strategy)</text>
     <text x="430" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#A3E635" text-anchor="end">2.2%</text>
     <rect x="0" y="18" width="430" height="9" rx="4.5" fill="#101C03" />
     <rect x="0" y="18" width="13" height="9" rx="4.5" fill="#A3E635">
@@ -107,7 +107,7 @@
 
   <!-- Language 8: Assembly x86_64 -->
   <g transform="translate(25, 304)">
-    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FFFFFF">💎 Assembly x86_64 (Shellcode / Binary Patching)</text>
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FFFFFF">💎 Assembly x86_64 (Binary Audit &amp; Shellcode)</text>
     <text x="430" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="end">1.5%</text>
     <rect x="0" y="18" width="430" height="9" rx="4.5" fill="#1C1C1C" />
     <rect x="0" y="18" width="8" height="9" rx="4.5" fill="#FFFFFF" opacity="0.9" />

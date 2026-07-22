@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="280">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 290" width="100%" height="290">
   <defs>
-    <!-- Pure Dark Hacker Pitch Black Gradient -->
+    <!-- Pitch Black Hacker Background -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#010408" />
-      <stop offset="50%" stop-color="#050B14" />
-      <stop offset="100%" stop-color="#000204" />
+      <stop offset="0%" stop-color="#020408" />
+      <stop offset="50%" stop-color="#090E18" />
+      <stop offset="100%" stop-color="#010204" />
     </linearGradient>
 
-    <!-- Intense Glow Filters -->
+    <!-- Glowing Filters -->
     <filter id="glowGreen" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="6" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
@@ -17,78 +17,74 @@
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
 
-    <!-- CRT Scanlines -->
+    <!-- Scanlines -->
     <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1.8" opacity="0.45" />
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1.8" opacity="0.5" />
     </pattern>
   </defs>
 
-  <!-- Main Dark Base Frame -->
-  <rect width="900" height="280" rx="14" fill="url(#bgGrad)" stroke="#00FF41" stroke-width="2" filter="url(#glowGreen)" />
-  <rect width="900" height="280" rx="14" fill="url(#bgGrad)" stroke="#FF0000" stroke-width="1" />
-  <rect width="900" height="280" rx="14" fill="url(#scanlines)" />
+  <!-- Base Frame -->
+  <rect width="900" height="290" rx="14" fill="url(#bgGrad)" stroke="#00FF41" stroke-width="2" filter="url(#glowGreen)" />
+  <rect width="900" height="290" rx="14" fill="url(#bgGrad)" stroke="#FF0000" stroke-width="1" />
+  <rect width="900" height="290" rx="14" fill="url(#scanlines)" />
 
-  <!-- FALLING MATRIX BINARY & EXPLOIT STREAM CODE -->
-  <g font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#00FF41" opacity="0.22">
-    <text x="30" y="30">01001001 01001110 01001010<animate attributeName="y" values="-30;300" dur="4s" repeatCount="indefinite" /></text>
-    <text x="180" y="50">CVE-2026-9999_EXPLOIT_PAYLOAD<animate attributeName="y" values="-50;310" dur="5.5s" repeatCount="indefinite" /></text>
-    <text x="360" y="20">0xDEADBEEF 0x7FFF5FBFF8C0<animate attributeName="y" values="-20;290" dur="3.8s" repeatCount="indefinite" /></text>
-    <text x="540" y="40">msfconsole -q -x "run exploit"<animate attributeName="y" values="-40;300" dur="4.8s" repeatCount="indefinite" /></text>
-    <text x="740" y="15">NMAP_PORT_SCAN_80_443_22_OPEN<animate attributeName="y" values="-20;290" dur="4.2s" repeatCount="indefinite" /></text>
+  <!-- FALLING MATRIX EXPLOIT & SECURITY AUDIT CODE STREAMS -->
+  <g font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#00FF41" opacity="0.3">
+    <text x="25" y="30">01001001 01001110 01001010<animate attributeName="y" values="-30;300" dur="3.8s" repeatCount="indefinite" /></text>
+    <text x="180" y="50">void audit_vulnerability() { inject(); }<animate attributeName="y" values="-50;310" dur="5.2s" repeatCount="indefinite" /></text>
+    <text x="400" y="20">0xDEADBEEF 0x7FFF5FBFF8C0<animate attributeName="y" values="-20;290" dur="3.5s" repeatCount="indefinite" /></text>
+    <text x="620" y="40">msfconsole -q -x "use exploit/multi/handler"<animate attributeName="y" values="-40;300" dur="4.5s" repeatCount="indefinite" /></text>
+    <text x="800" y="15">NMAP_PORT_SCAN_80_443_22_OPEN<animate attributeName="y" values="-20;290" dur="4s" repeatCount="indefinite" /></text>
   </g>
 
-  <!-- KALI LINUX TERMINAL BAR -->
-  <rect x="18" y="16" width="864" height="34" rx="6" fill="#040A14" stroke="#00FF41" stroke-width="1.2" />
-  <circle cx="42" cy="33" r="5" fill="#FF0000" />
-  <circle cx="59" cy="33" r="5" fill="#FFB000" />
-  <circle cx="76" cy="33" r="5" fill="#00FF41" />
-  <text x="96" y="37" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#00FF41" letter-spacing="1">
-    root@blackhat-kali-sentinel:~# ./infiltrate_target.sh --payload=kernel_exploit
+  <!-- KALI LINUX TERMINAL HEADER BAR -->
+  <rect x="18" y="16" width="864" height="36" rx="6" fill="#040A14" stroke="#00FF41" stroke-width="1.2" />
+  <circle cx="42" cy="34" r="5" fill="#FF0000" />
+  <circle cx="59" cy="34" r="5" fill="#FFB000" />
+  <circle cx="76" cy="34" r="5" fill="#00FF41" />
+  <text x="96" y="38" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#00FF41" letter-spacing="1">
+    root@kali-red-sentinel:~# ./security_audit_suite.sh --mode=ADVANCED_DEFENSE
   </text>
-  <!-- Pulsing Red Skull Warning Signal -->
-  <circle cx="858" cy="33" r="5" fill="#FF0000" filter="url(#glowRed)">
+  <circle cx="858" cy="34" r="5" fill="#FF0000" filter="url(#glowRed)">
     <animate attributeName="opacity" values="1;0.1;1" dur="0.6s" repeatCount="indefinite" />
   </circle>
 
-  <!-- MENACING CYBER HACKER SKULL SYMBOL (LEFT & RIGHT) -->
-  <g transform="translate(40, 75)" fill="#FF0000" opacity="0.85" filter="url(#glowRed)">
+  <!-- HACKER SKULL SYMBOL LEFT & RIGHT -->
+  <g transform="translate(45, 80)" fill="#FF0000" opacity="0.9" filter="url(#glowRed)">
     <path d="M 20 0 C 8 0 0 8 0 20 C 0 28 4 35 10 40 L 10 50 L 30 50 L 30 40 C 36 35 40 28 40 20 C 40 8 32 0 20 0 Z M 12 18 C 14 18 16 20 16 22 C 16 24 14 26 12 26 C 10 26 8 24 8 22 C 8 20 10 18 12 18 Z M 28 18 C 30 18 32 20 32 22 C 32 24 30 26 28 26 C 26 26 24 24 24 22 C 24 20 26 18 28 18 Z" />
   </g>
-  <g transform="translate(820, 75)" fill="#FF0000" opacity="0.85" filter="url(#glowRed)">
+  <g transform="translate(815, 80)" fill="#FF0000" opacity="0.9" filter="url(#glowRed)">
     <path d="M 20 0 C 8 0 0 8 0 20 C 0 28 4 35 10 40 L 10 50 L 30 50 L 30 40 C 36 35 40 28 40 20 C 40 8 32 0 20 0 Z M 12 18 C 14 18 16 20 16 22 C 16 24 14 26 12 26 C 10 26 8 24 8 22 C 8 20 10 18 12 18 Z M 28 18 C 30 18 32 20 32 22 C 32 24 30 26 28 26 C 26 26 24 24 24 22 C 24 20 26 18 28 18 Z" />
   </g>
 
-  <!-- MAIN MENACING TITLE WITH HIGH-CONTRAST CHROMATIC ABERRATION GLITCH -->
-  <!-- Shadow Layer Red -->
-  <text x="453" y="112" font-family="'JetBrains Mono', monospace" font-size="36" font-weight="900" fill="#FF0000" text-anchor="middle" letter-spacing="4" filter="url(#glowRed)">
+  <!-- MAIN HIGH-CONTRAST GLITCH TITLE -->
+  <text x="453" y="115" font-family="'JetBrains Mono', monospace" font-size="36" font-weight="900" fill="#FF0000" text-anchor="middle" letter-spacing="4" filter="url(#glowRed)">
     ☠️ MUHAMMAD LUTFI MUZAKI ☠️
     <animate attributeName="x" values="453;457;449;453" dur="0.3s" repeatCount="indefinite" />
   </text>
-  <!-- Foreground Layer Green -->
-  <text x="450" y="110" font-family="'JetBrains Mono', monospace" font-size="36" font-weight="900" fill="#00FF41" text-anchor="middle" letter-spacing="4" filter="url(#glowGreen)">
+  <text x="450" y="113" font-family="'JetBrains Mono', monospace" font-size="36" font-weight="900" fill="#00FF41" text-anchor="middle" letter-spacing="4" filter="url(#glowGreen)">
     ☠️ MUHAMMAD LUTFI MUZAKI ☠️
   </text>
 
   <!-- SUBTITLE -->
-  <text x="450" y="150" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">
-    ⚡ ELITE OFFENSIVE RED TEAM OPERATIVE • AI QUANT OVERLORD • ROOT ACCESS ⚡
+  <text x="450" y="152" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">
+    ⚡ SENIOR CYBERSECURITY AUDITOR • RED TEAM SENTINEL • AI QUANT ARCHITECT ⚡
   </text>
 
-  <!-- REAL-LOOKING EXPLOIT TELEMETRY LOG BOX -->
-  <rect x="80" y="172" width="740" height="42" rx="6" fill="#0C0204" stroke="#FF0000" stroke-width="1.4" filter="url(#glowRed)" />
-  <text x="450" y="191" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#FF0000" text-anchor="middle">
-    [!] CRITICAL: TARGET SYSTEM INFILTRATED (0xDEADBEEF) • SHELL SESSION #1 OPENED
+  <!-- REALISTIC SECURITY AUDIT TELEMETRY LOG BOX -->
+  <rect x="70" y="174" width="760" height="44" rx="6" fill="#0C0204" stroke="#FF0000" stroke-width="1.4" filter="url(#glowRed)" />
+  <text x="450" y="193" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#FF0000" text-anchor="middle">
+    [!] AUDIT ALERT: SYSTEM HARDENING ACTIVE • DEFENSIVE SECURITY SCANNING (0x7FFF5FBFF8C0)
   </text>
-  <text x="450" y="206" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#00FF41" text-anchor="middle">
-    [+] EXPLOIT: Zero-Day Buffer Overflow (CVE-2026-9999) STATUS: 100% EXECUTED
+  <text x="450" y="208" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#00FF41" text-anchor="middle">
+    [+] AUDIT: SQL Injection &amp; Buffer Overflow Protection Verified • STATUS: SECURE &amp; HARDENED
   </text>
 
-  <!-- TERMINAL PROMPT FOOTER WITH REAL HACKER COMMAND -->
-  <text x="25" y="258" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" fill="#00FF41">
-    [root@blackhat-sentinel]:~# <tspan fill="#FFFFFF">nc -lvnp 4444 &amp;&amp; gdb ./kernel_payload.bin -q</tspan>
+  <!-- TERMINAL PROMPT FOOTER -->
+  <text x="25" y="260" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" fill="#00FF41">
+    [root@kali-red-sentinel]:~# <tspan fill="#FFFFFF">gdb ./security_audit_core.bin -q &amp;&amp; verify_patch --all</tspan>
   </text>
-  <!-- Blinking Terminal Cursor -->
-  <rect x="525" y="246" width="9" height="15" fill="#00FF41" filter="url(#glowGreen)">
+  <rect x="585" y="248" width="9" height="15" fill="#00FF41" filter="url(#glowGreen)">
     <animate attributeName="opacity" values="1;0;1" dur="0.5s" repeatCount="indefinite" />
   </rect>
 </svg>
