@@ -125,7 +125,7 @@ NVDA / USD      $139.80        +3.20% 🤖     AI SENTIMENT: 98.8%    [STRONG BU
       </ul>
     </td>
     <td width="45%" align="center" valign="middle">
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=MuhammadLutfiMuzakiiVY&theme=cyberpunk" width="100%" alt="Top Languages Card" />
+      <img src="https://raw.githubusercontent.com/MuhammadLutfiMuzakiiVY/MuhammadLutfiMuzakiiVY/main/languages-matrix.svg" width="100%" alt="Languages Matrix Card" />
     </td>
   </tr>
 </table>
@@ -138,9 +138,6 @@ NVDA / USD      $139.80        +3.20% 🤖     AI SENTIMENT: 98.8%    [STRONG BU
 
 <table border="0">
   <tr>
-    <td align="center">
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MuhammadLutfiMuzakiiVY&theme=cyberpunk" width="450" alt="Repos Per Language" />
-    </td>
     <td align="center">
       <img src="https://github-readme-streak-stats.herokuapp.com/?user=MuhammadLutfiMuzakiiVY&theme=cyberpunk&hide_border=true&background=05050A&stroke=00FFFF&alarm=FF007F" width="450" alt="GitHub Streak" />
     </td>
