@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="100%" height="440">
+  <defs>
+    <!-- Background Dark Quant Abyss Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#02050A" />
+      <stop offset="50%" stop-color="#08101E" />
+      <stop offset="100%" stop-color="#010204" />
+    </linearGradient>
+
+    <!-- Candlestick Green & Red Glow -->
+    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <filter id="glowRed" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+
+    <!-- Laser Cyan Glow -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00FF41" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.2" />
+    </pattern>
+  </defs>
+
+  <!-- Main Terminal Base Frame -->
+  <rect width="900" height="440" rx="14" fill="url(#bgGrad)" stroke="#00FF41" stroke-width="2" filter="url(#glowGreen)" />
+  <rect width="900" height="440" rx="14" fill="url(#grid)" />
+
+  <!-- TOP TRADING TERMINAL BAR -->
+  <rect x="18" y="16" width="864" height="40" rx="8" fill="#040D18" stroke="#00FF41" stroke-width="1.2" />
+  <circle cx="42" cy="36" r="5" fill="#FF0000" />
+  <circle cx="59" cy="36" r="5" fill="#FFB000" />
+  <circle cx="76" cy="36" r="5" fill="#00FF41" />
+  <text x="100" y="41" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="900" fill="#00FF41" letter-spacing="1">
+    📈 BTC/USDT ALGORITHMIC HIGH-FREQUENCY QUANT TERMINAL (LIVE TELEMETRY)
+  </text>
+  <circle cx="858" cy="36" r="5" fill="#00FF41" filter="url(#glowGreen)">
+    <animate attributeName="opacity" values="1;0.2;1" dur="0.8s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- LIVE PRICE & 24H TELEMETRY DISPLAY -->
+  <g font-family="'JetBrains Mono', monospace">
+    <text x="35" y="85" font-size="24" font-weight="900" fill="#00FF41" filter="url(#glowGreen)">
+      $98,962.40 <tspan font-size="14" fill="#00FF41">+6.92% 🚀</tspan>
+      <animate attributeName="opacity" values="1;0.8;1" dur="1.2s" repeatCount="indefinite" />
+    </text>
+    <text x="350" y="80" font-size="11" font-weight="bold" fill="#00D4FF">RSI(14): 74.2 [BULLISH]</text>
+    <text x="500" y="80" font-size="11" font-weight="bold" fill="#FF007F">MACD: STRONG CROSSOVER</text>
+    <text x="680" y="80" font-size="11" font-weight="bold" fill="#FFB000">LATENCY: 0.8ms (RUST ENGINE)</text>
+  </g>
+
+  <!-- CHART CANVAS BOUNDS -->
+  <rect x="35" y="105" width="670" height="230" rx="8" fill="#020814" stroke="#00FF41" stroke-width="1" opacity="0.9" />
+
+  <!-- BOLLINGER BANDS UPPER & LOWER (ANIMATEDUNDULATING) -->
+  <path d="M 35 180 Q 200 130 370 170 T 705 130" fill="none" stroke="#00D4FF" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.6">
+    <animate attributeName="d" dur="4s" repeatCount="indefinite" values="
+      M 35 180 Q 200 130 370 170 T 705 130;
+      M 35 160 Q 200 150 370 140 T 705 150;
+      M 35 180 Q 200 130 370 170 T 705 130" />
+  </path>
+  <path d="M 35 270 Q 200 240 370 280 T 705 240" fill="none" stroke="#00D4FF" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.6">
+    <animate attributeName="d" dur="4s" repeatCount="indefinite" values="
+      M 35 270 Q 200 240 370 280 T 705 240;
+      M 35 290 Q 200 220 370 290 T 705 230;
+      M 35 270 Q 200 240 370 280 T 705 240" />
+  </path>
+
+  <!-- MAIN ANIMATED PRICE TREND WAVE LINE (GREEN GLOW) -->
+  <path d="M 35 220 C 120 280, 180 140, 260 210 C 340 280, 420 120, 500 180 C 580 240, 640 130, 705 150" fill="none" stroke="#00FF41" stroke-width="3" filter="url(#glowGreen)">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" values="
+      M 35 220 C 120 280, 180 140, 260 210 C 340 280, 420 120, 500 180 C 580 240, 640 130, 705 150;
+      M 35 200 C 120 250, 180 160, 260 190 C 340 260, 420 140, 500 160 C 580 220, 640 150, 705 130;
+      M 35 220 C 120 280, 180 140, 260 210 C 340 280, 420 120, 500 180 C 580 240, 640 130, 705 150" />
+  </path>
+
+  <!-- ANIMATED CANDLESTICKS (BREATHING MOVEMENT) -->
+  <g transform="translate(45, 0)">
+    <!-- Candle 1 (Green) -->
+    <line x1="30" y1="180" x2="30" y2="250" stroke="#00FF41" stroke-width="1.5" />
+    <rect x="23" y="195" width="14" height="40" rx="2" fill="#00FF41" filter="url(#glowGreen)">
+      <animate attributeName="height" values="40;48;35;40" dur="2.2s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- Candle 2 (Red) -->
+    <line x1="80" y1="210" x2="80" y2="280" stroke="#FF0000" stroke-width="1.5" />
+    <rect x="73" y="225" width="14" height="45" rx="2" fill="#FF0000" filter="url(#glowRed)">
+      <animate attributeName="height" values="45;38;52;45" dur="2.6s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- Candle 3 (Green) -->
+    <line x1="130" y1="150" x2="130" y2="230" stroke="#00FF41" stroke-width="1.5" />
+    <rect x="123" y="165" width="14" height="50" rx="2" fill="#00FF41" filter="url(#glowGreen)">
+      <animate attributeName="height" values="50;60;45;50" dur="2s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- Candle 4 (Green) -->
+    <line x1="180" y1="130" x2="180" y2="200" stroke="#00FF41" stroke-width="1.5" />
+    <rect x="173" y="145" width="14" height="42" rx="2" fill="#00FF41" filter="url(#glowGreen)">
+      <animate attributeName="height" values="42;50;38;42" dur="2.4s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- Candle 5 (Red) -->
+    <line x1="230" y1="170" x2="230" y2="260" stroke="#FF0000" stroke-width="1.5" />
+    <rect x="223" y="185" width="14" height="58" rx="2" fill="#FF0000" filter="url(#glowRed)">
+      <animate attributeName="height" values="58;48;64;58" dur="2.1s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- Candle 6 (Green Bullish Rocket) -->
+    <line x1="280" y1="120" x2="280" y2="220" stroke="#00FF41" stroke-width="1.5" />
+    <rect x="273" y="135" width="14" height="70" rx="2" fill="#00FF41" filter="url(#glowGreen)">
+      <animate attributeName="height" values="70;80;62;70" dur="1.8s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- Candle 7 (Green Breakout) -->
+    <line x1="330" y1="110" x2="330" y2="190" stroke="#00FF41" stroke-width="1.5" />
+    <rect x="323" y="120" width="14" height="55" rx="2" fill="#00FF41" filter="url(#glowGreen)">
+      <animate attributeName="height" values="55;65;48;55" dur="2.3s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- Candle 8 (Red Retest) -->
+    <line x1="380" y1="140" x2="380" y2="230" stroke="#FF0000" stroke-width="1.5" />
+    <rect x="373" y="155" width="14" height="60" rx="2" fill="#FF0000" filter="url(#glowRed)">
+      <animate attributeName="height" values="60;52;68;60" dur="2.7s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- Candle 9 (Green Impulse) -->
+    <line x1="430" y1="115" x2="430" y2="210" stroke="#00FF41" stroke-width="1.5" />
+    <rect x="423" y="130" width="14" height="65" rx="2" fill="#00FF41" filter="url(#glowGreen)">
+      <animate attributeName="height" values="65;75;58;65" dur="1.9s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- Candle 10 (Green ATH) -->
+    <line x1="480" y1="105" x2="480" y2="180" stroke="#00FF41" stroke-width="1.5" />
+    <rect x="473" y="115" width="14" height="52" rx="2" fill="#00FF41" filter="url(#glowGreen)">
+      <animate attributeName="height" values="52;62;45;52" dur="2.1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+
+  <!-- MOVING SCANNER LASER CURSOR -->
+  <line x1="35" y1="105" x2="35" y2="335" stroke="#00FFFF" stroke-width="1.8" filter="url(#glowCyan)">
+    <animate attributeName="x1" values="35;705;35" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="35;705;35" dur="6s" repeatCount="indefinite" />
+  </line>
+
+  <!-- LIVE ORDER BOOK DEPTH PANEL (RIGHT SIDE) -->
+  <g transform="translate(718, 105)">
+    <rect x="0" y="0" width="146" height="230" rx="8" fill="#020814" stroke="#00FF41" stroke-width="1" />
+    <text x="12" y="22" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#00FF41">
+      ⚡ ORDER BOOK
+    </text>
+
+    <!-- ASKS (RED SELL ORDERS) -->
+    <g transform="translate(10, 35)">
+      <rect x="0" y="0" width="105" height="10" fill="#FF0000" opacity="0.3" />
+      <rect x="0" y="0" width="75" height="10" fill="#FF0000" filter="url(#glowRed)">
+        <animate attributeName="width" values="75;92;60;75" dur="1.5s" repeatCount="indefinite" />
+      </rect>
+      <text x="112" y="9" font-family="'JetBrains Mono', monospace" font-size="9" fill="#FF0000" font-weight="bold">99.1k</text>
+
+      <rect x="0" y="16" width="105" height="10" fill="#FF0000" opacity="0.3" />
+      <rect x="0" y="16" width="55" height="10" fill="#FF0000" filter="url(#glowRed)">
+        <animate attributeName="width" values="55;70;45;55" dur="1.8s" repeatCount="indefinite" />
+      </rect>
+      <text x="112" y="25" font-family="'JetBrains Mono', monospace" font-size="9" fill="#FF0000" font-weight="bold">99.0k</text>
+    </g>
+
+    <line x1="10" y1="85" x2="136" y2="85" stroke="#1E293B" stroke-width="1" />
+    <text x="73" y="100" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#00FF41" text-anchor="middle">
+      $98,962.40 🚀
+    </text>
+    <line x1="10" y1="110" x2="136" y2="110" stroke="#1E293B" stroke-width="1" />
+
+    <!-- BIDS (GREEN BUY ORDERS) -->
+    <g transform="translate(10, 120)">
+      <rect x="0" y="0" width="105" height="10" fill="#00FF41" opacity="0.3" />
+      <rect x="0" y="0" width="88" height="10" fill="#00FF41" filter="url(#glowGreen)">
+        <animate attributeName="width" values="88;98;72;88" dur="1.4s" repeatCount="indefinite" />
+      </rect>
+      <text x="112" y="9" font-family="'JetBrains Mono', monospace" font-size="9" fill="#00FF41" font-weight="bold">98.9k</text>
+
+      <rect x="0" y="16" width="105" height="10" fill="#00FF41" opacity="0.3" />
+      <rect x="0" y="16" width="95" height="10" fill="#00FF41" filter="url(#glowGreen)">
+        <animate attributeName="width" values="95;102;80;95" dur="1.7s" repeatCount="indefinite" />
+      </rect>
+      <text x="112" y="25" font-family="'JetBrains Mono', monospace" font-size="9" fill="#00FF41" font-weight="bold">98.8k</text>
+    </g>
+  </g>
+
+  <!-- MACD / VOLUME INDICATOR SUB-PANEL (BOTTOM) -->
+  <g transform="translate(35, 350)">
+    <rect x="0" y="0" width="829" height="70" rx="8" fill="#020814" stroke="#00FF41" stroke-width="1" />
+    <text x="15" y="20" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#00FF41">
+      📊 SUB-PANEL: HIGH-FREQUENCY MACD HISTOGRAM &amp; VOLATILITY VOLUME
+    </text>
+
+    <!-- Volume Bars -->
+    <g transform="translate(15, 30)" fill="#00FF41">
+      <rect x="0" y="5" width="12" height="25" fill="#00FF41" opacity="0.8" />
+      <rect x="25" y="12" width="12" height="18" fill="#FF0000" opacity="0.8" />
+      <rect x="50" y="0" width="12" height="30" fill="#00FF41" filter="url(#glowGreen)" />
+      <rect x="75" y="8" width="12" height="22" fill="#00FF41" opacity="0.8" />
+      <rect x="100" y="15" width="12" height="15" fill="#FF0000" opacity="0.8" />
+      <rect x="125" y="0" width="12" height="30" fill="#00FF41" filter="url(#glowGreen)" />
+      <rect x="150" y="2" width="12" height="28" fill="#00FF41" filter="url(#glowGreen)" />
+      <rect x="175" y="10" width="12" height="20" fill="#FF0000" opacity="0.8" />
+      <rect x="200" y="0" width="12" height="30" fill="#00FF41" filter="url(#glowGreen)" />
+    </g>
+  </g>
+</svg>
