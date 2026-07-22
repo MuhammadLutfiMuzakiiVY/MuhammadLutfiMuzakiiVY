@@ -3,6 +3,13 @@
 <!-- ELECTRIC LIGHTNING HEADER BANNER -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,8,20,30&height=290&section=header&text=%E2%9A%A1%20MUHAMMAD%20LUTFI%20MUZAKI%20%E2%9A%A1&fontSize=42&fontAlignY=36&animation=twinkling&fontColor=00FFFF&desc=%E2%9A%A1%20AI%20ENGINEER%20%7C%20QUANT%20TRADING%20ARCHITECT%20%7C%20CYBERSECURITY%20SENTINEL%20%E2%9A%A1&descSize=15&descAlignY=58&descAlign=50" width="100%" alt="Electric Lightning Banner" />
 
+<!-- CYBERPUNK BACKGROUND MUSIC PLAYER CONTROL -->
+<p align="center">
+  <a href="https://raw.githubusercontent.com/MuhammadLutfiMuzakiiVY/MuhammadLutfiMuzakiiVY/main/Arsitek_Masa_Depan.mp3" target="_blank">
+    <img src="https://img.shields.io/badge/%E2%96%B6%EF%B8%8F%20PLAY%20AUDIO-%F0%9F%8E%B5%20Arsitek%20Masa%20Depan%20(Background%20Music)-00FFFF?style=for-the-badge&logo=youtube-music&logoColor=black" alt="Play Background Music" />
+  </a>
+</p>
+
 <!-- TYPING ANIMATION WITH ELECTRIC COLOR -->
 <a href="https://muhammadlutfimuzaki.com">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2500&pause=800&color=00FFFF&center=true&vCenter=true&repeat=true&width=750&height=50&lines=%E2%9A%A1+Founder+%26+Lead+AI+Developer+%40+LITERA-AI;%F0%9F%93%98+Quant+Trader+%26+Algorithmic+Execution+Engineer;%E2%9A%A1+Cybersecurity+Sentinel+%26+Red+Team+Auditor;%E2%9A%A1+High-Performance+System+Architect+%7C+Rust+%7C+Go+%7C+Python;%E2%9A%A1+Deep+Learning+Researcher+(CNN-LSTM+%2B+DDA)" alt="Electric Typing SVG" />
@@ -39,10 +46,10 @@
 📈 [QUANT TRADING TERMINAL] : ALGORITHMIC HIGH-FREQUENCY SUITE v4.2 (LIVE TELEMETRY)
 ===================================================================================
 [ASSET PAIR]    [LAST PRICE]   [24H CHANGE]  [TECHNICAL INDICATOR]  [ALGO SIGNAL]
-BTC / USDT      $98,540.00     +5.24% 🚀     RSI(14): 68.4 [BULLISH] [BUY / LONG]
-ETH / USDT      $3,450.20      +3.80% 📈     MACD: POSITIVE CROSS   [BUY / LONG]
-SOL / USDT      $215.80        +6.40% ⚡     EMA(200): ABOVE        [STRONG BUY]
-NVDA / USD      $138.25        +2.90% 🤖     AI SENTIMENT: 94%      [STRONG BUY]
+BTC / USDT      $98,962.40     +6.92% 🚀     RSI(14): 74.2 [BULLISH] [BUY / LONG]
+ETH / USDT      $3,534.10      +4.30% 📈     MACD: STRONG CROSS     [BUY / LONG]
+SOL / USDT      $218.40        +7.10% ⚡     EMA(200): ABOVE        [STRONG BUY]
+NVDA / USD      $139.80        +3.20% 🤖     AI SENTIMENT: 98.8%    [STRONG BUY]
 -----------------------------------------------------------------------------------
 [MODEL METRICS] : Sharpe Ratio: 3.12 | Win Rate: 91.8% | Latency: 1.2ms (Rust Engine)
 [EXECUTION]     : Automated Order Router & High-Frequency Arbitrage active ⚡
