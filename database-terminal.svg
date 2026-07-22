@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="100%" height="480">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070A" />
+      <stop offset="50%" stop-color="#0A1828" />
+      <stop offset="100%" stop-color="#020407" />
+    </linearGradient>
+
+    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00FF66" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.15" />
+    </pattern>
+  </defs>
+
+  <rect width="900" height="480" rx="10" fill="url(#bgGrad)" stroke="#00FF66" stroke-width="1.6" filter="url(#glowGreen)" />
+  <rect width="900" height="480" rx="10" fill="url(#grid)" />
+
+  <!-- TOP TITLE BAR -->
+  <rect x="15" y="14" width="870" height="36" rx="6" fill="#030A14" stroke="#00FF66" stroke-width="1" />
+  <circle cx="35" cy="32" r="5" fill="#FF0055" />
+  <circle cx="52" cy="32" r="5" fill="#FF9900" />
+  <circle cx="69" cy="32" r="5" fill="#00FF66" />
+  <text x="90" y="36" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#00FF66" letter-spacing="1">
+    🗄️ DATABASE INFRASTRUCTURE &amp; CLUSTER TELEMETRY <tspan fill="#00E5FF">| HIGH THROUGHPUT TPS</tspan>
+  </text>
+  <circle cx="865" cy="32" r="4" fill="#00FF66" filter="url(#glowGreen)">
+    <animate attributeName="opacity" values="1;0.2;1" dur="0.8s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- TABLE HEADER -->
+  <g font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#8899A6" transform="translate(25, 70)">
+    <text x="10" y="0">DATABASE ENGINE</text>
+    <text x="160" y="0">TRANSACTIONS/SEC (TPS)</text>
+    <text x="360" y="0">QUERIES/SEC (QPS)</text>
+    <text x="540" y="0">AVG LATENCY</text>
+    <text x="680" y="0">REPLICATION</text>
+    <text x="800" y="0">STORAGE</text>
+    <line x1="0" y1="10" x2="850" y2="10" stroke="#1E293B" stroke-width="1" />
+  </g>
+
+  <!-- DATABASE ROWS (7 ENGINES) -->
+  <g font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" transform="translate(25, 98)">
+
+    <!-- 1. PostgreSQL -->
+    <g transform="translate(0, 0)">
+      <text x="10" y="0" fill="#336791">PostgreSQL 17</text>
+      <text x="160" y="0" fill="#00FF66">145,200 TPS</text>
+      <text x="360" y="0" fill="#00E5FF">480,000 QPS</text>
+      <text x="540" y="0" fill="#00FF66">0.45 ms</text>
+      <text x="680" y="0" fill="#00FF66">SYNC MULTI-REGION</text>
+      <text x="800" y="0" fill="#F8FAFC">4.2 TB NVMe</text>
+    </g>
+
+    <!-- 2. Redis -->
+    <g transform="translate(0, 32)">
+      <text x="10" y="0" fill="#DC382D">Redis 7 (In-Memory)</text>
+      <text x="160" y="0" fill="#00FF66">1,850,000 TPS 🚀</text>
+      <text x="360" y="0" fill="#00E5FF">3,200,000 QPS</text>
+      <text x="540" y="0" fill="#00FF66">0.08 ms [ULTRA]</text>
+      <text x="680" y="0" fill="#00FF66">CLUSTER (32 SHARDS)</text>
+      <text x="800" y="0" fill="#F8FAFC">256 GB RAM</text>
+    </g>
+
+    <!-- 3. MySQL -->
+    <g transform="translate(0, 64)">
+      <text x="10" y="0" fill="#00758F">MySQL 8.4</text>
+      <text x="160" y="0" fill="#00FF66">98,400 TPS</text>
+      <text x="360" y="0" fill="#00E5FF">310,000 QPS</text>
+      <text x="540" y="0" fill="#00E5FF">0.85 ms</text>
+      <text x="680" y="0" fill="#00FF66">GALERA CLUSTER</text>
+      <text x="800" y="0" fill="#F8FAFC">2.8 TB SSD</text>
+    </g>
+
+    <!-- 4. MongoDB -->
+    <g transform="translate(0, 96)">
+      <text x="10" y="0" fill="#47A248">MongoDB 8.0</text>
+      <text x="160" y="0" fill="#00FF66">210,000 TPS</text>
+      <text x="360" y="0" fill="#00E5FF">650,000 QPS</text>
+      <text x="540" y="0" fill="#00FF66">0.32 ms</text>
+      <text x="680" y="0" fill="#00FF66">REPLICA SET (3 NODES)</text>
+      <text x="800" y="0" fill="#F8FAFC">6.5 TB NVMe</text>
+    </g>
+
+    <!-- 5. SQLite -->
+    <g transform="translate(0, 128)">
+      <text x="10" y="0" fill="#003B57">SQLite 3 (WAL)</text>
+      <text x="160" y="0" fill="#00FF66">350,000 TPS [LOCAL]</text>
+      <text x="360" y="0" fill="#00E5FF">920,000 QPS</text>
+      <text x="540" y="0" fill="#00FF66">0.02 ms [EMBEDDED]</text>
+      <text x="680" y="0" fill="#8899A6">SINGLE FILE WAL</text>
+      <text x="800" y="0" fill="#F8FAFC">12 GB RAM-DISK</text>
+    </g>
+
+    <!-- 6. ElasticSearch -->
+    <g transform="translate(0, 160)">
+      <text x="10" y="0" fill="#005571">ElasticSearch 8</text>
+      <text x="160" y="0" fill="#00FF66">420,000 TPS</text>
+      <text x="360" y="0" fill="#00E5FF">1,100,000 QPS</text>
+      <text x="540" y="0" fill="#00E5FF">1.10 ms</text>
+      <text x="680" y="0" fill="#00FF66">PRIMARY / REPLICA</text>
+      <text x="800" y="0" fill="#F8FAFC">18.4 TB LUCENE</text>
+    </g>
+
+    <!-- 7. Neo4j -->
+    <g transform="translate(0, 192)">
+      <text x="10" y="0" fill="#008CC1">Neo4j Graph DB</text>
+      <text x="160" y="0" fill="#00FF66">65,000 TPS</text>
+      <text x="360" y="0" fill="#00E5FF">240,000 QPS</text>
+      <text x="540" y="0" fill="#00E5FF">1.45 ms</text>
+      <text x="680" y="0" fill="#00FF66">CAUSAL CLUSTER</text>
+      <text x="800" y="0" fill="#F8FAFC">1.2 TB GRAPH</text>
+    </g>
+
+  </g>
+
+  <!-- LIVE DYNAMIC DYNAMIC BAR GRAPHS -->
+  <g transform="translate(25, 340)">
+    <text x="0" y="0" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#00FF66">
+      📊 LIVE TRANSACTION VOLUME SPECTRUM (REALTIME ANIMATED BUFFER)
+    </text>
+
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="850" height="70" rx="6" fill="#020814" stroke="#00E5FF" stroke-width="1" />
+      <g transform="translate(15, 10)">
+        <rect x="0" y="5" width="22" height="40" fill="#00FF66" filter="url(#glowGreen)">
+          <animate attributeName="height" values="40;48;32;40" dur="1.8s" repeatCount="indefinite" />
+        </rect>
+        <rect x="35" y="0" width="22" height="48" fill="#00E5FF" filter="url(#glowCyan)">
+          <animate attributeName="height" values="48;35;52;48" dur="2.1s" repeatCount="indefinite" />
+        </rect>
+        <rect x="70" y="10" width="22" height="35" fill="#00FF66" opacity="0.8" />
+        <rect x="105" y="15" width="22" height="30" fill="#00FF66" opacity="0.8" />
+        <rect x="140" y="0" width="22" height="50" fill="#00FF66" filter="url(#glowGreen)">
+          <animate attributeName="height" values="50;42;55;50" dur="2.4s" repeatCount="indefinite" />
+        </rect>
+        <rect x="175" y="5" width="22" height="42" fill="#00E5FF" filter="url(#glowCyan)" />
+        <rect x="210" y="20" width="22" height="25" fill="#FF9900" />
+        <rect x="245" y="0" width="22" height="50" fill="#00FF66" filter="url(#glowGreen)" />
+        <rect x="280" y="8" width="22" height="38" fill="#00E5FF" />
+        <rect x="315" y="2" width="22" height="45" fill="#00FF66" filter="url(#glowGreen)" />
+      </g>
+    </g>
+  </g>
+</svg>

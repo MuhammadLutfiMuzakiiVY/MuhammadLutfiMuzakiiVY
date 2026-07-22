@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="100%" height="480">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070A" />
+      <stop offset="50%" stop-color="#0E121E" />
+      <stop offset="100%" stop-color="#020407" />
+    </linearGradient>
+
+    <filter id="glowPurple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#9D00FF" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.15" />
+    </pattern>
+  </defs>
+
+  <rect width="900" height="480" rx="10" fill="url(#bgGrad)" stroke="#9D00FF" stroke-width="1.6" filter="url(#glowPurple)" />
+  <rect width="900" height="480" rx="10" fill="url(#grid)" />
+
+  <!-- TOP TITLE BAR -->
+  <rect x="15" y="14" width="870" height="36" rx="6" fill="#0A0314" stroke="#9D00FF" stroke-width="1" />
+  <circle cx="35" cy="32" r="5" fill="#FF0055" />
+  <circle cx="52" cy="32" r="5" fill="#FF9900" />
+  <circle cx="69" cy="32" r="5" fill="#00FF66" />
+  <text x="90" y="36" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#9D00FF" letter-spacing="1">
+    🤖 AI INFERENCE &amp; DEEP LEARNING MODEL TERMINAL <tspan fill="#00E5FF">| HIGH-THROUGHPUT LATENCY MONITOR</tspan>
+  </text>
+  <circle cx="865" cy="32" r="4" fill="#9D00FF" filter="url(#glowPurple)">
+    <animate attributeName="opacity" values="1;0.2;1" dur="0.8s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- TABLE HEADER -->
+  <g font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#8899A6" transform="translate(25, 70)">
+    <text x="10" y="0">MODEL NAME</text>
+    <text x="140" y="0">INFERENCE/SEC</text>
+    <text x="280" y="0">LATENCY</text>
+    <text x="390" y="0">CONTEXT WINDOW</text>
+    <text x="540" y="0">GPU UTILIZATION</text>
+    <text x="680" y="0">ACCURACY</text>
+    <text x="790" y="0">EMBED SPEED</text>
+    <line x1="0" y1="10" x2="850" y2="10" stroke="#1E293B" stroke-width="1" />
+  </g>
+
+  <!-- AI MODEL ROWS (11 MODELS) -->
+  <g font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" transform="translate(25, 98)">
+
+    <!-- 1. GPT-5.5 -->
+    <g transform="translate(0, 0)">
+      <text x="10" y="0" fill="#00FF66">GPT-5.5 (OpenAI)</text>
+      <text x="140" y="0" fill="#00E5FF">345 tok/s</text>
+      <text x="280" y="0" fill="#00FF66">8.4 ms</text>
+      <text x="390" y="0" fill="#F8FAFC">2,000,000 tok</text>
+
+      <rect x="540" y="-10" width="110" height="12" rx="3" fill="#0D192B" />
+      <rect x="540" y="-10" width="105" height="12" rx="3" fill="#9D00FF" filter="url(#glowPurple)">
+        <animate attributeName="width" values="105;109;100;105" dur="2s" repeatCount="indefinite" />
+      </rect>
+      <text x="595" y="0" fill="#FFFFFF" font-size="9" font-weight="900" text-anchor="middle">95% (H100 x8)</text>
+
+      <text x="680" y="0" fill="#00FF66">98.9% MMLU</text>
+      <text x="790" y="0" fill="#00E5FF">14,200/s</text>
+    </g>
+
+    <!-- 2. Claude 3.5 Opus -->
+    <g transform="translate(0, 30)">
+      <text x="10" y="0" fill="#D97706">Claude 3.5 Opus</text>
+      <text x="140" y="0" fill="#00E5FF">280 tok/s</text>
+      <text x="280" y="0" fill="#00FF66">11.2 ms</text>
+      <text x="390" y="0" fill="#F8FAFC">1,000,000 tok</text>
+
+      <rect x="540" y="-10" width="110" height="12" rx="3" fill="#0D192B" />
+      <rect x="540" y="-10" width="98" height="12" rx="3" fill="#9D00FF" />
+      <text x="595" y="0" fill="#FFFFFF" font-size="9" font-weight="900" text-anchor="middle">89% (H100 x8)</text>
+
+      <text x="680" y="0" fill="#00FF66">98.4% MMLU</text>
+      <text x="790" y="0" fill="#00E5FF">12,800/s</text>
+    </g>
+
+    <!-- 3. Gemini 1.5 Pro -->
+    <g transform="translate(0, 60)">
+      <text x="10" y="0" fill="#4285F4">Gemini 1.5 Pro</text>
+      <text x="140" y="0" fill="#00E5FF">410 tok/s</text>
+      <text x="280" y="0" fill="#00FF66">6.2 ms</text>
+      <text x="390" y="0" fill="#00FF66">10,000,000 tok 🚀</text>
+
+      <rect x="540" y="-10" width="110" height="12" rx="3" fill="#0D192B" />
+      <rect x="540" y="-10" width="102" height="12" rx="3" fill="#00E5FF" filter="url(#glowCyan)" />
+      <text x="595" y="0" fill="#000000" font-size="9" font-weight="900" text-anchor="middle">92% (TPU v5p)</text>
+
+      <text x="680" y="0" fill="#00FF66">97.8% MMLU</text>
+      <text x="790" y="0" fill="#00E5FF">18,500/s</text>
+    </g>
+
+    <!-- 4. DeepSeek-V3 -->
+    <g transform="translate(0, 90)">
+      <text x="10" y="0" fill="#00FF66">DeepSeek-V3 (MoE)</text>
+      <text x="140" y="0" fill="#00FF66">650 tok/s 🚀</text>
+      <text x="280" y="0" fill="#00FF66">3.1 ms</text>
+      <text x="390" y="0" fill="#F8FAFC">128,000 tok</text>
+
+      <rect x="540" y="-10" width="110" height="12" rx="3" fill="#0D192B" />
+      <rect x="540" y="-10" width="62" height="12" rx="3" fill="#00FF66" filter="url(#glowGreen)" />
+      <text x="595" y="0" fill="#000000" font-size="9" font-weight="900" text-anchor="middle">56% (EP-MoE)</text>
+
+      <text x="680" y="0" fill="#00FF66">96.5% MMLU</text>
+      <text x="790" y="0" fill="#00E5FF">24,000/s</text>
+    </g>
+
+    <!-- 5. Qwen-2.5 72B -->
+    <g transform="translate(0, 120)">
+      <text x="10" y="0" fill="#FF9900">Qwen-2.5 72B</text>
+      <text x="140" y="0" fill="#00E5FF">380 tok/s</text>
+      <text x="280" y="0" fill="#00FF66">7.8 ms</text>
+      <text x="390" y="0" fill="#F8FAFC">128,000 tok</text>
+
+      <rect x="540" y="-10" width="110" height="12" rx="3" fill="#0D192B" />
+      <rect x="540" y="-10" width="88" height="12" rx="3" fill="#9D00FF" />
+      <text x="595" y="0" fill="#FFFFFF" font-size="9" font-weight="900" text-anchor="middle">80% (A100 x8)</text>
+
+      <text x="680" y="0" fill="#00FF66">95.2% MMLU</text>
+      <text x="790" y="0" fill="#00E5FF">16,100/s</text>
+    </g>
+
+    <!-- 6. GLM-4 -->
+    <g transform="translate(0, 150)">
+      <text x="10" y="0" fill="#3B82F6">GLM-4 (Zhipu)</text>
+      <text x="140" y="0" fill="#00E5FF">310 tok/s</text>
+      <text x="280" y="0" fill="#00FF66">9.0 ms</text>
+      <text x="390" y="0" fill="#F8FAFC">128,000 tok</text>
+
+      <rect x="540" y="-10" width="110" height="12" rx="3" fill="#0D192B" />
+      <rect x="540" y="-10" width="82" height="12" rx="3" fill="#9D00FF" />
+      <text x="595" y="0" fill="#FFFFFF" font-size="9" font-weight="900" text-anchor="middle">75% (H100 x4)</text>
+
+      <text x="680" y="0" fill="#00FF66">93.8% MMLU</text>
+      <text x="790" y="0" fill="#00E5FF">13,400/s</text>
+    </g>
+
+    <!-- 7. Llama-3.3 70B -->
+    <g transform="translate(0, 180)">
+      <text x="10" y="0" fill="#0467DF">Llama-3.3 70B</text>
+      <text x="140" y="0" fill="#00E5FF">490 tok/s</text>
+      <text x="280" y="0" fill="#00FF66">4.8 ms</text>
+      <text x="390" y="0" fill="#F8FAFC">128,000 tok</text>
+
+      <rect x="540" y="-10" width="110" height="12" rx="3" fill="#0D192B" />
+      <rect x="540" y="-10" width="70" height="12" rx="3" fill="#00E5FF" filter="url(#glowCyan)" />
+      <text x="595" y="0" fill="#000000" font-size="9" font-weight="900" text-anchor="middle">64% (vLLM)</text>
+
+      <text x="680" y="0" fill="#00FF66">94.6% MMLU</text>
+      <text x="790" y="0" fill="#00E5FF">21,000/s</text>
+    </g>
+
+    <!-- 8. Mistral Large 2 -->
+    <g transform="translate(0, 210)">
+      <text x="10" y="0" fill="#FF5500">Mistral Large 2</text>
+      <text x="140" y="0" fill="#00E5FF">420 tok/s</text>
+      <text x="280" y="0" fill="#00FF66">5.5 ms</text>
+      <text x="390" y="0" fill="#F8FAFC">128,000 tok</text>
+
+      <rect x="540" y="-10" width="110" height="12" rx="3" fill="#0D192B" />
+      <rect x="540" y="-10" width="76" height="12" rx="3" fill="#9D00FF" />
+      <text x="595" y="0" fill="#FFFFFF" font-size="9" font-weight="900" text-anchor="middle">69% (H100 x4)</text>
+
+      <text x="680" y="0" fill="#00FF66">94.1% MMLU</text>
+      <text x="790" y="0" fill="#00E5FF">19,200/s</text>
+    </g>
+
+    <!-- 9. Gemma-2 27B -->
+    <g transform="translate(0, 240)">
+      <text x="10" y="0" fill="#4285F4">Gemma-2 27B</text>
+      <text x="140" y="0" fill="#00FF66">720 tok/s</text>
+      <text x="280" y="0" fill="#00FF66">2.8 ms</text>
+      <text x="390" y="0" fill="#F8FAFC">32,000 tok</text>
+
+      <rect x="540" y="-10" width="110" height="12" rx="3" fill="#0D192B" />
+      <rect x="540" y="-10" width="45" height="12" rx="3" fill="#00FF66" filter="url(#glowGreen)" />
+      <text x="595" y="0" fill="#000000" font-size="9" font-weight="900" text-anchor="middle">41% (RTX4090)</text>
+
+      <text x="680" y="0" fill="#00FF66">91.4% MMLU</text>
+      <text x="790" y="0" fill="#00E5FF">28,500/s</text>
+    </g>
+
+    <!-- 10. Phi-4 (Microsoft) -->
+    <g transform="translate(0, 270)">
+      <text x="10" y="0" fill="#00A4EF">Phi-4 (14B)</text>
+      <text x="140" y="0" fill="#00FF66">950 tok/s 🚀</text>
+      <text x="280" y="0" fill="#00FF66">1.9 ms</text>
+      <text x="390" y="0" fill="#F8FAFC">16,000 tok</text>
+
+      <rect x="540" y="-10" width="110" height="12" rx="3" fill="#0D192B" />
+      <rect x="540" y="-10" width="30" height="12" rx="3" fill="#00FF66" filter="url(#glowGreen)" />
+      <text x="595" y="0" fill="#000000" font-size="9" font-weight="900" text-anchor="middle">27% (ONNX Edge)</text>
+
+      <text x="680" y="0" fill="#00FF66">89.8% MMLU</text>
+      <text x="790" y="0" fill="#00E5FF">35,000/s</text>
+    </g>
+
+    <!-- 11. Command-R+ -->
+    <g transform="translate(0, 300)">
+      <text x="10" y="0" fill="#39424E">Command-R+</text>
+      <text x="140" y="0" fill="#00E5FF">390 tok/s</text>
+      <text x="280" y="0" fill="#00FF66">6.8 ms</text>
+      <text x="390" y="0" fill="#F8FAFC">128,000 tok</text>
+
+      <rect x="540" y="-10" width="110" height="12" rx="3" fill="#0D192B" />
+      <rect x="540" y="-10" width="85" height="12" rx="3" fill="#9D00FF" />
+      <text x="595" y="0" fill="#FFFFFF" font-size="9" font-weight="900" text-anchor="middle">77% (Cohere)</text>
+
+      <text x="680" y="0" fill="#00FF66">92.7% MMLU</text>
+      <text x="790" y="0" fill="#00E5FF">15,900/s</text>
+    </g>
+
+  </g>
+
+  <!-- LIVE INFERENCE SPEED REALTIME ANIMATED CHART -->
+  <g transform="translate(25, 420)">
+    <text x="0" y="-8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#00E5FF">
+      ⚡ REALTIME AGENT INFERENCE THROUGHPUT WAVEFORM (TOKENS/SEC)
+    </text>
+    <path d="M 0 25 Q 100 5 200 20 T 400 15 T 600 30 T 850 10" fill="none" stroke="#00FF66" stroke-width="2" filter="url(#glowGreen)">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" values="
+        M 0 25 Q 100 5 200 20 T 400 15 T 600 30 T 850 10;
+        M 0 15 Q 100 30 200 10 T 400 25 T 600 10 T 850 25;
+        M 0 25 Q 100 5 200 20 T 400 15 T 600 30 T 850 10" />
+    </path>
+  </g>
+</svg>
