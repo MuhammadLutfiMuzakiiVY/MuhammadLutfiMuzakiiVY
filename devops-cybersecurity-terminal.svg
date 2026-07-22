@@ -1,194 +1,150 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="100%" height="520">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#05070A" />
-      <stop offset="50%" stop-color="#0C1525" />
-      <stop offset="100%" stop-color="#020407" />
+    <linearGradient id="binanceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0E11" />
+      <stop offset="50%" stop-color="#181A20" />
+      <stop offset="100%" stop-color="#0B0E11" />
     </linearGradient>
 
+    <filter id="glowYellow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
     <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-    </filter>
-    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-    </filter>
-    <filter id="glowRed" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="4" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
 
     <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00E5FF" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.15" />
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#2B313A" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.4" />
     </pattern>
   </defs>
 
-  <rect width="900" height="520" rx="10" fill="url(#bgGrad)" stroke="#00FF66" stroke-width="1.6" filter="url(#glowGreen)" />
+  <rect width="900" height="520" rx="10" fill="url(#binanceBg)" stroke="#F0B90B" stroke-width="1.6" filter="url(#glowYellow)" />
   <rect width="900" height="520" rx="10" fill="url(#grid)" />
 
   <!-- TOP TITLE BAR -->
-  <rect x="15" y="14" width="870" height="36" rx="6" fill="#030A14" stroke="#00FF66" stroke-width="1" />
-  <circle cx="35" cy="32" r="5" fill="#FF0055" />
-  <circle cx="52" cy="32" r="5" fill="#FF9900" />
-  <circle cx="69" cy="32" r="5" fill="#00FF66" />
-  <text x="90" y="36" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#00FF66" letter-spacing="1">
-    ⚙️ DEVOPS, CLOUD INFRASTRUCTURE &amp; CYBERSECURITY SENTINEL MATRIX
+  <rect x="14" y="14" width="872" height="36" rx="6" fill="#181A20" stroke="#2B313A" stroke-width="1" />
+  <text x="30" y="36" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#F0B90B" letter-spacing="1">
+    ⚙️ BINANCE FUTURES ORDER EXECUTION &amp; DEVOPS POSITION RISK PANEL
   </text>
-  <circle cx="865" cy="32" r="4" fill="#FF0055" filter="url(#glowRed)">
-    <animate attributeName="opacity" values="1;0.2;1" dur="0.25s" repeatCount="indefinite" />
+  <circle cx="865" cy="32" r="4" fill="#0ECB81" filter="url(#glowGreen)">
+    <animate attributeName="opacity" values="1;0.2;1" dur="0.4s" repeatCount="indefinite" />
   </circle>
 
-  <!-- LEFT COLUMN: DEVOPS & CLOUD TELEMETRY -->
-  <g transform="translate(25, 70)" font-family="'JetBrains Mono', monospace">
-    <text x="0" y="0" font-size="11" font-weight="900" fill="#00E5FF">☁️ CLOUD INFRASTRUCTURE &amp; CONTAINERS</text>
-    <line x1="0" y1="10" x2="410" y2="10" stroke="#1E293B" stroke-width="1" />
+  <!-- LEFT: BINANCE FUTURES TRADE ORDER FORM (WIDTH 350) -->
+  <g transform="translate(25, 65)" font-family="'JetBrains Mono', monospace">
+    <rect x="0" y="0" width="340" height="420" rx="6" fill="#181A20" stroke="#2B313A" stroke-width="1" />
+    
+    <!-- Order Type Tabs -->
+    <g transform="translate(15, 15)">
+      <rect x="0" y="0" width="90" height="24" rx="4" fill="#F0B90B" />
+      <text x="45" y="16" font-size="10" font-weight="900" fill="#0B0E11" text-anchor="middle">LIMIT</text>
 
-    <g transform="translate(0, 30)" font-size="11" font-weight="bold">
-      <text x="0" y="0" fill="#2496ED">Docker Containers</text>
-      <text x="170" y="0" fill="#00FF66">42 RUNNING</text>
-      <text x="300" y="0" fill="#00E5FF">CPU 12.4%</text>
-      <text x="410" y="0" fill="#F8FAFC" text-anchor="end">RAM 8.4GB</text>
+      <rect x="100" y="0" width="90" height="24" rx="4" fill="#2B313A" />
+      <text x="145" y="16" font-size="10" font-weight="bold" fill="#848E9C" text-anchor="middle">MARKET</text>
+
+      <rect x="200" y="0" width="100" height="24" rx="4" fill="#2B313A" />
+      <text x="250" y="16" font-size="10" font-weight="bold" fill="#848E9C" text-anchor="middle">STOP-LIMIT</text>
     </g>
 
-    <g transform="translate(0, 55)" font-size="11" font-weight="bold">
-      <text x="0" y="0" fill="#326CE5">Kubernetes Cluster</text>
-      <text x="170" y="0" fill="#00FF66">128 PODS [HEALTHY]</text>
-      <text x="300" y="0" fill="#00E5FF">CPU 24.1%</text>
-      <text x="410" y="0" fill="#F8FAFC" text-anchor="end">RAM 32GB</text>
+    <!-- Price Input Box -->
+    <g transform="translate(15, 55)" font-size="11" font-weight="bold">
+      <text x="0" y="0" fill="#848E9C">Price (Build Speed)</text>
+      <rect x="0" y="8" width="310" height="32" rx="4" fill="#1E2329" stroke="#2B313A" stroke-width="1" />
+      <text x="12" y="29" fill="#EAECEF">0.42s (Rust Cargo)</text>
+      <text x="295" y="29" fill="#848E9C" text-anchor="end">USDT</text>
     </g>
 
-    <g transform="translate(0, 80)" font-size="11" font-weight="bold">
-      <text x="0" y="0" fill="#FF9900">AWS (us-east-1)</text>
-      <text x="170" y="0" fill="#00FF66">EKS / EC2 Active</text>
-      <text x="300" y="0" fill="#00E5FF">99.99% UP</text>
-      <text x="410" y="0" fill="#00FF66" text-anchor="end">READY</text>
+    <!-- Size Input Box -->
+    <g transform="translate(15, 115)" font-size="11" font-weight="bold">
+      <text x="0" y="0" fill="#848E9C">Size (K8s Pods / CPU)</text>
+      <rect x="0" y="8" width="310" height="32" rx="4" fill="#1E2329" stroke="#2B313A" stroke-width="1" />
+      <text x="12" y="29" fill="#EAECEF">128 Pods / 16-Core</text>
+      <text x="295" y="29" fill="#848E9C" text-anchor="end">PODS</text>
     </g>
 
-    <g transform="translate(0, 105)" font-size="11" font-weight="bold">
-      <text x="0" y="0" fill="#F38020">Cloudflare Edge</text>
-      <text x="170" y="0" fill="#00FF66">Global Workers</text>
-      <text x="300" y="0" fill="#00E5FF">0.4ms Latency</text>
-      <text x="410" y="0" fill="#00FF66" text-anchor="end">ACTIVE</text>
+    <!-- Slider Leverage bar -->
+    <g transform="translate(15, 175)">
+      <text x="0" y="0" font-size="10" font-weight="bold" fill="#848E9C">Leverage Selector: 125x</text>
+      <rect x="0" y="8" width="310" height="6" rx="3" fill="#2B313A" />
+      <rect x="0" y="8" width="280" height="6" rx="3" fill="#F0B90B" />
+      <circle cx="280" cy="11" r="7" fill="#F0B90B" filter="url(#glowYellow)" />
     </g>
 
-    <g transform="translate(0, 130)" font-size="11" font-weight="bold">
-      <text x="0" y="0" fill="#E6522C">Prometheus / Grafana</text>
-      <text x="170" y="0" fill="#00FF66">1,400 Metrics/s</text>
-      <text x="300" y="0" fill="#00E5FF">100% Ingest</text>
-      <text x="410" y="0" fill="#00FF66" text-anchor="end">OK</text>
-    </g>
-  </g>
+    <!-- BUY LONG / SELL SHORT BUTTONS -->
+    <g transform="translate(15, 215)">
+      <rect x="0" y="0" width="148" height="42" rx="4" fill="#0ECB81" />
+      <text x="74" y="26" font-size="13" font-weight="900" fill="#0B0E11" text-anchor="middle">BUY / LONG 🚀</text>
 
-  <!-- RIGHT COLUMN: CYBERSECURITY THREAT MONITOR -->
-  <g transform="translate(465, 70)" font-family="'JetBrains Mono', monospace">
-    <text x="0" y="0" font-size="11" font-weight="900" fill="#FF0055">🛡️ CYBERSECURITY THREAT &amp; CVE SCANNER</text>
-    <line x1="0" y1="10" x2="410" y2="10" stroke="#1E293B" stroke-width="1" />
-
-    <g transform="translate(0, 30)" font-size="11" font-weight="bold">
-      <text x="0" y="0" fill="#F8FAFC">THREAT LEVEL:</text>
-      <rect x="110" y="-12" width="90" height="16" rx="3" fill="#00FF66" opacity="0.2" />
-      <text x="155" y="0" fill="#00FF66" text-anchor="middle">LOW (SECURE)</text>
-
-      <text x="230" y="0" fill="#F8FAFC">ATTACKS BLOCKED:</text>
-      <text x="410" y="0" fill="#FF0055" text-anchor="end" font-weight="900">4,892 / DAY</text>
+      <rect x="162" y="0" width="148" height="42" rx="4" fill="#F6465D" />
+      <text x="236" y="26" font-size="13" font-weight="900" fill="#FFFFFF" text-anchor="middle">SELL / SHORT</text>
     </g>
 
-    <g transform="translate(0, 55)" font-size="11" font-weight="bold">
-      <text x="0" y="0" fill="#FF9900">OWASP ZAP / Burp</text>
-      <text x="170" y="0" fill="#00FF66">SQLi &amp; XSS Shield</text>
-      <text x="410" y="0" fill="#00FF66" text-anchor="end">0 CVE VULN</text>
-    </g>
-
-    <g transform="translate(0, 80)" font-size="11" font-weight="bold">
-      <text x="0" y="0" fill="#00E5FF">Suricata IDS/IPS</text>
-      <text x="170" y="0" fill="#00FF66">DDoS Filter Active</text>
-      <text x="410" y="0" fill="#00FF66" text-anchor="end">HARDENED</text>
-    </g>
-
-    <g transform="translate(0, 105)" font-size="11" font-weight="bold">
-      <text x="0" y="0" fill="#9D00FF">CrowdSec Bouncer</text>
-      <text x="170" y="0" fill="#00FF66">182 Bad IPs Banned</text>
-      <text x="410" y="0" fill="#00FF66" text-anchor="end">PROTECTED</text>
-    </g>
-
-    <g transform="translate(0, 130)" font-size="11" font-weight="bold">
-      <text x="0" y="0" fill="#00FF66">Nmap Security Audit</text>
-      <text x="170" y="0" fill="#00FF66">Ports 80, 443 Strict</text>
-      <text x="410" y="0" fill="#00FF66" text-anchor="end">PASSED</text>
+    <!-- Account Margin Info -->
+    <g transform="translate(15, 280)" font-size="10" font-weight="bold" fill="#848E9C">
+      <text y="0">Avail Margin: <tspan fill="#EAECEF">64GB DDR5 / 4TB NVMe</tspan></text>
+      <text y="20">Margin Ratio: <tspan fill="#0ECB81">2.14% (SAFE)</tspan></text>
+      <text y="40">Max Position: <tspan fill="#F0B90B">100,000,000 USDT</tspan></text>
     </g>
   </g>
 
-  <!-- MIDDLE SECTION: NETWORK PROTOCOLS -->
-  <g transform="translate(25, 240)" font-family="'JetBrains Mono', monospace">
-    <text x="0" y="0" font-size="11" font-weight="900" fill="#00E5FF">
-      🌐 HIGH-FREQUENCY NETWORK PROTOCOLS &amp; STREAMING PIPELINES
-    </text>
-    <line x1="0" y1="10" x2="850" y2="10" stroke="#1E293B" stroke-width="1" />
+  <!-- RIGHT: DEVOPS & CYBERSECURITY SENTINEL POSITION RISK MATRIX (WIDTH 500) -->
+  <g transform="translate(385, 65)" font-family="'JetBrains Mono', monospace">
+    <rect x="0" y="0" width="490" height="420" rx="6" fill="#181A20" stroke="#2B313A" stroke-width="1" />
+    <text x="15" y="22" font-size="11" font-weight="900" fill="#F0B90B">🛡️ DEVOPS &amp; CYBERSECURITY POSITION RISK MATRIX</text>
+    <line x1="15" y1="30" x2="475" y2="30" stroke="#2B313A" stroke-width="1" />
 
-    <g transform="translate(0, 30)" font-size="11" font-weight="bold">
-      <text x="0" y="0" fill="#244255">gRPC / HTTP/2</text>
-      <text x="120" y="0" fill="#00FF66">0.12ms [ProtoBuf]</text>
+    <g font-size="11" font-weight="bold" transform="translate(15, 50)">
+      <text x="0" y="0" fill="#2496ED">Docker Containers:</text>
+      <text x="180" y="0" fill="#0ECB81">42 RUNNING</text>
+      <text x="330" y="0" fill="#EAECEF">CPU 12.4%</text>
 
-      <text x="280" y="0" fill="#00E5FF">WebSocket (WSS)</text>
-      <text x="420" y="0" fill="#00FF66">Live Telemetry</text>
+      <text x="0" y="32" fill="#326CE5">Kubernetes Cluster:</text>
+      <text x="180" y="32" fill="#0ECB81">128 PODS HEALTHY</text>
+      <text x="330" y="32" fill="#EAECEF">RAM 32GB</text>
 
-      <text x="570" y="0" fill="#FF9900">Apache Kafka</text>
-      <text x="700" y="0" fill="#00FF66">1.2M msgs/sec 🚀</text>
+      <text x="0" y="64" fill="#FF9900">AWS (us-east-1):</text>
+      <text x="180" y="64" fill="#0ECB81">99.99% UP</text>
+      <text x="330" y="64" fill="#0ECB81">READY</text>
+
+      <text x="0" y="96" fill="#F38020">Cloudflare Edge:</text>
+      <text x="180" y="96" fill="#0ECB81">Global Workers</text>
+      <text x="330" y="96" fill="#0ECB81">0.4ms Latency</text>
+
+      <text x="0" y="128" fill="#F6465D">OWASP &amp; Burp Shield:</text>
+      <text x="180" y="128" fill="#0ECB81">SQLi/XSS Shield</text>
+      <text x="330" y="128" fill="#0ECB81">0 CVE VULN</text>
+
+      <text x="0" y="160" fill="#9D00FF">Suricata IDS/IPS:</text>
+      <text x="180" y="160" fill="#0ECB81">DDoS Filter Active</text>
+      <text x="330" y="160" fill="#0ECB81">HARDENED</text>
     </g>
 
-    <g transform="translate(0, 55)" font-size="11" font-weight="bold">
-      <text x="0" y="0" fill="#00FF66">QUIC / HTTP/3</text>
-      <text x="120" y="0" fill="#00FF66">0-RTT Connect</text>
-
-      <text x="280" y="0" fill="#9D00FF">MQTT v5.0</text>
-      <text x="420" y="0" fill="#00FF66">IoT Stream</text>
-
-      <text x="570" y="0" fill="#FF6600">RabbitMQ</text>
-      <text x="700" y="0" fill="#00FF66">AMQP 0.9.1 Active</text>
-    </g>
-  </g>
-
-  <!-- RAPID HIGH-SPEED PACKET FLOW (1.2s DURATION) -->
-  <g transform="translate(25, 350)">
-    <rect x="0" y="0" width="850" height="28" rx="5" fill="#020814" stroke="#00E5FF" stroke-width="1" />
-    <text x="15" y="18" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#00FF66">
-      HIGH-SPEED PACKET STREAM:
-    </text>
-
-    <g transform="translate(180, 8)">
-      <circle cx="10" cy="6" r="5" fill="#00FF66" filter="url(#glowGreen)">
-        <animate attributeName="cx" values="10;630;10" dur="1.2s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="120" cy="6" r="5" fill="#00E5FF" filter="url(#glowCyan)">
-        <animate attributeName="cx" values="120;630;10" dur="1.0s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="250" cy="6" r="5" fill="#FF0055" filter="url(#glowRed)">
-        <animate attributeName="cx" values="250;630;10" dur="1.4s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="380" cy="6" r="5" fill="#FF9900">
-        <animate attributeName="cx" values="380;630;10" dur="0.9s" repeatCount="indefinite" />
-      </circle>
-    </g>
-  </g>
-
-  <!-- BOTTOM CI/CD LIVE BUILD -->
-  <g transform="translate(25, 410)" font-family="'JetBrains Mono', monospace">
-    <text x="0" y="0" font-size="11" font-weight="900" fill="#00FF66">
-      🛠️ LIVE CI/CD BUILD PIPELINE &amp; INTEGRATION MATRIX
-    </text>
-    <line x1="0" y1="10" x2="850" y2="10" stroke="#1E293B" stroke-width="1" />
-
-    <g transform="translate(0, 30)" font-size="11" font-weight="bold">
-      <text x="0" y="0" fill="#F8FAFC">Cargo Build (Rust): <tspan fill="#00FF66">PASSED (0.4s)</tspan></text>
-      <text x="300" y="0" fill="#F8FAFC">npm / pnpm: <tspan fill="#00FF66">BUILD SUCCESS</tspan></text>
-      <text x="580" y="0" fill="#F8FAFC">Unit Tests: <tspan fill="#00FF66">100% (412 Passed)</tspan></text>
+    <!-- BINANCE REALTIME PACKET STREAM BAR (BOTTOM) -->
+    <g transform="translate(15, 240)">
+      <text x="0" y="0" font-size="10" font-weight="900" fill="#848E9C">PACKET FLOW STREAMING (HIGH-SPEED MATCHING ENGINE)</text>
+      <rect x="0" y="10" width="460" height="32" rx="4" fill="#1E2329" stroke="#2B313A" stroke-width="1" />
+      
+      <g transform="translate(15, 18)">
+        <circle cx="10" cy="8" r="5" fill="#0ECB81" filter="url(#glowGreen)">
+          <animate attributeName="cx" values="10;430;10" dur="1.2s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="120" cy="8" r="5" fill="#F0B90B" filter="url(#glowYellow)">
+          <animate attributeName="cx" values="120;430;10" dur="1.0s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="250" cy="8" r="5" fill="#F6465D">
+          <animate attributeName="cx" values="250;430;10" dur="1.4s" repeatCount="indefinite" />
+        </circle>
+      </g>
     </g>
 
-    <g transform="translate(0, 52)" font-size="11" font-weight="bold">
-      <text x="0" y="0" fill="#F8FAFC">Docker Build: <tspan fill="#00FF66">OPTIMIZED (LMM-v5.0)</tspan></text>
-      <text x="300" y="0" fill="#F8FAFC">GitHub Actions: <tspan fill="#00FF66">WORKFLOW SUCCESS</tspan></text>
-      <text x="580" y="0" fill="#F8FAFC">Code Coverage: <tspan fill="#00FF66">98.4% COVERAGE</tspan></text>
+    <!-- CI/CD BUILD SUCCESS STATUS -->
+    <g transform="translate(15, 305)" font-size="10" font-weight="bold">
+      <rect x="0" y="0" width="460" height="40" rx="4" fill="#1E2329" stroke="#0ECB81" stroke-width="1" />
+      <text x="15" y="24" fill="#0ECB81">
+        [✓] Cargo Build Passed (0.42s) • [✓] Unit Tests 100% (412 Passed) • [✓] 98.4% Coverage
+      </text>
     </g>
   </g>
 </svg>

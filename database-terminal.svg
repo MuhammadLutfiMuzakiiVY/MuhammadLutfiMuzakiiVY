@@ -1,166 +1,185 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="100%" height="480">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#05070A" />
-      <stop offset="50%" stop-color="#0A1828" />
-      <stop offset="100%" stop-color="#020407" />
+    <linearGradient id="binanceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0E11" />
+      <stop offset="50%" stop-color="#181A20" />
+      <stop offset="100%" stop-color="#0B0E11" />
     </linearGradient>
 
+    <filter id="glowYellow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
     <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="4" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
-    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="glowRed" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="4" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
 
     <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00FF66" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.15" />
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#2B313A" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.4" />
     </pattern>
   </defs>
 
-  <rect width="900" height="480" rx="10" fill="url(#bgGrad)" stroke="#00FF66" stroke-width="1.6" filter="url(#glowGreen)" />
+  <rect width="900" height="480" rx="10" fill="url(#binanceBg)" stroke="#F0B90B" stroke-width="1.6" filter="url(#glowYellow)" />
   <rect width="900" height="480" rx="10" fill="url(#grid)" />
 
   <!-- TOP TITLE BAR -->
-  <rect x="15" y="14" width="870" height="36" rx="6" fill="#030A14" stroke="#00FF66" stroke-width="1" />
-  <circle cx="35" cy="32" r="5" fill="#FF0055" />
-  <circle cx="52" cy="32" r="5" fill="#FF9900" />
-  <circle cx="69" cy="32" r="5" fill="#00FF66" />
-  <text x="90" y="36" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#00FF66" letter-spacing="1">
-    🗄️ DATABASE INFRASTRUCTURE &amp; CLUSTER TELEMETRY <tspan fill="#00E5FF">| RAPID TPS SPECTRUM</tspan>
+  <rect x="14" y="14" width="872" height="36" rx="6" fill="#181A20" stroke="#2B313A" stroke-width="1" />
+  <text x="30" y="36" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#F0B90B" letter-spacing="1">
+    ⚡ BINANCE LIVE ORDER BOOK (ASKS &amp; BIDS) <tspan fill="#EAECEF">| DATABASE CLUSTER TELEMETRY</tspan>
   </text>
-  <circle cx="865" cy="32" r="4" fill="#00FF66" filter="url(#glowGreen)">
-    <animate attributeName="opacity" values="1;0.2;1" dur="0.3s" repeatCount="indefinite" />
+  <circle cx="865" cy="32" r="4" fill="#0ECB81" filter="url(#glowGreen)">
+    <animate attributeName="opacity" values="1;0.2;1" dur="0.4s" repeatCount="indefinite" />
   </circle>
 
-  <!-- TABLE HEADER -->
-  <g font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#8899A6" transform="translate(25, 70)">
-    <text x="10" y="0">DATABASE ENGINE</text>
-    <text x="160" y="0">TRANSACTIONS/SEC (TPS)</text>
-    <text x="360" y="0">QUERIES/SEC (QPS)</text>
-    <text x="540" y="0">AVG LATENCY</text>
-    <text x="680" y="0">REPLICATION</text>
-    <text x="800" y="0">STORAGE</text>
-    <line x1="0" y1="10" x2="850" y2="10" stroke="#1E293B" stroke-width="1" />
-  </g>
+  <!-- LEFT: BINANCE LIVE ORDER BOOK PANEL (WIDTH 360) -->
+  <g transform="translate(25, 65)" font-family="'JetBrains Mono', monospace">
+    <rect x="0" y="0" width="350" height="380" rx="6" fill="#181A20" stroke="#2B313A" stroke-width="1" />
+    <text x="15" y="22" font-size="11" font-weight="900" fill="#F0B90B">⚡ BINANCE FUTURES ORDER BOOK</text>
 
-  <!-- DATABASE ROWS -->
-  <g font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" transform="translate(25, 98)">
-
-    <!-- 1. PostgreSQL -->
-    <g transform="translate(0, 0)">
-      <text x="10" y="0" fill="#336791">PostgreSQL 17</text>
-      <text x="160" y="0" fill="#00FF66">145,200 TPS</text>
-      <text x="360" y="0" fill="#00E5FF">480,000 QPS</text>
-      <text x="540" y="0" fill="#00FF66">0.45 ms</text>
-      <text x="680" y="0" fill="#00FF66">SYNC MULTI-REGION</text>
-      <text x="800" y="0" fill="#F8FAFC">4.2 TB NVMe</text>
+    <!-- Table Column Headers -->
+    <g font-size="9" font-weight="bold" fill="#848E9C" transform="translate(15, 38)">
+      <text x="0" y="0">PRICE (USDT)</text>
+      <text x="120" y="0">SIZE (QPS)</text>
+      <text x="240" y="0">TOTAL (TPS)</text>
+      <line x1="0" y1="6" x2="320" y2="6" stroke="#2B313A" stroke-width="1" />
     </g>
 
-    <!-- 2. Redis -->
-    <g transform="translate(0, 32)">
-      <text x="10" y="0" fill="#DC382D">Redis 7 (In-Memory)</text>
-      <text x="160" y="0" fill="#00FF66">1,850,000 TPS 🚀</text>
-      <text x="360" y="0" fill="#00E5FF">3,200,000 QPS</text>
-      <text x="540" y="0" fill="#00FF66">0.08 ms [ULTRA]</text>
-      <text x="680" y="0" fill="#00FF66">CLUSTER (32 SHARDS)</text>
-      <text x="800" y="0" fill="#F8FAFC">256 GB RAM</text>
-    </g>
+    <!-- ASKS (RED SELL ORDERS - TOP HALF) -->
+    <g transform="translate(15, 54)" font-size="10" font-weight="bold">
+      <!-- Ask 1 -->
+      <rect x="0" y="0" width="220" height="14" fill="#F6465D" opacity="0.25">
+        <animate attributeName="width" values="220;250;180;220" dur="0.6s" repeatCount="indefinite" />
+      </rect>
+      <text x="0" y="11" fill="#F6465D">99,120.40</text>
+      <text x="120" y="11" fill="#EAECEF">480,000</text>
+      <text x="240" y="11" fill="#848E9C">145.2K</text>
 
-    <!-- 3. MySQL -->
-    <g transform="translate(0, 64)">
-      <text x="10" y="0" fill="#00758F">MySQL 8.4</text>
-      <text x="160" y="0" fill="#00FF66">98,400 TPS</text>
-      <text x="360" y="0" fill="#00E5FF">310,000 QPS</text>
-      <text x="540" y="0" fill="#00E5FF">0.85 ms</text>
-      <text x="680" y="0" fill="#00FF66">GALERA CLUSTER</text>
-      <text x="800" y="0" fill="#F8FAFC">2.8 TB SSD</text>
-    </g>
-
-    <!-- 4. MongoDB -->
-    <g transform="translate(0, 96)">
-      <text x="10" y="0" fill="#47A248">MongoDB 8.0</text>
-      <text x="160" y="0" fill="#00FF66">210,000 TPS</text>
-      <text x="360" y="0" fill="#00E5FF">650,000 QPS</text>
-      <text x="540" y="0" fill="#00FF66">0.32 ms</text>
-      <text x="680" y="0" fill="#00FF66">REPLICA SET (3 NODES)</text>
-      <text x="800" y="0" fill="#F8FAFC">6.5 TB NVMe</text>
-    </g>
-
-    <!-- 5. SQLite -->
-    <g transform="translate(0, 128)">
-      <text x="10" y="0" fill="#003B57">SQLite 3 (WAL)</text>
-      <text x="160" y="0" fill="#00FF66">350,000 TPS [LOCAL]</text>
-      <text x="360" y="0" fill="#00E5FF">920,000 QPS</text>
-      <text x="540" y="0" fill="#00FF66">0.02 ms [EMBEDDED]</text>
-      <text x="680" y="0" fill="#8899A6">SINGLE FILE WAL</text>
-      <text x="800" y="0" fill="#F8FAFC">12 GB RAM-DISK</text>
-    </g>
-
-    <!-- 6. ElasticSearch -->
-    <g transform="translate(0, 160)">
-      <text x="10" y="0" fill="#005571">ElasticSearch 8</text>
-      <text x="160" y="0" fill="#00FF66">420,000 TPS</text>
-      <text x="360" y="0" fill="#00E5FF">1,100,000 QPS</text>
-      <text x="540" y="0" fill="#00E5FF">1.10 ms</text>
-      <text x="680" y="0" fill="#00FF66">PRIMARY / REPLICA</text>
-      <text x="800" y="0" fill="#F8FAFC">18.4 TB LUCENE</text>
-    </g>
-
-    <!-- 7. Neo4j -->
-    <g transform="translate(0, 192)">
-      <text x="10" y="0" fill="#008CC1">Neo4j Graph DB</text>
-      <text x="160" y="0" fill="#00FF66">65,000 TPS</text>
-      <text x="360" y="0" fill="#00E5FF">240,000 QPS</text>
-      <text x="540" y="0" fill="#00E5FF">1.45 ms</text>
-      <text x="680" y="0" fill="#00FF66">CAUSAL CLUSTER</text>
-      <text x="800" y="0" fill="#F8FAFC">1.2 TB GRAPH</text>
-    </g>
-
-  </g>
-
-  <!-- RAPID HIGH-SPEED SPECTRUM BARS (0.4s & 0.5s ANIMATIONS) -->
-  <g transform="translate(25, 340)">
-    <text x="0" y="0" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#00FF66">
-      📊 LIVE TRANSACTION VOLUME SPECTRUM (RAPID STOCK TICK BUFFER)
-    </text>
-
-    <g transform="translate(0, 20)">
-      <rect x="0" y="0" width="850" height="70" rx="6" fill="#020814" stroke="#00E5FF" stroke-width="1" />
-      <g transform="translate(15, 10)">
-        <rect x="0" y="5" width="22" height="40" fill="#00FF66" filter="url(#glowGreen)">
-          <animate attributeName="height" values="40;52;20;45;30;40" dur="0.4s" repeatCount="indefinite" />
+      <!-- Ask 2 -->
+      <g transform="translate(0, 18)">
+        <rect x="0" y="0" width="180" height="14" fill="#F6465D" opacity="0.25">
+          <animate attributeName="width" values="180;210;150;180" dur="0.5s" repeatCount="indefinite" />
         </rect>
-        <rect x="35" y="0" width="22" height="48" fill="#00E5FF" filter="url(#glowCyan)">
-          <animate attributeName="height" values="48;25;54;38;20;48" dur="0.5s" repeatCount="indefinite" />
-        </rect>
-        <rect x="70" y="10" width="22" height="35" fill="#00FF66" opacity="0.8">
-          <animate attributeName="height" values="35;45;15;40;35" dur="0.45s" repeatCount="indefinite" />
-        </rect>
-        <rect x="105" y="15" width="22" height="30" fill="#00FF66" opacity="0.8">
-          <animate attributeName="height" values="30;50;22;42;30" dur="0.38s" repeatCount="indefinite" />
-        </rect>
-        <rect x="140" y="0" width="22" height="50" fill="#00FF66" filter="url(#glowGreen)">
-          <animate attributeName="height" values="50;20;55;35;50" dur="0.52s" repeatCount="indefinite" />
-        </rect>
-        <rect x="175" y="5" width="22" height="42" fill="#00E5FF" filter="url(#glowCyan)">
-          <animate attributeName="height" values="42;18;48;30;42" dur="0.42s" repeatCount="indefinite" />
-        </rect>
-        <rect x="210" y="20" width="22" height="25" fill="#FF9900">
-          <animate attributeName="height" values="25;45;15;38;25" dur="0.48s" repeatCount="indefinite" />
-        </rect>
-        <rect x="245" y="0" width="22" height="50" fill="#00FF66" filter="url(#glowGreen)">
-          <animate attributeName="height" values="50;30;55;20;50" dur="0.35s" repeatCount="indefinite" />
-        </rect>
-        <rect x="280" y="8" width="22" height="38" fill="#00E5FF">
-          <animate attributeName="height" values="38;48;18;42;38" dur="0.44s" repeatCount="indefinite" />
-        </rect>
-        <rect x="315" y="2" width="22" height="45" fill="#00FF66" filter="url(#glowGreen)">
-          <animate attributeName="height" values="45;20;52;35;45" dur="0.39s" repeatCount="indefinite" />
-        </rect>
+        <text x="0" y="11" fill="#F6465D">99,080.10</text>
+        <text x="120" y="11" fill="#EAECEF">320,000</text>
+        <text x="240" y="11" fill="#848E9C">98.4K</text>
       </g>
+
+      <!-- Ask 3 -->
+      <g transform="translate(0, 36)">
+        <rect x="0" y="0" width="260" height="14" fill="#F6465D" opacity="0.25">
+          <animate attributeName="width" values="260;280;230;260" dur="0.7s" repeatCount="indefinite" />
+        </rect>
+        <text x="0" y="11" fill="#F6465D">99,010.00</text>
+        <text x="120" y="11" fill="#EAECEF">650,000</text>
+        <text x="240" y="11" fill="#848E9C">210.0K</text>
+      </g>
+
+      <!-- Ask 4 -->
+      <g transform="translate(0, 54)">
+        <rect x="0" y="0" width="140" height="14" fill="#F6465D" opacity="0.25" />
+        <text x="0" y="11" fill="#F6465D">98,990.50</text>
+        <text x="120" y="11" fill="#EAECEF">210,000</text>
+        <text x="240" y="11" fill="#848E9C">65.0K</text>
+      </g>
+    </g>
+
+    <!-- MID PRICE TICKER BAR -->
+    <g transform="translate(15, 145)">
+      <rect x="0" y="0" width="320" height="28" rx="4" fill="#1E2329" stroke="#0ECB81" stroke-width="1" />
+      <text x="15" y="19" font-size="13" font-weight="900" fill="#0ECB81">
+        $98,962.40 🚀 <tspan font-size="10" fill="#848E9C">(Mark Price)</tspan>
+      </text>
+    </g>
+
+    <!-- BIDS (GREEN BUY ORDERS - BOTTOM HALF) -->
+    <g transform="translate(15, 185)" font-size="10" font-weight="bold">
+      <!-- Bid 1 -->
+      <rect x="0" y="0" width="280" height="14" fill="#0ECB81" opacity="0.25">
+        <animate attributeName="width" values="280;300;250;280" dur="0.4s" repeatCount="indefinite" />
+      </rect>
+      <text x="0" y="11" fill="#0ECB81">98,940.00</text>
+      <text x="120" y="11" fill="#EAECEF">1,850,000</text>
+      <text x="240" y="11" fill="#848E9C">1.85M</text>
+
+      <!-- Bid 2 -->
+      <g transform="translate(0, 18)">
+        <rect x="0" y="0" width="240" height="14" fill="#0ECB81" opacity="0.25">
+          <animate attributeName="width" values="240;270;210;240" dur="0.6s" repeatCount="indefinite" />
+        </rect>
+        <text x="0" y="11" fill="#0ECB81">98,910.20</text>
+        <text x="120" y="11" fill="#EAECEF">920,000</text>
+        <text x="240" y="11" fill="#848E9C">350.0K</text>
+      </g>
+
+      <!-- Bid 3 -->
+      <g transform="translate(0, 36)">
+        <rect x="0" y="0" width="300" height="14" fill="#0ECB81" opacity="0.25">
+          <animate attributeName="width" values="300;315;280;300" dur="0.5s" repeatCount="indefinite" />
+        </rect>
+        <text x="0" y="11" fill="#0ECB81">98,870.00</text>
+        <text x="120" y="11" fill="#EAECEF">1,100,000</text>
+        <text x="240" y="11" fill="#848E9C">420.0K</text>
+      </g>
+
+      <!-- Bid 4 -->
+      <g transform="translate(0, 54)">
+        <rect x="0" y="0" width="190" height="14" fill="#0ECB81" opacity="0.25" />
+        <text x="0" y="11" fill="#0ECB81">98,820.80</text>
+        <text x="120" y="11" fill="#EAECEF">410,000</text>
+        <text x="240" y="11" fill="#848E9C">110.0K</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- RIGHT: DATABASE INFRASTRUCTURE METRICS (WIDTH 490) -->
+  <g transform="translate(400, 65)" font-family="'JetBrains Mono', monospace">
+    <rect x="0" y="0" width="475" height="380" rx="6" fill="#181A20" stroke="#2B313A" stroke-width="1" />
+    <text x="15" y="22" font-size="11" font-weight="900" fill="#F0B90B">🗄️ DATABASE CLUSTER ENGINE METRICS</text>
+    <line x1="15" y1="30" x2="460" y2="30" stroke="#2B313A" stroke-width="1" />
+
+    <g font-size="11" font-weight="bold" transform="translate(15, 48)">
+      <text x="0" y="0" fill="#EAECEF">PostgreSQL 17:</text>
+      <text x="150" y="0" fill="#0ECB81">145,200 TPS</text>
+      <text x="290" y="0" fill="#00E5FF">0.45 ms Latency</text>
+
+      <text x="0" y="30" fill="#EAECEF">Redis 7 (In-Mem):</text>
+      <text x="150" y="30" fill="#0ECB81">1,850,000 TPS 🚀</text>
+      <text x="290" y="30" fill="#0ECB81">0.08 ms [ULTRA]</text>
+
+      <text x="0" y="60" fill="#EAECEF">MySQL 8.4:</text>
+      <text x="150" y="60" fill="#0ECB81">98,400 TPS</text>
+      <text x="290" y="60" fill="#00E5FF">0.85 ms Latency</text>
+
+      <text x="0" y="90" fill="#EAECEF">MongoDB 8.0:</text>
+      <text x="150" y="90" fill="#0ECB81">210,000 TPS</text>
+      <text x="290" y="90" fill="#0ECB81">0.32 ms Latency</text>
+
+      <text x="0" y="120" fill="#EAECEF">SQLite 3 WAL:</text>
+      <text x="150" y="120" fill="#0ECB81">350,000 TPS</text>
+      <text x="290" y="120" fill="#0ECB81">0.02 ms [EMBEDDED]</text>
+
+      <text x="0" y="150" fill="#EAECEF">ElasticSearch 8:</text>
+      <text x="150" y="150" fill="#0ECB81">420,000 TPS</text>
+      <text x="290" y="150" fill="#00E5FF">1.10 ms Latency</text>
+    </g>
+
+    <!-- BINANCE DEPTH GRAPH CHART (BOTTOM) -->
+    <g transform="translate(15, 230)">
+      <text x="0" y="0" font-size="10" font-weight="900" fill="#848E9C">DEPTH CHART (BIDS VS ASKS LIQUIDITY)</text>
+      <rect x="0" y="10" width="445" height="120" rx="4" fill="#1E2329" stroke="#2B313A" stroke-width="1" />
+      
+      <!-- Green Bids Area -->
+      <polygon points="10,120 10,40 180,60 220,120" fill="#0ECB81" opacity="0.3" />
+      <polyline points="10,40 180,60 220,120" fill="none" stroke="#0ECB81" stroke-width="2" />
+
+      <!-- Red Asks Area -->
+      <polygon points="225,120 260,60 435,20 435,120" fill="#F6465D" opacity="0.3" />
+      <polyline points="225,120 260,60 435,20" fill="none" stroke="#F6465D" stroke-width="2" />
     </g>
   </g>
 </svg>

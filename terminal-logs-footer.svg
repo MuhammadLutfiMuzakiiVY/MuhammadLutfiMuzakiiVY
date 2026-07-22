@@ -1,39 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 130" width="100%" height="130">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020407" />
-      <stop offset="50%" stop-color="#070C16" />
-      <stop offset="100%" stop-color="#010204" />
+    <linearGradient id="binanceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0E11" />
+      <stop offset="50%" stop-color="#181A20" />
+      <stop offset="100%" stop-color="#0B0E11" />
     </linearGradient>
 
-    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="glowYellow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
   </defs>
 
-  <rect width="900" height="130" rx="8" fill="url(#bgGrad)" stroke="#00FF66" stroke-width="1.4" filter="url(#glowGreen)" />
+  <rect width="900" height="130" rx="8" fill="url(#binanceBg)" stroke="#F0B90B" stroke-width="1.4" filter="url(#glowYellow)" />
 
   <g transform="translate(15, 12)">
-    <circle cx="10" cy="10" r="4" fill="#FF0055" />
-    <circle cx="25" cy="10" r="4" fill="#FF9900" />
-    <circle cx="40" cy="10" r="4" fill="#00FF66" />
-    <text x="58" y="14" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#00FF66" letter-spacing="1">
-      ⚡ REALTIME RAPID STOCK TELEMETRY LOGS STREAM (MICROSECOND LOOP)
+    <circle cx="10" cy="10" r="4" fill="#F6465D" />
+    <circle cx="25" cy="10" r="4" fill="#F0B90B" />
+    <circle cx="40" cy="10" r="4" fill="#0ECB81" />
+    <text x="58" y="14" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#F0B90B" letter-spacing="1">
+      ⚡ BINANCE FUTURES REALTIME LOGS TELEMETRY STREAM (125x MATCHING ENGINE)
     </text>
   </g>
 
-  <rect x="15" y="32" width="870" height="84" rx="4" fill="#01050A" stroke="#1E293B" stroke-width="1" />
+  <rect x="15" y="32" width="870" height="84" rx="4" fill="#181A20" stroke="#2B313A" stroke-width="1" />
 
-  <!-- RAPID HIGH-SPEED SCROLLING LOG LINES (3.2s DURATION) -->
-  <g font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#00FF66">
+  <!-- SCROLLING BINANCE LOGS -->
+  <g font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#0ECB81">
     <g transform="translate(25, 50)">
-      <text y="0" fill="#00FF66">[0.0001s] NASDAQ Ticker Stream: BTC/USDT $98,962.40 +6.92% [BUY]</text>
-      <text y="16" fill="#00E5FF">[0.0003s] Microsecond Order Book Match: Bids/Asks Clear 0.1ms [MATCH]</text>
-      <text y="32" fill="#FF9900">[0.0005s] AI Sentiment Engine: 98.8% Strong Buy Signal Active [EXEC]</text>
-      <text y="48" fill="#00FF66">[0.0008s] High-Frequency Arbitrage Router: NYSE / LSE / TOKYO Connected</text>
-      <text y="64" fill="#9D00FF">[0.0012s] Rust Kernel Memory Hardened: 0 CVE Buffer Overflow Risk</text>
-      <text y="80" fill="#00E5FF">[0.0015s] Rapid Tick Complete: 1,850,000 TPS Ingestion Active [STABLE]</text>
+      <text y="0" fill="#0ECB81">[0.0001s] BINANCE FUTURES: ORDER MATCHED RUST/USDT @ $98,962.40 [BUY LONG 125x]</text>
+      <text y="16" fill="#F0B90B">[0.0003s] Microsecond Order Book Match: Bids/Asks Clear 0.1ms [EXECUTED]</text>
+      <text y="32" fill="#0ECB81">[0.0005s] AI LLM Inference ROE PnL: +850.40% [PROFIT SECURED]</text>
+      <text y="48" fill="#F0B90B">[0.0008s] High-Frequency Arbitrage Router: NASDAQ / NYSE / TOKYO Connected</text>
+      <text y="64" fill="#0ECB81">[0.0012s] Rust Kernel Memory Hardened: 0 CVE Buffer Overflow Risk [SAFE]</text>
+      <text y="80" fill="#F0B90B">[0.0015s] Rapid Tick Complete: 1,850,000 TPS Ingestion Active [STABLE]</text>
 
       <animateTransform attributeName="transform" type="translate" values="25, 50; 25, -50" dur="3.2s" repeatCount="indefinite" />
     </g>
