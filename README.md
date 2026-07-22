@@ -259,8 +259,8 @@ NVDA / USD      $139.80        +3.20% 🤖     AI SENTIMENT: 98.8%    [STRONG BU
 
 <div align="center">
 
-<!-- FOOTER ELECTRIC LIGHTNING WAVE BANNER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,8,20,30&height=130&section=footer" width="100%" alt="Footer Lightning Wave Banner" />
+<!-- FOOTER ANIMATED DEEP OCEAN & FUTURISTIC SUBMARINE BANNER -->
+<img src="https://raw.githubusercontent.com/MuhammadLutfiMuzakiiVY/MuhammadLutfiMuzakiiVY/main/ocean-submarine-animated.svg" width="100%" alt="Footer Animated Ocean & Submarine Banner" />
 
 <p align="center">
   ⚡ <strong>Code • Build • Secure • Trade • Innovate</strong> ⚡<br />
