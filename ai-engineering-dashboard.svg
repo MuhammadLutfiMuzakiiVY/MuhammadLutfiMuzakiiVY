@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="100%" height="300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050505" />
+      <stop offset="50%" stop-color="#0A1424" />
+      <stop offset="100%" stop-color="#020407" />
+    </linearGradient>
+
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="300" rx="10" fill="url(#bgGrad)" stroke="#00F5FF" stroke-width="1.6" filter="url(#glowCyan)" />
+
+  <!-- TOP TITLE BAR -->
+  <rect x="14" y="14" width="872" height="36" rx="6" fill="#08111F" stroke="#00C8FF" stroke-width="0.8" />
+  <circle cx="36" cy="32" r="5" fill="#FF0055" />
+  <circle cx="53" cy="32" r="5" fill="#FFB000" />
+  <circle cx="70" cy="32" r="5" fill="#00F5FF" />
+  <text x="92" y="36" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#00F5FF" letter-spacing="1">
+    🤖 AI RESEARCH &amp; DEEP LEARNING ARCHITECTURE MATRIX
+  </text>
+
+  <!-- GRID OF 9 AI CARDS -->
+  <g font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" transform="translate(25, 65)">
+
+    <!-- Card 1: Local LLM -->
+    <g transform="translate(0, 0)">
+      <rect width="270" height="65" rx="6" fill="#0A1424" stroke="#00C8FF" stroke-width="1" />
+      <text x="15" y="22" font-size="11" fill="#00F5FF" font-weight="900">🧠 Local LLM (Ollama / vLLM)</text>
+      <text x="15" y="42" fill="#8899A6">Inference: 650 tok/s</text>
+      <rect x="15" y="48" width="240" height="6" rx="3" fill="#1E293B" />
+      <rect x="15" y="48" width="220" height="6" rx="3" fill="#00F5FF" filter="url(#glowCyan)">
+        <animate attributeName="width" values="220;235;210;220" dur="2s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
+    <!-- Card 2: Deep Learning -->
+    <g transform="translate(290, 0)">
+      <rect width="270" height="65" rx="6" fill="#0A1424" stroke="#7B61FF" stroke-width="1" />
+      <text x="15" y="22" font-size="11" fill="#7B61FF" font-weight="900">⚡ Deep Learning (CNN-LSTM)</text>
+      <text x="15" y="42" fill="#8899A6">Accuracy: 98.4% MMLU</text>
+      <rect x="15" y="48" width="240" height="6" rx="3" fill="#1E293B" />
+      <rect x="15" y="48" width="230" height="6" rx="3" fill="#7B61FF">
+        <animate attributeName="width" values="230;240;220;230" dur="2.2s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
+    <!-- Card 3: RAG Architecture -->
+    <g transform="translate(580, 0)">
+      <rect width="270" height="65" rx="6" fill="#0A1424" stroke="#00F5FF" stroke-width="1" />
+      <text x="15" y="22" font-size="11" fill="#00F5FF" font-weight="900">🔍 RAG Pipeline &amp; Hybrid Search</text>
+      <text x="15" y="42" fill="#8899A6">Latency: 1.2ms SLO</text>
+      <rect x="15" y="48" width="240" height="6" rx="3" fill="#1E293B" />
+      <rect x="15" y="48" width="210" height="6" rx="3" fill="#00F5FF" />
+    </g>
+
+    <!-- Card 4: Vector Database -->
+    <g transform="translate(0, 75)">
+      <rect width="270" height="65" rx="6" fill="#0A1424" stroke="#7B61FF" stroke-width="1" />
+      <text x="15" y="22" font-size="11" fill="#7B61FF" font-weight="900">🗄️ Vector DB (Qdrant / Milvus)</text>
+      <text x="15" y="42" fill="#8899A6">Capacity: 10M Vectors</text>
+      <rect x="15" y="48" width="240" height="6" rx="3" fill="#1E293B" />
+      <rect x="15" y="48" width="225" height="6" rx="3" fill="#7B61FF" />
+    </g>
+
+    <!-- Card 5: Embeddings -->
+    <g transform="translate(290, 75)">
+      <rect width="270" height="65" rx="6" fill="#0A1424" stroke="#00C8FF" stroke-width="1" />
+      <text x="15" y="22" font-size="11" fill="#00C8FF" font-weight="900">📐 High-Dim Embeddings</text>
+      <text x="15" y="42" fill="#8899A6">Speed: 35,000/s</text>
+      <rect x="15" y="48" width="240" height="6" rx="3" fill="#1E293B" />
+      <rect x="15" y="48" width="235" height="6" rx="3" fill="#00C8FF" />
+    </g>
+
+    <!-- Card 6: Transformers -->
+    <g transform="translate(580, 75)">
+      <rect width="270" height="65" rx="6" fill="#0A1424" stroke="#00F5FF" stroke-width="1" />
+      <text x="15" y="22" font-size="11" fill="#00F5FF" font-weight="900">🤗 Transformers (ONNX / TensorRT)</text>
+      <text x="15" y="42" fill="#8899A6">FP16 / INT4 Quantized</text>
+      <rect x="15" y="48" width="240" height="6" rx="3" fill="#1E293B" />
+      <rect x="15" y="48" width="228" height="6" rx="3" fill="#00F5FF" />
+    </g>
+
+    <!-- Card 7: Inference Engine -->
+    <g transform="translate(0, 150)">
+      <rect width="270" height="65" rx="6" fill="#0A1424" stroke="#00F5FF" stroke-width="1" />
+      <text x="15" y="22" font-size="11" fill="#00F5FF" font-weight="900">🚀 Inference Engine (CUDA / ROCm)</text>
+      <text x="15" y="42" fill="#8899A6">RTX 4090 GPU: 94.8%</text>
+      <rect x="15" y="48" width="240" height="6" rx="3" fill="#1E293B" />
+      <rect x="15" y="48" width="230" height="6" rx="3" fill="#00F5FF" />
+    </g>
+
+    <!-- Card 8: Machine Learning -->
+    <g transform="translate(290, 150)">
+      <rect width="270" height="65" rx="6" fill="#0A1424" stroke="#7B61FF" stroke-width="1" />
+      <text x="15" y="22" font-size="11" fill="#7B61FF" font-weight="900">📊 Machine Learning (PyTorch)</text>
+      <text x="15" y="42" fill="#8899A6">Custom DDA Algorithms</text>
+      <rect x="15" y="48" width="240" height="6" rx="3" fill="#1E293B" />
+      <rect x="15" y="48" width="220" height="6" rx="3" fill="#7B61FF" />
+    </g>
+
+    <!-- Card 9: Neural Networks -->
+    <g transform="translate(580, 150)">
+      <rect width="270" height="65" rx="6" fill="#0A1424" stroke="#00C8FF" stroke-width="1" />
+      <text x="15" y="22" font-size="11" fill="#00C8FF" font-weight="900">🕸️ Neural Networks &amp; Fine-Tuning</text>
+      <text x="15" y="42" fill="#8899A6">LoRA / QLoRA Trained</text>
+      <rect x="15" y="48" width="240" height="6" rx="3" fill="#1E293B" />
+      <rect x="15" y="48" width="235" height="6" rx="3" fill="#00C8FF" />
+    </g>
+
+  </g>
+</svg>
