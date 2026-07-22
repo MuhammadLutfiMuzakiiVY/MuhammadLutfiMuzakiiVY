@@ -1,126 +1,352 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="100%" height="420">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="100%" height="520">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#050505" />
-      <stop offset="50%" stop-color="#091322" />
-      <stop offset="100%" stop-color="#03060C" />
+      <stop offset="50%" stop-color="#081220" />
+      <stop offset="100%" stop-color="#020408" />
     </linearGradient>
 
     <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="4" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
+
+    <filter id="glowBlue" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00F5FF" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.15" />
+    </pattern>
   </defs>
 
-  <rect width="900" height="420" rx="10" fill="url(#bgGrad)" stroke="#00F5FF" stroke-width="1.6" filter="url(#glowCyan)" />
+  <rect width="900" height="520" rx="12" fill="url(#bgGrad)" stroke="#00F5FF" stroke-width="1.8" filter="url(#glowCyan)" />
+  <rect width="900" height="520" rx="12" fill="url(#grid)" />
 
   <!-- TOP TITLE BAR -->
-  <rect x="14" y="14" width="872" height="36" rx="6" fill="#08111F" stroke="#00C8FF" stroke-width="0.8" />
-  <circle cx="36" cy="32" r="5" fill="#FF0055" />
-  <circle cx="53" cy="32" r="5" fill="#FFB000" />
-  <circle cx="70" cy="32" r="5" fill="#00F5FF" />
-  <text x="92" y="36" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#00F5FF" letter-spacing="1">
-    ⚡ TECHNOLOGY STACK WALL &amp; ENTERPRISE ECOSYSTEM
+  <rect x="14" y="14" width="872" height="38" rx="6" fill="#08111F" stroke="#00C8FF" stroke-width="0.8" />
+  <circle cx="36" cy="33" r="5" fill="#FF0055" />
+  <circle cx="53" cy="33" r="5" fill="#FFB000" />
+  <circle cx="70" cy="33" r="5" fill="#00F5FF" />
+  <text x="92" y="38" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="900" fill="#00F5FF" letter-spacing="1">
+    ⚡ HANDCRAFTED CUSTOM VECTOR ICON ECOSYSTEM &amp; TECH WALL
   </text>
 
-  <!-- 5 CATEGORIES OF TECH CARDS -->
-  <g font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" transform="translate(25, 65)">
+  <!-- CATEGORY 1: PROGRAMMING LANGUAGES -->
+  <g transform="translate(25, 68)" font-family="'JetBrains Mono', monospace">
+    <text font-size="11" font-weight="900" fill="#00F5FF">🔤 PROGRAMMING LANGUAGES (VECTOR BADGES)</text>
 
-    <!-- 1. LANGUAGES -->
-    <g transform="translate(0, 0)">
-      <text y="0" font-size="11" font-weight="900" fill="#00F5FF">🔤 LANGUAGES:</text>
-      <rect x="0" y="10" width="850" height="48" rx="6" fill="#0A1424" stroke="#1E293B" stroke-width="1" />
-      <g font-size="10" transform="translate(15, 38)">
-        <text fill="#DEA584">Rust</text>
-        <text x="60" fill="#00ADD8">Go</text>
-        <text x="100" fill="#3776AB">Python</text>
-        <text x="170" fill="#3178C6">TypeScript</text>
-        <text x="260" fill="#F7DF1E">JavaScript</text>
-        <text x="350" fill="#777BB4">PHP</text>
-        <text x="400" fill="#ED8B00">Java</text>
-        <text x="450" fill="#239120">C#</text>
-        <text x="490" fill="#00599C">C++</text>
-        <text x="540" fill="#A8B9CC">C</text>
-        <text x="570" fill="#7F52FF">Kotlin</text>
-        <text x="630" fill="#F05138">Swift</text>
-        <text x="680" fill="#0175C2">Dart</text>
-        <text x="730" fill="#00F5FF">SQL</text>
-        <text x="770" fill="#4EAA25">Shell</text>
+    <g transform="translate(0, 12)">
+
+      <!-- RUST BADGE -->
+      <g transform="translate(0, 0)">
+        <rect width="95" height="30" rx="6" fill="#140D0A" stroke="#DEA584" stroke-width="1" />
+        <!-- Custom Rust Gear SVG Path -->
+        <path d="M 14 15 C 14 11 21 11 21 15 C 21 19 14 19 14 15 M 17 8 L 18 10 M 17 22 L 18 20 M 10 15 L 12 15 M 22 15 L 24 15" stroke="#DEA584" stroke-width="1.5" fill="none" />
+        <text x="32" y="19" font-size="10" font-weight="bold" fill="#DEA584">Rust</text>
       </g>
-    </g>
 
-    <!-- 2. FRAMEWORKS -->
-    <g transform="translate(0, 75)">
-      <text y="0" font-size="11" font-weight="900" fill="#7B61FF">🚀 FRAMEWORKS &amp; LIBRARIES:</text>
-      <rect x="0" y="10" width="850" height="48" rx="6" fill="#0A1424" stroke="#1E293B" stroke-width="1" />
-      <g font-size="10" transform="translate(15, 38)">
-        <text fill="#FF3E00">SvelteKit</text>
-        <text x="80" fill="#FFFFFF">Next.js</text>
-        <text x="145" fill="#61DAFB">React</text>
-        <text x="200" fill="#4FC08D">Vue</text>
-        <text x="240" fill="#DD0031">Angular</text>
-        <text x="310" fill="#02569B">Flutter</text>
-        <text x="375" fill="#FF2D20">Laravel</text>
-        <text x="440" fill="#6DB33F">Spring Boot</text>
-        <text x="540" fill="#DEA584">Axum</text>
-        <text x="590" fill="#339933">Node.js</text>
-        <text x="655" fill="#FFFFFF">Express</text>
-        <text x="725" fill="#009688">FastAPI</text>
+      <!-- GO BADGE -->
+      <g transform="translate(105, 0)">
+        <rect width="85" height="30" rx="6" fill="#04141D" stroke="#00ADD8" stroke-width="1" />
+        <!-- Custom Go Gopher Shape -->
+        <circle cx="17" cy="15" r="6" fill="#00ADD8" />
+        <circle cx="15" cy="13" r="1.5" fill="#FFFFFF" />
+        <circle cx="19" cy="13" r="1.5" fill="#FFFFFF" />
+        <text x="30" y="19" font-size="10" font-weight="bold" fill="#00ADD8">Go</text>
       </g>
-    </g>
 
-    <!-- 3. DATABASES -->
-    <g transform="translate(0, 150)">
-      <text y="0" font-size="11" font-weight="900" fill="#00C8FF">🗄️ DATABASES &amp; STORAGE:</text>
-      <rect x="0" y="10" width="850" height="48" rx="6" fill="#0A1424" stroke="#1E293B" stroke-width="1" />
-      <g font-size="10" transform="translate(15, 38)">
-        <text fill="#4169E1">PostgreSQL</text>
-        <text x="100" fill="#DC382D">Redis</text>
-        <text x="160" fill="#4479A1">MySQL</text>
-        <text x="220" fill="#003B57">SQLite</text>
-        <text x="280" fill="#47A248">MongoDB</text>
-        <text x="360" fill="#FFCA28">Firebase</text>
-        <text x="440" fill="#00F5FF">Qdrant Vector</text>
-        <text x="560" fill="#7B61FF">Milvus DB</text>
-        <text x="650" fill="#FFFFFF">ClickHouse</text>
+      <!-- PYTHON BADGE -->
+      <g transform="translate(200, 0)">
+        <rect width="100" height="30" rx="6" fill="#0A1424" stroke="#3776AB" stroke-width="1" />
+        <!-- Custom Python Snakes -->
+        <path d="M 12 10 Q 18 10 18 15 Q 18 18 12 18" fill="none" stroke="#3776AB" stroke-width="2" />
+        <path d="M 20 20 Q 14 20 14 15 Q 14 12 20 12" fill="none" stroke="#FFD43B" stroke-width="2" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#FFFFFF">Python</text>
       </g>
-    </g>
 
-    <!-- 4. DEVOPS & CLOUD -->
-    <g transform="translate(0, 225)">
-      <text y="0" font-size="11" font-weight="900" fill="#50FA7B">☁️ DEVOPS, CONTAINERS &amp; CLOUD:</text>
-      <rect x="0" y="10" width="850" height="48" rx="6" fill="#0A1424" stroke="#1E293B" stroke-width="1" />
-      <g font-size="10" transform="translate(15, 38)">
-        <text fill="#2496ED">Docker</text>
-        <text x="70" fill="#326CE5">Kubernetes</text>
-        <text x="160" fill="#009639">Nginx</text>
-        <text x="215" fill="#FCC624">Linux</text>
-        <text x="270" fill="#2088FF">GitHub Actions</text>
-        <text x="390" fill="#844FBA">Terraform</text>
-        <text x="475" fill="#F38020">Cloudflare</text>
-        <text x="565" fill="#FF9900">AWS</text>
-        <text x="610" fill="#0089D6">Azure</text>
-        <text x="660" fill="#4285F4">GCP</text>
+      <!-- TYPESCRIPT BADGE -->
+      <g transform="translate(310, 0)">
+        <rect width="115" height="30" rx="6" fill="#071324" stroke="#3178C6" stroke-width="1" />
+        <rect x="8" y="7" width="16" height="16" rx="3" fill="#3178C6" />
+        <text x="11" y="19" font-size="9" font-weight="900" fill="#FFFFFF">TS</text>
+        <text x="30" y="19" font-size="10" font-weight="bold" fill="#FFFFFF">TypeScript</text>
       </g>
-    </g>
 
-    <!-- 5. TOOLS & AI AGENTS -->
-    <g transform="translate(0, 300)">
-      <text y="0" font-size="11" font-weight="900" fill="#FFB000">🛠️ TOOLS &amp; AI AGENT ECOSYSTEM:</text>
-      <rect x="0" y="10" width="850" height="48" rx="6" fill="#0A1424" stroke="#1E293B" stroke-width="1" />
-      <g font-size="10" transform="translate(15, 38)">
-        <text fill="#007ACC">VS Code</text>
-        <text x="80" fill="#000000">JetBrains</text>
-        <text x="160" fill="#F05032">Git</text>
-        <text x="200" fill="#FFFFFF">GitHub</text>
-        <text x="260" fill="#F24E1E">Figma</text>
-        <text x="315" fill="#FF6C37">Postman</text>
-        <text x="385" fill="#00F5FF">Cursor</text>
-        <text x="450" fill="#D97706">Claude Code</text>
-        <text x="550" fill="#10A37F">OpenAI API</text>
-        <text x="650" fill="#7B61FF">Burp Suite</text>
+      <!-- JAVASCRIPT BADGE -->
+      <g transform="translate(435, 0)">
+        <rect width="110" height="30" rx="6" fill="#1C1802" stroke="#F7DF1E" stroke-width="1" />
+        <rect x="8" y="7" width="16" height="16" rx="3" fill="#F7DF1E" />
+        <text x="11" y="19" font-size="9" font-weight="900" fill="#000000">JS</text>
+        <text x="30" y="19" font-size="10" font-weight="bold" fill="#F7DF1E">JavaScript</text>
       </g>
-    </g>
 
+      <!-- C++ BADGE -->
+      <g transform="translate(555, 0)">
+        <rect width="85" height="30" rx="6" fill="#041220" stroke="#00599C" stroke-width="1" />
+        <polygon points="16,8 22,12 22,18 16,22 10,18 10,12" fill="#00599C" />
+        <text x="30" y="19" font-size="10" font-weight="bold" fill="#00C8FF">C++</text>
+      </g>
+
+      <!-- C# BADGE -->
+      <g transform="translate(650, 0)">
+        <rect width="80" height="30" rx="6" fill="#0E051C" stroke="#239120" stroke-width="1" />
+        <polygon points="16,8 22,12 22,18 16,22 10,18 10,12" fill="#239120" />
+        <text x="30" y="19" font-size="10" font-weight="bold" fill="#50FA7B">C#</text>
+      </g>
+
+      <!-- PHP BADGE -->
+      <g transform="translate(740, 0)">
+        <rect width="80" height="30" rx="6" fill="#0F1024" stroke="#777BB4" stroke-width="1" />
+        <ellipse cx="16" cy="15" rx="8" ry="5" fill="#777BB4" />
+        <text x="30" y="19" font-size="10" font-weight="bold" fill="#777BB4">PHP</text>
+      </g>
+
+    </g>
+  </g>
+
+  <!-- CATEGORY 2: FRAMEWORKS & LIBRARIES -->
+  <g transform="translate(25, 155)" font-family="'JetBrains Mono', monospace">
+    <text font-size="11" font-weight="900" fill="#7B61FF">🚀 FRAMEWORKS &amp; LIBRARIES (HANDCRAFTED LOGOS)</text>
+
+    <g transform="translate(0, 12)">
+
+      <!-- REACT BADGE -->
+      <g transform="translate(0, 0)">
+        <rect width="90" height="30" rx="6" fill="#041624" stroke="#61DAFB" stroke-width="1" />
+        <!-- React Ellipse Orbit -->
+        <ellipse cx="16" cy="15" rx="7" ry="3" fill="none" stroke="#61DAFB" stroke-width="1" transform="rotate(30 16 15)" />
+        <ellipse cx="16" cy="15" rx="7" ry="3" fill="none" stroke="#61DAFB" stroke-width="1" transform="rotate(-30 16 15)" />
+        <circle cx="16" cy="15" r="1.5" fill="#61DAFB" />
+        <text x="30" y="19" font-size="10" font-weight="bold" fill="#61DAFB">React</text>
+      </g>
+
+      <!-- NEXT.JS BADGE -->
+      <g transform="translate(100, 0)">
+        <rect width="100" height="30" rx="6" fill="#0A0A0A" stroke="#FFFFFF" stroke-width="1" />
+        <circle cx="16" cy="15" r="7" fill="#FFFFFF" />
+        <text x="13" y="19" font-size="9" font-weight="900" fill="#000000">N</text>
+        <text x="30" y="19" font-size="10" font-weight="bold" fill="#FFFFFF">Next.js</text>
+      </g>
+
+      <!-- SVELTEKIT BADGE -->
+      <g transform="translate(210, 0)">
+        <rect width="110" height="30" rx="6" fill="#200803" stroke="#FF3E00" stroke-width="1" />
+        <path d="M 12 11 Q 20 8 18 14 Q 16 18 20 20" fill="none" stroke="#FF3E00" stroke-width="2" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#FF3E00">SvelteKit</text>
+      </g>
+
+      <!-- VUE BADGE -->
+      <g transform="translate(330, 0)">
+        <rect width="80" height="30" rx="6" fill="#031A10" stroke="#4FC08D" stroke-width="1" />
+        <polygon points="10,10 16,20 22,10 18,10 16,14 14,10" fill="#4FC08D" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#4FC08D">Vue</text>
+      </g>
+
+      <!-- NODE.JS BADGE -->
+      <g transform="translate(420, 0)">
+        <rect width="95" height="30" rx="6" fill="#051707" stroke="#339933" stroke-width="1" />
+        <polygon points="16,9 22,12 22,18 16,21 10,18 10,12" fill="#339933" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#339933">Node.js</text>
+      </g>
+
+      <!-- LARAVEL BADGE -->
+      <g transform="translate(525, 0)">
+        <rect width="95" height="30" rx="6" fill="#240604" stroke="#FF2D20" stroke-width="1" />
+        <path d="M 10 10 L 16 20 L 22 14" fill="none" stroke="#FF2D20" stroke-width="2" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#FF2D20">Laravel</text>
+      </g>
+
+      <!-- FASTAPI BADGE -->
+      <g transform="translate(630, 0)">
+        <rect width="95" height="30" rx="6" fill="#021714" stroke="#009688" stroke-width="1" />
+        <circle cx="16" cy="15" r="6" fill="#009688" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#009688">FastAPI</text>
+      </g>
+
+      <!-- AXUM BADGE -->
+      <g transform="translate(735, 0)">
+        <rect width="85" height="30" rx="6" fill="#1A100A" stroke="#DEA584" stroke-width="1" />
+        <circle cx="16" cy="15" r="6" fill="#DEA584" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#DEA584">Axum</text>
+      </g>
+
+    </g>
+  </g>
+
+  <!-- CATEGORY 3: DATABASES & STORAGE -->
+  <g transform="translate(25, 245)" font-family="'JetBrains Mono', monospace">
+    <text font-size="11" font-weight="900" fill="#00C8FF">🗄️ DATABASES &amp; STORAGE (DATABASE CYLINDERS)</text>
+
+    <g transform="translate(0, 12)">
+
+      <!-- POSTGRESQL BADGE -->
+      <g transform="translate(0, 0)">
+        <rect width="120" height="30" rx="6" fill="#071224" stroke="#4169E1" stroke-width="1" />
+        <ellipse cx="16" cy="12" rx="6" ry="3" fill="#4169E1" />
+        <rect x="10" y="12" width="12" height="6" fill="#4169E1" />
+        <ellipse cx="16" cy="18" rx="6" ry="3" fill="#4169E1" />
+        <text x="30" y="19" font-size="10" font-weight="bold" fill="#FFFFFF">PostgreSQL</text>
+      </g>
+
+      <!-- REDIS BADGE -->
+      <g transform="translate(130, 0)">
+        <rect width="85" height="30" rx="6" fill="#240706" stroke="#DC382D" stroke-width="1" />
+        <rect x="10" y="10" width="12" height="10" fill="#DC382D" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#DC382D">Redis</text>
+      </g>
+
+      <!-- MYSQL BADGE -->
+      <g transform="translate(225, 0)">
+        <rect width="90" height="30" rx="6" fill="#061320" stroke="#4479A1" stroke-width="1" />
+        <path d="M 10 18 Q 16 10 22 18" fill="none" stroke="#4479A1" stroke-width="2" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#4479A1">MySQL</text>
+      </g>
+
+      <!-- MONGODB BADGE -->
+      <g transform="translate(325, 0)">
+        <rect width="105" height="30" rx="6" fill="#081C0B" stroke="#47A248" stroke-width="1" />
+        <path d="M 16 8 Q 20 15 16 22 Q 12 15 16 8 Z" fill="#47A248" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#47A248">MongoDB</text>
+      </g>
+
+      <!-- QDRANT VECTOR BADGE -->
+      <g transform="translate(440, 0)">
+        <rect width="130" height="30" rx="6" fill="#041624" stroke="#00F5FF" stroke-width="1" filter="url(#glowCyan)" />
+        <circle cx="16" cy="15" r="6" fill="#00F5FF" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#00F5FF">Qdrant Vector</text>
+      </g>
+
+      <!-- MILVUS DB BADGE -->
+      <g transform="translate(580, 0)">
+        <rect width="105" height="30" rx="6" fill="#0E051C" stroke="#7B61FF" stroke-width="1" />
+        <circle cx="16" cy="15" r="6" fill="#7B61FF" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#7B61FF">Milvus DB</text>
+      </g>
+
+    </g>
+  </g>
+
+  <!-- CATEGORY 4: DEVOPS, CONTAINERS & CLOUD -->
+  <g transform="translate(25, 335)" font-family="'JetBrains Mono', monospace">
+    <text font-size="11" font-weight="900" fill="#50FA7B">☁️ DEVOPS, CONTAINERS &amp; CLOUD (OFFICIAL LOGO BADGES)</text>
+
+    <g transform="translate(0, 12)">
+
+      <!-- DOCKER BADGE -->
+      <g transform="translate(0, 0)">
+        <rect width="95" height="30" rx="6" fill="#051524" stroke="#2496ED" stroke-width="1" />
+        <rect x="9" y="12" width="4" height="4" fill="#2496ED" />
+        <rect x="14" y="12" width="4" height="4" fill="#2496ED" />
+        <rect x="14" y="7" width="4" height="4" fill="#2496ED" />
+        <path d="M 8 18 Q 16 22 24 18" fill="none" stroke="#2496ED" stroke-width="1.5" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#2496ED">Docker</text>
+      </g>
+
+      <!-- KUBERNETES BADGE -->
+      <g transform="translate(105, 0)">
+        <rect width="125" height="30" rx="6" fill="#071229" stroke="#326CE5" stroke-width="1" />
+        <circle cx="16" cy="15" r="7" fill="none" stroke="#326CE5" stroke-width="1.5" />
+        <circle cx="16" cy="15" r="2" fill="#326CE5" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#326CE5">Kubernetes</text>
+      </g>
+
+      <!-- LINUX BADGE -->
+      <g transform="translate(240, 0)">
+        <rect width="85" height="30" rx="6" fill="#1C1604" stroke="#FCC624" stroke-width="1" />
+        <!-- Tux Penguin Silhouette -->
+        <ellipse cx="16" cy="16" rx="5" ry="7" fill="#FCC624" />
+        <ellipse cx="16" cy="16" rx="3" ry="5" fill="#FFFFFF" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#FCC624">Linux</text>
+      </g>
+
+      <!-- CLOUDFLARE BADGE -->
+      <g transform="translate(335, 0)">
+        <rect width="115" height="30" rx="6" fill="#241304" stroke="#F38020" stroke-width="1" />
+        <path d="M 10 18 Q 12 12 18 13 Q 22 13 22 18 Z" fill="#F38020" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#F38020">Cloudflare</text>
+      </g>
+
+      <!-- AWS BADGE -->
+      <g transform="translate(460, 0)">
+        <rect width="75" height="30" rx="6" fill="#241604" stroke="#FF9900" stroke-width="1" />
+        <path d="M 10 18 Q 16 22 22 18" fill="none" stroke="#FF9900" stroke-width="2" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#FF9900">AWS</text>
+      </g>
+
+      <!-- TERRAFORM BADGE -->
+      <g transform="translate(545, 0)">
+        <rect width="115" height="30" rx="6" fill="#130924" stroke="#844FBA" stroke-width="1" />
+        <polygon points="10,10 15,13 15,18 10,15" fill="#844FBA" />
+        <polygon points="16,13 21,16 21,21 16,18" fill="#844FBA" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#844FBA">Terraform</text>
+      </g>
+
+      <!-- GITHUB ACTIONS BADGE -->
+      <g transform="translate(670, 0)">
+        <rect width="150" height="30" rx="6" fill="#041224" stroke="#2088FF" stroke-width="1" />
+        <circle cx="16" cy="15" r="5" fill="#2088FF" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#2088FF">GitHub Actions</text>
+      </g>
+
+    </g>
+  </g>
+
+  <!-- CATEGORY 5: TOOLS & AI AGENTS -->
+  <g transform="translate(25, 425)" font-family="'JetBrains Mono', monospace">
+    <text font-size="11" font-weight="900" fill="#FFB000">🛠️ TOOLS &amp; AI AGENTS (CUSTOM VECTOR BADGES)</text>
+
+    <g transform="translate(0, 12)">
+
+      <!-- VS CODE BADGE -->
+      <g transform="translate(0, 0)">
+        <rect width="95" height="30" rx="6" fill="#041224" stroke="#007ACC" stroke-width="1" />
+        <path d="M 10 15 L 14 10 L 20 18 L 22 8" fill="none" stroke="#007ACC" stroke-width="2" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#007ACC">VS Code</text>
+      </g>
+
+      <!-- CURSOR AI BADGE -->
+      <g transform="translate(105, 0)">
+        <rect width="90" height="30" rx="6" fill="#041824" stroke="#00F5FF" stroke-width="1" filter="url(#glowCyan)" />
+        <polygon points="12,10 20,15 12,20" fill="#00F5FF" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#00F5FF">Cursor</text>
+      </g>
+
+      <!-- CLAUDE CODE BADGE -->
+      <g transform="translate(205, 0)">
+        <rect width="125" height="30" rx="6" fill="#241404" stroke="#D97706" stroke-width="1" />
+        <circle cx="16" cy="15" r="6" fill="#D97706" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#D97706">Claude Code</text>
+      </g>
+
+      <!-- OPENAI BADGE -->
+      <g transform="translate(340, 0)">
+        <rect width="115" height="30" rx="6" fill="#041A14" stroke="#10A37F" stroke-width="1" />
+        <circle cx="16" cy="15" r="6" fill="none" stroke="#10A37F" stroke-width="2" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#10A37F">OpenAI API</text>
+      </g>
+
+      <!-- GIT BADGE -->
+      <g transform="translate(465, 0)">
+        <rect width="75" height="30" rx="6" fill="#240D05" stroke="#F05032" stroke-width="1" />
+        <circle cx="12" cy="15" r="2.5" fill="#F05032" />
+        <circle cx="20" cy="10" r="2.5" fill="#F05032" />
+        <circle cx="20" cy="20" r="2.5" fill="#F05032" />
+        <path d="M 12 15 L 20 10 M 12 15 L 20 20" stroke="#F05032" stroke-width="1.5" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#F05032">Git</text>
+      </g>
+
+      <!-- FIGMA BADGE -->
+      <g transform="translate(550, 0)">
+        <rect width="85" height="30" rx="6" fill="#240A04" stroke="#F24E1E" stroke-width="1" />
+        <circle cx="13" cy="12" r="3" fill="#F24E1E" />
+        <circle cx="19" cy="12" r="3" fill="#FF7262" />
+        <circle cx="13" cy="18" r="3" fill="#A259FF" />
+        <circle cx="19" cy="18" r="3" fill="#1ABCFE" />
+        <text x="28" y="19" font-size="10" font-weight="bold" fill="#F24E1E">Figma</text>
+      </g>
+
+    </g>
   </g>
 </svg>
