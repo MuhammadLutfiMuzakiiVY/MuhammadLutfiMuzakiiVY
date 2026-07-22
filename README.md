@@ -125,7 +125,7 @@ NVDA / USD      $139.80        +3.20% 🤖     AI SENTIMENT: 98.8%    [STRONG BU
       </ul>
     </td>
     <td width="45%" align="center" valign="middle">
-      <img src="https://raw.githubusercontent.com/MuhammadLutfiMuzakiiVY/MuhammadLutfiMuzakiiVY/main/languages-matrix.svg" width="100%" alt="Languages Matrix Card" />
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=MuhammadLutfiMuzakiiVY&theme=cyberpunk" width="100%" alt="Top Languages Card" />
     </td>
   </tr>
 </table>
@@ -138,6 +138,9 @@ NVDA / USD      $139.80        +3.20% 🤖     AI SENTIMENT: 98.8%    [STRONG BU
 
 <table border="0">
   <tr>
+    <td align="center">
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MuhammadLutfiMuzakiiVY&theme=cyberpunk" width="450" alt="Repos Per Language" />
+    </td>
     <td align="center">
       <img src="https://github-readme-streak-stats.herokuapp.com/?user=MuhammadLutfiMuzakiiVY&theme=cyberpunk&hide_border=true&background=05050A&stroke=00FFFF&alarm=FF007F" width="450" alt="GitHub Streak" />
     </td>
@@ -199,6 +202,14 @@ NVDA / USD      $139.80        +3.20% 🤖     AI SENTIMENT: 98.8%    [STRONG BU
 
 ---
 
+### 📈⚡ TELEMETRY ACTIVITY GRAPH
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MuhammadLutfiMuzakiiVY&bg_color=05050a&color=00ffff&line=ff007f&point=00ffff&area=true&hide_border=true" width="100%" alt="Cyber Telemetry Activity Graph" />
+</p>
+
+---
+
 ### 🛡️ CYBERSECURITY AUDIT & AI RESEARCH FOCUS
 
 <table border="0">
@@ -251,8 +262,8 @@ NVDA / USD      $139.80        +3.20% 🤖     AI SENTIMENT: 98.8%    [STRONG BU
 
 <div align="center">
 
-<!-- FOOTER ANIMATED DEEP OCEAN & FUTURISTIC SUBMARINE BANNER -->
-<img src="https://raw.githubusercontent.com/MuhammadLutfiMuzakiiVY/MuhammadLutfiMuzakiiVY/main/ocean-submarine-animated.svg" width="100%" alt="Footer Animated Ocean & Submarine Banner" />
+<!-- FOOTER ELECTRIC LIGHTNING WAVE BANNER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,8,20,30&height=130&section=footer" width="100%" alt="Footer Lightning Wave Banner" />
 
 <p align="center">
   ⚡ <strong>Code • Build • Secure • Trade • Innovate</strong> ⚡<br />
