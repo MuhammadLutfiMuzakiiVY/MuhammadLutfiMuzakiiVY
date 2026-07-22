@@ -19,23 +19,23 @@
     <circle cx="25" cy="10" r="4" fill="#FF9900" />
     <circle cx="40" cy="10" r="4" fill="#00FF66" />
     <text x="58" y="14" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#00FF66" letter-spacing="1">
-      ⚡ REALTIME SYSTEM LOGS TELEMETRY STREAM (INFINITE KERNEL BUFFER)
+      ⚡ REALTIME RAPID STOCK TELEMETRY LOGS STREAM (MICROSECOND LOOP)
     </text>
   </g>
 
   <rect x="15" y="32" width="870" height="84" rx="4" fill="#01050A" stroke="#1E293B" stroke-width="1" />
 
-  <!-- INFINITE SCROLLING LOG LINES -->
+  <!-- RAPID HIGH-SPEED SCROLLING LOG LINES (3.2s DURATION) -->
   <g font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#00FF66">
     <g transform="translate(25, 50)">
-      <text y="0" fill="#00FF66">[0.001s] Initializing Rust Compiler (Cargo v1.85)... [OPTIMIZED]</text>
-      <text y="16" fill="#00E5FF">[0.003s] Loading AI Engine (vLLM MoE / TensorRT-LLM)... [READY]</text>
-      <text y="32" fill="#FF9900">[0.005s] Building OCI Container (Docker LMM-v5.0)... [SUCCESS]</text>
-      <text y="48" fill="#00FF66">[0.008s] Deploy Success: Kubernetes Pod (EKS us-east-1) [HEALTHY]</text>
-      <text y="64" fill="#9D00FF">[0.012s] Running Integration Tests... [100% COVERAGE PASSED]</text>
-      <text y="80" fill="#00E5FF">[0.015s] Inference Engine Ready: Latency 0.8ms (RTX 4090)</text>
+      <text y="0" fill="#00FF66">[0.0001s] NASDAQ Ticker Stream: BTC/USDT $98,962.40 +6.92% [BUY]</text>
+      <text y="16" fill="#00E5FF">[0.0003s] Microsecond Order Book Match: Bids/Asks Clear 0.1ms [MATCH]</text>
+      <text y="32" fill="#FF9900">[0.0005s] AI Sentiment Engine: 98.8% Strong Buy Signal Active [EXEC]</text>
+      <text y="48" fill="#00FF66">[0.0008s] High-Frequency Arbitrage Router: NYSE / LSE / TOKYO Connected</text>
+      <text y="64" fill="#9D00FF">[0.0012s] Rust Kernel Memory Hardened: 0 CVE Buffer Overflow Risk</text>
+      <text y="80" fill="#00E5FF">[0.0015s] Rapid Tick Complete: 1,850,000 TPS Ingestion Active [STABLE]</text>
 
-      <animateTransform attributeName="transform" type="translate" values="25, 50; 25, -50" dur="8s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="translate" values="25, 50; 25, -50" dur="3.2s" repeatCount="indefinite" />
     </g>
   </g>
 </svg>

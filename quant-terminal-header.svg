@@ -1,13 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="100%" height="260">
   <defs>
-    <!-- Dark IDE Background Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#05070A" />
       <stop offset="50%" stop-color="#0B1220" />
       <stop offset="100%" stop-color="#020407" />
     </linearGradient>
 
-    <!-- Neon Glow Filters -->
     <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="5" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
@@ -18,95 +16,90 @@
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
 
-    <filter id="glowPurple" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="glowRed" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="5" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
 
-    <!-- Terminal Scanlines & Matrix Grid -->
     <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
       <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00E5FF" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.12" />
     </pattern>
   </defs>
 
-  <!-- Base IDE Frame -->
   <rect width="900" height="260" rx="12" fill="url(#bgGrad)" stroke="#00FF66" stroke-width="1.8" filter="url(#glowGreen)" />
   <rect width="900" height="260" rx="12" fill="url(#grid)" />
 
-  <!-- VS CODE / NEOVIM HEADER TAB BAR -->
+  <!-- VS CODE / HFT TRADING HEADER TAB BAR -->
   <rect x="16" y="14" width="868" height="38" rx="6" fill="#030A14" stroke="#00E5FF" stroke-width="1" />
   <circle cx="36" cy="33" r="5" fill="#FF0055" />
   <circle cx="53" cy="33" r="5" fill="#FF9900" />
   <circle cx="70" cy="33" r="5" fill="#00FF66" />
 
-  <!-- IDE Tabs -->
   <g font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">
-    <!-- Tab 1: Active main.rs -->
-    <rect x="92" y="21" width="105" height="24" rx="4" fill="#0D192B" stroke="#00FF66" stroke-width="1" />
-    <text x="106" y="37" fill="#00FF66">🦀 main.rs</text>
+    <rect x="92" y="21" width="125" height="24" rx="4" fill="#0D192B" stroke="#00FF66" stroke-width="1" />
+    <text x="106" y="37" fill="#00FF66">📈 hft_stock.rs</text>
 
-    <!-- Tab 2: ai_agent.py -->
-    <rect x="204" y="21" width="115" height="24" rx="4" fill="#070E1A" stroke="#1E293B" stroke-width="1" />
-    <text x="216" y="37" fill="#3776AB">🐍 ai_agent.py</text>
+    <rect x="224" y="21" width="125" height="24" rx="4" fill="#070E1A" stroke="#1E293B" stroke-width="1" />
+    <text x="236" y="37" fill="#3776AB">🐍 quant_algo.py</text>
 
-    <!-- Tab 3: quant_engine.cpp -->
-    <rect x="326" y="21" width="140" height="24" rx="4" fill="#070E1A" stroke="#1E293B" stroke-width="1" />
-    <text x="338" y="37" fill="#00599C">⚡ quant_engine.cpp</text>
+    <rect x="356" y="21" width="145" height="24" rx="4" fill="#070E1A" stroke="#1E293B" stroke-width="1" />
+    <text x="368" y="37" fill="#00599C">⚡ order_book.cpp</text>
   </g>
 
-  <!-- STATUS LIGHTS RIGHT -->
+  <!-- RAPID FLICKERING TELEMETRY BADGES -->
   <g font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" transform="translate(620, 24)">
     <rect x="0" y="0" width="85" height="18" rx="3" fill="#00FF66" opacity="0.15" stroke="#00FF66" stroke-width="0.8" />
-    <text x="8" y="13" fill="#00FF66">● COMPILED</text>
+    <text x="8" y="13" fill="#00FF66">● LIVE HFT
+      <animate attributeName="opacity" values="1;0.2;1" dur="0.3s" repeatCount="indefinite" />
+    </text>
 
     <rect x="92" y="0" width="75" height="18" rx="3" fill="#00E5FF" opacity="0.15" stroke="#00E5FF" stroke-width="0.8" />
-    <text x="100" y="13" fill="#00E5FF">⚡ 0.4ms</text>
+    <text x="100" y="13" fill="#00E5FF">⚡ 0.1ms</text>
 
-    <rect x="174" y="0" width="70" height="18" rx="3" fill="#9D00FF" opacity="0.15" stroke="#9D00FF" stroke-width="0.8" />
-    <text x="180" y="13" fill="#9D00FF">🤖 vLLM</text>
+    <rect x="174" y="0" width="70" height="18" rx="3" fill="#FF0055" opacity="0.15" stroke="#FF0055" stroke-width="0.8" />
+    <text x="180" y="13" fill="#FF0055">🚀 HIGH TICK</text>
   </g>
 
-  <!-- BACKGROUND SYNTAX HIGHLIGHTED PROGRAMMER CODE LINES -->
-  <g font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" opacity="0.22" transform="translate(30, 75)">
-    <text x="0" y="0" fill="#8899A6">01 | <tspan fill="#FF79C6">use</tspan> <tspan fill="#F8FAFC">std::sync::Arc;</tspan></text>
-    <text x="0" y="18" fill="#8899A6">02 | <tspan fill="#FF79C6">pub struct</tspan> <tspan fill="#50FA7B">Developer</tspan> { name: <tspan fill="#F1FA8C">&amp;'static str</tspan>, stack: <tspan fill="#BD93F9">Vec&lt;Language&gt;</tspan> }</text>
-    <text x="0" y="36" fill="#8899A6">03 | <tspan fill="#FF79C6">impl</tspan> <tspan fill="#50FA7B">Developer</tspan> { <tspan fill="#FF79C6">fn</tspan> <tspan fill="#50FA7B">build_autonomous_ai</tspan>(&amp;<tspan fill="#FF79C6">self</tspan>) -&gt; <tspan fill="#BD93F9">Result&lt;()&gt;</tspan> { ... } }</text>
-    <text x="0" y="54" fill="#8899A6">04 | <tspan fill="#FF79C6">async fn</tspan> <tspan fill="#50FA7B">execute_hft_arbitrage</tspan>(ticker: &amp;<tspan fill="#F1FA8C">"BTC/USDT"</tspan>) { Router::deploy().<tspan fill="#50FA7B">await</tspan>; }</text>
-    <text x="0" y="72" fill="#8899A6">05 | <tspan fill="#FF79C6">const</tspan> <tspan fill="#BD93F9">LATENCY_SLO</tspan>: <tspan fill="#8BE9FD">f64</tspan> = <tspan fill="#BD93F9">0.0008</tspan>; <tspan fill="#6272A4">// 0.8ms Rust HFT Engine</tspan></text>
-    <text x="0" y="90" fill="#8899A6">06 | <tspan fill="#FF79C6">let</tspan> sentinel = <tspan fill="#50FA7B">CyberSecurity::new</tspan>(<tspan fill="#F1FA8C">"Hardened SQLi &amp; BufferOverflow Shield"</tspan>);</text>
+  <!-- SYNTAX HIGHLIGHTED CODE LINES -->
+  <g font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" opacity="0.25" transform="translate(30, 75)">
+    <text x="0" y="0" fill="#8899A6">01 | <tspan fill="#FF79C6">use</tspan> <tspan fill="#F8FAFC">hft_engine::OrderBook;</tspan></text>
+    <text x="0" y="18" fill="#8899A6">02 | <tspan fill="#FF79C6">pub struct</tspan> <tspan fill="#50FA7B">StockTrader</tspan> { trader: <tspan fill="#F1FA8C">"Muhammad Lutfi Muzaki"</tspan> }</text>
+    <text x="0" y="36" fill="#8899A6">03 | <tspan fill="#FF79C6">async fn</tspan> <tspan fill="#50FA7B">execute_arbitrage_ticks</tspan>() { OrderBook::match_bids_asks(); }</text>
+    <text x="0" y="54" fill="#8899A6">04 | <tspan fill="#FF79C6">const</tspan> <tspan fill="#BD93F9">TICK_SPEED</tspan>: <tspan fill="#8BE9FD">f64</tspan> = <tspan fill="#BD93F9">0.0001</tspan>; <tspan fill="#6272A4">// High-Speed Microsecond Execution</tspan></text>
+    <text x="0" y="72" fill="#8899A6">05 | <tspan fill="#FF79C6">let</tspan> engine = <tspan fill="#50FA7B">QuantEngine::spawn</tspan>(<tspan fill="#F1FA8C">"NASDAQ / NYSE Realtime Stream"</tspan>);</text>
   </g>
 
-  <!-- MAIN HIGH-IMPACT PROGRAMMER NAME TITLE -->
+  <!-- MAIN NAME TITLE -->
   <text x="450" y="115" font-family="'JetBrains Mono', monospace" font-size="34" font-weight="900" fill="#00FF66" text-anchor="middle" letter-spacing="4" filter="url(#glowGreen)">
-    💻 MUHAMMAD LUTFI MUZAKI 💻
-    <animate attributeName="opacity" values="1;0.85;1" dur="1.5s" repeatCount="indefinite" />
+    📈 MUHAMMAD LUTFI MUZAKI 📈
+    <animate attributeName="opacity" values="1;0.7;1" dur="0.4s" repeatCount="indefinite" />
   </text>
   <text x="448" y="113" font-family="'JetBrains Mono', monospace" font-size="34" font-weight="900" fill="#00E5FF" text-anchor="middle" letter-spacing="4" filter="url(#glowCyan)">
-    💻 MUHAMMAD LUTFI MUZAKI 💻
+    📈 MUHAMMAD LUTFI MUZAKI 📈
   </text>
 
-  <!-- SUBTITLE PROGRAMMER BADGES -->
+  <!-- SUBTITLE -->
   <text x="450" y="152" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="900" fill="#F8FAFC" text-anchor="middle" letter-spacing="2">
-    ⚡ SENIOR FULL-STACK AI DEVELOPER • HIGH-PERFORMANCE RUST &amp; GO ARCHITECT ⚡
+    ⚡ REAL-TIME STOCK QUANT ENGINEER • HIGH-FREQUENCY ALGORITHMIC ARCHITECT ⚡
   </text>
 
-  <!-- LIVE CODE COMPILER TERMINAL EXECUTION BOX -->
+  <!-- RAPID HIGH-SPEED COMPILER TICKER BOX -->
   <rect x="65" y="172" width="770" height="42" rx="6" fill="#020814" stroke="#00FF66" stroke-width="1.2" filter="url(#glowGreen)" />
   
   <text x="450" y="191" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#00FF66" text-anchor="middle">
-    [cargo build --release --target=x86_64-unknown-linux-gnu] 🚀 COMPILATION SUCCESSFUL (0.42s)
+    [REALTIME STOCK TELEMETRY] 🚀 NASDAQ: +18.4% | NYSE: +12.8% | TECH INDEX: HIGH VOLATILITY
+    <animate attributeName="fill" values="#00FF66;#00E5FF;#00FF66" dur="0.6s" repeatCount="indefinite" />
   </text>
   <text x="450" y="206" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#00E5FF" text-anchor="middle">
-    [✓] AI LLM Inference Active • [✓] HFT Quant Router Live • [✓] Security Vulnerability Audit 0 CVEs
+    [✓] Order Routing 0.1ms • [✓] Market Maker Bids: $98,962.40 • [✓] Execution Active
   </text>
 
-  <!-- BOTTOM TERMINAL PROMPT LINE -->
+  <!-- BOTTOM TERMINAL PROMPT LINE WITH RAPID CURSOR -->
   <text x="25" y="244" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#00FF66">
-    root@lutfi-dev-workstation:~# <tspan fill="#F8FAFC">./run_hft_ai_sentinel.bin --mode=MAX_PERFORMANCE</tspan>
+    root@stock-hft-terminal:~# <tspan fill="#F8FAFC">./start_rapid_execution_router --speed=MICROSECOND</tspan>
   </text>
-  
-  <!-- Blinking Terminal Cursor -->
-  <rect x="615" y="233" width="8" height="14" fill="#00FF66" filter="url(#glowGreen)">
-    <animate attributeName="opacity" values="1;0;1" dur="0.6s" repeatCount="indefinite" />
+
+  <rect x="655" y="233" width="8" height="14" fill="#00FF66" filter="url(#glowGreen)">
+    <animate attributeName="opacity" values="1;0;1" dur="0.25s" repeatCount="indefinite" />
   </rect>
 </svg>

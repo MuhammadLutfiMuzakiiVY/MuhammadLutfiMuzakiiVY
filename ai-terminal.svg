@@ -33,10 +33,10 @@
   <circle cx="52" cy="32" r="5" fill="#FF9900" />
   <circle cx="69" cy="32" r="5" fill="#00FF66" />
   <text x="90" y="36" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#9D00FF" letter-spacing="1">
-    🤖 AI INFERENCE &amp; DEEP LEARNING MODEL TERMINAL <tspan fill="#00E5FF">| HIGH-THROUGHPUT LATENCY MONITOR</tspan>
+    🤖 AI INFERENCE &amp; DEEP LEARNING MODEL TERMINAL <tspan fill="#00E5FF">| HIGH-FREQUENCY LATENCY TICKER</tspan>
   </text>
   <circle cx="865" cy="32" r="4" fill="#9D00FF" filter="url(#glowPurple)">
-    <animate attributeName="opacity" values="1;0.2;1" dur="0.8s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="1;0.2;1" dur="0.3s" repeatCount="indefinite" />
   </circle>
 
   <!-- TABLE HEADER -->
@@ -51,7 +51,7 @@
     <line x1="0" y1="10" x2="850" y2="10" stroke="#1E293B" stroke-width="1" />
   </g>
 
-  <!-- AI MODEL ROWS (11 MODELS) -->
+  <!-- AI MODEL ROWS (11 MODELS WITH RAPID FLICKERING GPU GAUGES) -->
   <g font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" transform="translate(25, 98)">
 
     <!-- 1. GPT-5.5 -->
@@ -63,7 +63,7 @@
 
       <rect x="540" y="-10" width="110" height="12" rx="3" fill="#0D192B" />
       <rect x="540" y="-10" width="105" height="12" rx="3" fill="#9D00FF" filter="url(#glowPurple)">
-        <animate attributeName="width" values="105;109;100;105" dur="2s" repeatCount="indefinite" />
+        <animate attributeName="width" values="105;109;98;105" dur="0.6s" repeatCount="indefinite" />
       </rect>
       <text x="595" y="0" fill="#FFFFFF" font-size="9" font-weight="900" text-anchor="middle">95% (H100 x8)</text>
 
@@ -79,7 +79,9 @@
       <text x="390" y="0" fill="#F8FAFC">1,000,000 tok</text>
 
       <rect x="540" y="-10" width="110" height="12" rx="3" fill="#0D192B" />
-      <rect x="540" y="-10" width="98" height="12" rx="3" fill="#9D00FF" />
+      <rect x="540" y="-10" width="98" height="12" rx="3" fill="#9D00FF">
+        <animate attributeName="width" values="98;104;90;98" dur="0.7s" repeatCount="indefinite" />
+      </rect>
       <text x="595" y="0" fill="#FFFFFF" font-size="9" font-weight="900" text-anchor="middle">89% (H100 x8)</text>
 
       <text x="680" y="0" fill="#00FF66">98.4% MMLU</text>
@@ -94,7 +96,9 @@
       <text x="390" y="0" fill="#00FF66">10,000,000 tok 🚀</text>
 
       <rect x="540" y="-10" width="110" height="12" rx="3" fill="#0D192B" />
-      <rect x="540" y="-10" width="102" height="12" rx="3" fill="#00E5FF" filter="url(#glowCyan)" />
+      <rect x="540" y="-10" width="102" height="12" rx="3" fill="#00E5FF" filter="url(#glowCyan)">
+        <animate attributeName="width" values="102;108;95;102" dur="0.5s" repeatCount="indefinite" />
+      </rect>
       <text x="595" y="0" fill="#000000" font-size="9" font-weight="900" text-anchor="middle">92% (TPU v5p)</text>
 
       <text x="680" y="0" fill="#00FF66">97.8% MMLU</text>
@@ -109,7 +113,9 @@
       <text x="390" y="0" fill="#F8FAFC">128,000 tok</text>
 
       <rect x="540" y="-10" width="110" height="12" rx="3" fill="#0D192B" />
-      <rect x="540" y="-10" width="62" height="12" rx="3" fill="#00FF66" filter="url(#glowGreen)" />
+      <rect x="540" y="-10" width="62" height="12" rx="3" fill="#00FF66" filter="url(#glowGreen)">
+        <animate attributeName="width" values="62;72;55;62" dur="0.4s" repeatCount="indefinite" />
+      </rect>
       <text x="595" y="0" fill="#000000" font-size="9" font-weight="900" text-anchor="middle">56% (EP-MoE)</text>
 
       <text x="680" y="0" fill="#00FF66">96.5% MMLU</text>
@@ -223,15 +229,16 @@
 
   </g>
 
-  <!-- LIVE INFERENCE SPEED REALTIME ANIMATED CHART -->
+  <!-- RAPID UNDULATING STOCK PRICE WAVEFORM (0.8s DURATION) -->
   <g transform="translate(25, 420)">
     <text x="0" y="-8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#00E5FF">
-      ⚡ REALTIME AGENT INFERENCE THROUGHPUT WAVEFORM (TOKENS/SEC)
+      ⚡ REALTIME STOCK HFT WAVEFORM (MICROSECOND TICK THROUGHPUT)
     </text>
-    <path d="M 0 25 Q 100 5 200 20 T 400 15 T 600 30 T 850 10" fill="none" stroke="#00FF66" stroke-width="2" filter="url(#glowGreen)">
-      <animate attributeName="d" dur="3s" repeatCount="indefinite" values="
+    <path d="M 0 25 Q 100 5 200 20 T 400 15 T 600 30 T 850 10" fill="none" stroke="#00FF66" stroke-width="2.5" filter="url(#glowGreen)">
+      <animate attributeName="d" dur="0.8s" repeatCount="indefinite" values="
         M 0 25 Q 100 5 200 20 T 400 15 T 600 30 T 850 10;
-        M 0 15 Q 100 30 200 10 T 400 25 T 600 10 T 850 25;
+        M 0 10 Q 100 35 200 5 T 400 30 T 600 8 T 850 28;
+        M 0 30 Q 100 12 200 28 T 400 8 T 600 22 T 850 12;
         M 0 25 Q 100 5 200 20 T 400 15 T 600 30 T 850 10" />
     </path>
   </g>
