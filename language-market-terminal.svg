@@ -14,10 +14,6 @@
       <feGaussianBlur stdDeviation="4" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
-    <filter id="glowRed" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-    </filter>
 
     <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
       <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#2B313A" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.4" />
@@ -30,7 +26,7 @@
   <!-- TOP TITLE BAR -->
   <rect x="14" y="14" width="872" height="36" rx="6" fill="#181A20" stroke="#2B313A" stroke-width="1" />
   <text x="30" y="36" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#F0B90B" letter-spacing="1">
-    📈 BINANCE FUTURES PAIRS MARKET <tspan fill="#EAECEF">| PROGRAMMING LANGUAGES &amp; ENGINE SPEEDS</tspan>
+    💻 PROGRAMMING LANGUAGE COMPILATION &amp; PERFORMANCE BENCHMARK TERMINAL
   </text>
   <circle cx="865" cy="32" r="4" fill="#0ECB81" filter="url(#glowGreen)">
     <animate attributeName="opacity" values="1;0.2;1" dur="0.4s" repeatCount="indefinite" />
@@ -38,160 +34,160 @@
 
   <!-- TABLE HEADER -->
   <g font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#848E9C" transform="translate(25, 70)">
-    <text x="10" y="0">FUTURES PAIR</text>
-    <text x="140" y="0">LAST PRICE (SPEED)</text>
-    <text x="290" y="0">24H CHANGE %</text>
-    <text x="430" y="0">SAFETY SCORE</text>
-    <text x="580" y="0">PERF INDEX</text>
-    <text x="730" y="0">ACTION</text>
+    <text x="10" y="0">LANGUAGE (ENGINE)</text>
+    <text x="170" y="0">COMPILATION SPEED</text>
+    <text x="330" y="0">POPULARITY INDEX</text>
+    <text x="490" y="0">MEMORY SAFETY</text>
+    <text x="650" y="0">PERF INDEX</text>
+    <text x="770" y="0">STATUS</text>
     <line x1="0" y1="10" x2="850" y2="10" stroke="#2B313A" stroke-width="1" />
   </g>
 
-  <!-- LANGUAGE FUTURES ROWS (12 PAIRS) -->
+  <!-- LANGUAGE PROGRAMMER ROWS -->
   <g font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" transform="translate(25, 98)">
 
-    <!-- 1. RUST/USDT -->
+    <!-- 1. Rust -->
     <g transform="translate(0, 0)">
-      <text x="10" y="0" fill="#EAECEF">RUST/USDT <tspan font-size="9" fill="#F0B90B">125x</tspan></text>
-      <text x="140" y="0" fill="#0ECB81">0.42s [OPT]</text>
-      <text x="290" y="0" fill="#0ECB81">+18.42% 🚀</text>
-      <text x="430" y="0" fill="#0ECB81">100/100 (Safe)</text>
-      <text x="580" y="0" fill="#F0B90B">99.8 TFLOPS</text>
+      <text x="10" y="0" fill="#EAECEF">Rust (rustc)</text>
+      <text x="170" y="0" fill="#0ECB81">0.42s [OPT]</text>
+      <text x="330" y="0" fill="#0ECB81">98.4% [TOP]</text>
+      <text x="490" y="0" fill="#0ECB81">100/100 (Safe)</text>
+      <text x="650" y="0" fill="#F0B90B">99.8 TFLOPS</text>
       
-      <rect x="730" y="-12" width="100" height="18" rx="3" fill="#0ECB81" />
-      <text x="780" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">BUY / LONG</text>
+      <rect x="770" y="-12" width="90" height="18" rx="3" fill="#0ECB81" />
+      <text x="815" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">PASSED</text>
     </g>
 
-    <!-- 2. CPP/USDT -->
+    <!-- 2. C++ -->
     <g transform="translate(0, 30)">
-      <text x="10" y="0" fill="#EAECEF">CPP/USDT <tspan font-size="9" fill="#F0B90B">125x</tspan></text>
-      <text x="140" y="0" fill="#0ECB81">0.18s [FAST]</text>
-      <text x="290" y="0" fill="#0ECB81">+12.80% 📈</text>
-      <text x="430" y="0" fill="#F6465D">72/100 (Unsafe)</text>
-      <text x="580" y="0" fill="#F0B90B">100.0 TFLOPS</text>
+      <text x="10" y="0" fill="#EAECEF">C++ (GCC/Clang)</text>
+      <text x="170" y="0" fill="#0ECB81">0.18s [FAST]</text>
+      <text x="330" y="0" fill="#0ECB81">96.2% [TOP]</text>
+      <text x="490" y="0" fill="#F0B90B">72/100 (Manual)</text>
+      <text x="650" y="0" fill="#F0B90B">100.0 TFLOPS</text>
 
-      <rect x="730" y="-12" width="100" height="18" rx="3" fill="#0ECB81" />
-      <text x="780" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">BUY / LONG</text>
+      <rect x="770" y="-12" width="90" height="18" rx="3" fill="#0ECB81" />
+      <text x="815" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">PASSED</text>
     </g>
 
-    <!-- 3. GO/USDT -->
+    <!-- 3. Go -->
     <g transform="translate(0, 60)">
-      <text x="10" y="0" fill="#EAECEF">GO/USDT <tspan font-size="9" fill="#F0B90B">100x</tspan></text>
-      <text x="140" y="0" fill="#0ECB81">0.05s [ULTRA]</text>
-      <text x="290" y="0" fill="#0ECB81">+15.10% 🚀</text>
-      <text x="430" y="0" fill="#0ECB81">94/100 (GC)</text>
-      <text x="580" y="0" fill="#F0B90B">91.2 TFLOPS</text>
+      <text x="10" y="0" fill="#EAECEF">Go (gc compiler)</text>
+      <text x="170" y="0" fill="#0ECB81">0.05s [ULTRA]</text>
+      <text x="330" y="0" fill="#0ECB81">94.8% [TOP]</text>
+      <text x="490" y="0" fill="#0ECB81">94/100 (GC Safe)</text>
+      <text x="650" y="0" fill="#F0B90B">91.2 TFLOPS</text>
 
-      <rect x="730" y="-12" width="100" height="18" rx="3" fill="#0ECB81" />
-      <text x="780" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">BUY / LONG</text>
+      <rect x="770" y="-12" width="90" height="18" rx="3" fill="#0ECB81" />
+      <text x="815" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">PASSED</text>
     </g>
 
-    <!-- 4. TS/USDT -->
+    <!-- 4. TypeScript -->
     <g transform="translate(0, 90)">
-      <text x="10" y="0" fill="#EAECEF">TS/USDT <tspan font-size="9" fill="#F0B90B">75x</tspan></text>
-      <text x="140" y="0" fill="#F0B90B">1.20s [JIT]</text>
-      <text x="290" y="0" fill="#0ECB81">+24.50% 🚀</text>
-      <text x="430" y="0" fill="#0ECB81">90/100 (Strict)</text>
-      <text x="580" y="0" fill="#F0B90B">74.5 TFLOPS</text>
+      <text x="10" y="0" fill="#EAECEF">TypeScript (tsc)</text>
+      <text x="170" y="0" fill="#F0B90B">1.20s [JIT]</text>
+      <text x="330" y="0" fill="#0ECB81">99.1% [TOP]</text>
+      <text x="490" y="0" fill="#0ECB81">90/100 (Strict)</text>
+      <text x="650" y="0" fill="#F0B90B">74.5 TFLOPS</text>
 
-      <rect x="730" y="-12" width="100" height="18" rx="3" fill="#0ECB81" />
-      <text x="780" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">BUY / LONG</text>
+      <rect x="770" y="-12" width="90" height="18" rx="3" fill="#0ECB81" />
+      <text x="815" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">PASSED</text>
     </g>
 
-    <!-- 5. PY/USDT -->
+    <!-- 5. Python -->
     <g transform="translate(0, 120)">
-      <text x="10" y="0" fill="#EAECEF">PYTHON/USDT <tspan font-size="9" fill="#F0B90B">50x</tspan></text>
-      <text x="140" y="0" fill="#F6465D">2.45s [INTERP]</text>
-      <text x="290" y="0" fill="#0ECB81">+31.20% 🚀</text>
-      <text x="430" y="0" fill="#0ECB81">88/100 (Dynamic)</text>
-      <text x="580" y="0" fill="#F0B90B">62.0 TFLOPS</text>
+      <text x="10" y="0" fill="#EAECEF">Python (CPython)</text>
+      <text x="170" y="0" fill="#F0B90B">2.45s [INTERP]</text>
+      <text x="330" y="0" fill="#0ECB81">100.0% [TOP]</text>
+      <text x="490" y="0" fill="#0ECB81">88/100 (Dynamic)</text>
+      <text x="650" y="0" fill="#F0B90B">62.0 TFLOPS</text>
 
-      <rect x="730" y="-12" width="100" height="18" rx="3" fill="#0ECB81" />
-      <text x="780" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">BUY / LONG</text>
+      <rect x="770" y="-12" width="90" height="18" rx="3" fill="#0ECB81" />
+      <text x="815" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">PASSED</text>
     </g>
 
-    <!-- 6. ZIG/USDT -->
+    <!-- 6. Zig -->
     <g transform="translate(0, 150)">
-      <text x="10" y="0" fill="#EAECEF">ZIG/USDT <tspan font-size="9" fill="#F0B90B">100x</tspan></text>
-      <text x="140" y="0" fill="#0ECB81">0.12s [LLVM]</text>
-      <text x="290" y="0" fill="#0ECB81">+42.10% 🚀</text>
-      <text x="430" y="0" fill="#0ECB81">85/100 (Explicit)</text>
-      <text x="580" y="0" fill="#F0B90B">98.5 TFLOPS</text>
+      <text x="10" y="0" fill="#EAECEF">Zig (zig cc)</text>
+      <text x="170" y="0" fill="#0ECB81">0.12s [LLVM]</text>
+      <text x="330" y="0" fill="#0ECB81">88.2% [HIGH]</text>
+      <text x="490" y="0" fill="#0ECB81">85/100 (Explicit)</text>
+      <text x="650" y="0" fill="#F0B90B">98.5 TFLOPS</text>
 
-      <rect x="730" y="-12" width="100" height="18" rx="3" fill="#0ECB81" />
-      <text x="780" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">BUY / LONG</text>
+      <rect x="770" y="-12" width="90" height="18" rx="3" fill="#0ECB81" />
+      <text x="815" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">PASSED</text>
     </g>
 
-    <!-- 7. JAVA/USDT -->
+    <!-- 7. Java -->
     <g transform="translate(0, 180)">
-      <text x="10" y="0" fill="#EAECEF">JAVA/USDT <tspan font-size="9" fill="#F0B90B">50x</tspan></text>
-      <text x="140" y="0" fill="#F0B90B">1.80s [JVM]</text>
-      <text x="290" y="0" fill="#0ECB81">+5.40% 📈</text>
-      <text x="430" y="0" fill="#0ECB81">95/100 (Safe)</text>
-      <text x="580" y="0" fill="#F0B90B">82.1 TFLOPS</text>
+      <text x="10" y="0" fill="#EAECEF">Java (OpenJDK)</text>
+      <text x="170" y="0" fill="#F0B90B">1.80s [JVM]</text>
+      <text x="330" y="0" fill="#0ECB81">95.4% [TOP]</text>
+      <text x="490" y="0" fill="#0ECB81">95/100 (GC)</text>
+      <text x="650" y="0" fill="#F0B90B">82.1 TFLOPS</text>
 
-      <rect x="730" y="-12" width="100" height="18" rx="3" fill="#0ECB81" />
-      <text x="780" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">BUY / LONG</text>
+      <rect x="770" y="-12" width="90" height="18" rx="3" fill="#0ECB81" />
+      <text x="815" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">PASSED</text>
     </g>
 
-    <!-- 8. KT/USDT -->
+    <!-- 8. Kotlin -->
     <g transform="translate(0, 210)">
-      <text x="10" y="0" fill="#EAECEF">KT/USDT <tspan font-size="9" fill="#F0B90B">50x</tspan></text>
-      <text x="140" y="0" fill="#F0B90B">1.65s [JVM]</text>
-      <text x="290" y="0" fill="#0ECB81">+11.20% 🚀</text>
-      <text x="430" y="0" fill="#0ECB81">96/100 (NullSafe)</text>
-      <text x="580" y="0" fill="#F0B90B">83.4 TFLOPS</text>
+      <text x="10" y="0" fill="#EAECEF">Kotlin (kotlinc)</text>
+      <text x="170" y="0" fill="#F0B90B">1.65s [JVM]</text>
+      <text x="330" y="0" fill="#0ECB81">91.5% [HIGH]</text>
+      <text x="490" y="0" fill="#0ECB81">96/100 (NullSafe)</text>
+      <text x="650" y="0" fill="#F0B90B">83.4 TFLOPS</text>
 
-      <rect x="730" y="-12" width="100" height="18" rx="3" fill="#0ECB81" />
-      <text x="780" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">BUY / LONG</text>
+      <rect x="770" y="-12" width="90" height="18" rx="3" fill="#0ECB81" />
+      <text x="815" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">PASSED</text>
     </g>
 
-    <!-- 9. SWIFT/USDT -->
+    <!-- 9. Swift -->
     <g transform="translate(0, 240)">
-      <text x="10" y="0" fill="#EAECEF">SWIFT/USDT <tspan font-size="9" fill="#F0B90B">50x</tspan></text>
-      <text x="140" y="0" fill="#0ECB81">0.60s [LLVM]</text>
-      <text x="290" y="0" fill="#0ECB81">+8.30% 📈</text>
-      <text x="430" y="0" fill="#0ECB81">97/100 (ARC)</text>
-      <text x="580" y="0" fill="#F0B90B">88.9 TFLOPS</text>
+      <text x="10" y="0" fill="#EAECEF">Swift (swiftc)</text>
+      <text x="170" y="0" fill="#0ECB81">0.60s [LLVM]</text>
+      <text x="330" y="0" fill="#0ECB81">89.0% [HIGH]</text>
+      <text x="490" y="0" fill="#0ECB81">97/100 (ARC)</text>
+      <text x="650" y="0" fill="#F0B90B">88.9 TFLOPS</text>
 
-      <rect x="730" y="-12" width="100" height="18" rx="3" fill="#0ECB81" />
-      <text x="780" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">BUY / LONG</text>
+      <rect x="770" y="-12" width="90" height="18" rx="3" fill="#0ECB81" />
+      <text x="815" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">PASSED</text>
     </g>
 
-    <!-- 10. PHP/USDT -->
+    <!-- 10. PHP -->
     <g transform="translate(0, 270)">
-      <text x="10" y="0" fill="#EAECEF">PHP/USDT <tspan font-size="9" fill="#F0B90B">25x</tspan></text>
-      <text x="140" y="0" fill="#F0B90B">0.95s [JIT]</text>
-      <text x="290" y="0" fill="#F6465D">-1.20% 📉</text>
-      <text x="430" y="0" fill="#0ECB81">82/100 (TypeOpt)</text>
-      <text x="580" y="0" fill="#F0B90B">65.8 TFLOPS</text>
+      <text x="10" y="0" fill="#EAECEF">PHP (Zend JIT)</text>
+      <text x="170" y="0" fill="#F0B90B">0.95s [JIT]</text>
+      <text x="330" y="0" fill="#848E9C">86.4% [MID]</text>
+      <text x="490" y="0" fill="#0ECB81">82/100 (TypeOpt)</text>
+      <text x="650" y="0" fill="#F0B90B">65.8 TFLOPS</text>
 
-      <rect x="730" y="-12" width="100" height="18" rx="3" fill="#F6465D" />
-      <text x="780" y="1" fill="#FFFFFF" font-size="9" font-weight="900" text-anchor="middle">SELL / SHORT</text>
+      <rect x="770" y="-12" width="90" height="18" rx="3" fill="#0ECB81" />
+      <text x="815" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">PASSED</text>
     </g>
 
-    <!-- 11. JS/USDT -->
+    <!-- 11. JavaScript -->
     <g transform="translate(0, 300)">
-      <text x="10" y="0" fill="#EAECEF">JS/USDT <tspan font-size="9" fill="#F0B90B">75x</tspan></text>
-      <text x="140" y="0" fill="#F0B90B">0.85s [V8]</text>
-      <text x="290" y="0" fill="#0ECB81">+14.10% 🚀</text>
-      <text x="430" y="0" fill="#F6465D">60/100 (Dynamic)</text>
-      <text x="580" y="0" fill="#F0B90B">71.0 TFLOPS</text>
+      <text x="10" y="0" fill="#EAECEF">JavaScript (V8)</text>
+      <text x="170" y="0" fill="#F0B90B">0.85s [V8]</text>
+      <text x="330" y="0" fill="#0ECB81">100.0% [TOP]</text>
+      <text x="490" y="0" fill="#F0B90B">60/100 (Dynamic)</text>
+      <text x="650" y="0" fill="#F0B90B">71.0 TFLOPS</text>
 
-      <rect x="730" y="-12" width="100" height="18" rx="3" fill="#0ECB81" />
-      <text x="780" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">BUY / LONG</text>
+      <rect x="770" y="-12" width="90" height="18" rx="3" fill="#0ECB81" />
+      <text x="815" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">PASSED</text>
     </g>
 
-    <!-- 12. CSHARP/USDT -->
+    <!-- 12. C# -->
     <g transform="translate(0, 330)">
-      <text x="10" y="0" fill="#EAECEF">CSHARP/USDT <tspan font-size="9" fill="#F0B90B">50x</tspan></text>
-      <text x="140" y="0" fill="#0ECB81">0.70s [AOT]</text>
-      <text x="290" y="0" fill="#0ECB81">+9.40% 📈</text>
-      <text x="430" y="0" fill="#0ECB81">95/100 (Managed)</text>
-      <text x="580" y="0" fill="#F0B90B">86.7 TFLOPS</text>
+      <text x="10" y="0" fill="#EAECEF">C# (.NET AOT)</text>
+      <text x="170" y="0" fill="#0ECB81">0.70s [AOT]</text>
+      <text x="330" y="0" fill="#0ECB81">93.1% [HIGH]</text>
+      <text x="490" y="0" fill="#0ECB81">95/100 (Managed)</text>
+      <text x="650" y="0" fill="#F0B90B">86.7 TFLOPS</text>
 
-      <rect x="730" y="-12" width="100" height="18" rx="3" fill="#0ECB81" />
-      <text x="780" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">BUY / LONG</text>
+      <rect x="770" y="-12" width="90" height="18" rx="3" fill="#0ECB81" />
+      <text x="815" y="1" fill="#0B0E11" font-size="9" font-weight="900" text-anchor="middle">PASSED</text>
     </g>
 
   </g>

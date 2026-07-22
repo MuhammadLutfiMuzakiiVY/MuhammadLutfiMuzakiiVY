@@ -15,25 +15,25 @@
   <rect width="900" height="130" rx="8" fill="url(#binanceBg)" stroke="#F0B90B" stroke-width="1.4" filter="url(#glowYellow)" />
 
   <g transform="translate(15, 12)">
-    <circle cx="10" cy="10" r="4" fill="#F6465D" />
+    <circle cx="10" cy="10" r="4" fill="#0ECB81" />
     <circle cx="25" cy="10" r="4" fill="#F0B90B" />
     <circle cx="40" cy="10" r="4" fill="#0ECB81" />
     <text x="58" y="14" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" fill="#F0B90B" letter-spacing="1">
-      ⚡ BINANCE FUTURES REALTIME LOGS TELEMETRY STREAM (125x MATCHING ENGINE)
+      ⚡ PROGRAMMER REALTIME LOGS TELEMETRY STREAM (COMPILER &amp; CI/CD BUFFER)
     </text>
   </g>
 
   <rect x="15" y="32" width="870" height="84" rx="4" fill="#181A20" stroke="#2B313A" stroke-width="1" />
 
-  <!-- SCROLLING BINANCE LOGS -->
+  <!-- SCROLLING PROGRAMMER LOGS -->
   <g font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#0ECB81">
     <g transform="translate(25, 50)">
-      <text y="0" fill="#0ECB81">[0.0001s] BINANCE FUTURES: ORDER MATCHED RUST/USDT @ $98,962.40 [BUY LONG 125x]</text>
-      <text y="16" fill="#F0B90B">[0.0003s] Microsecond Order Book Match: Bids/Asks Clear 0.1ms [EXECUTED]</text>
-      <text y="32" fill="#0ECB81">[0.0005s] AI LLM Inference ROE PnL: +850.40% [PROFIT SECURED]</text>
-      <text y="48" fill="#F0B90B">[0.0008s] High-Frequency Arbitrage Router: NASDAQ / NYSE / TOKYO Connected</text>
-      <text y="64" fill="#0ECB81">[0.0012s] Rust Kernel Memory Hardened: 0 CVE Buffer Overflow Risk [SAFE]</text>
-      <text y="80" fill="#F0B90B">[0.0015s] Rapid Tick Complete: 1,850,000 TPS Ingestion Active [STABLE]</text>
+      <text y="0" fill="#0ECB81">[0.0001s] CARGO RELEASE BUILD: RUST v1.85 TARGET x86_64 LINUX [OPTIMIZED 0.42s]</text>
+      <text y="16" fill="#F0B90B">[0.0003s] vLLM AI Inference Engine: DeepSeek-V3 650 tok/s Active [3.1ms SLO]</text>
+      <text y="32" fill="#0ECB81">[0.0005s] Unit Tests Execution: 412 Tests Passed (98.4% Code Coverage) [PASSED]</text>
+      <text y="48" fill="#F0B90B">[0.0008s] Kubernetes Deployment: 128 Pods Active in us-east-1 EKS [HEALTHY]</text>
+      <text y="64" fill="#0ECB81">[0.0012s] Cybersecurity Hardening: 0 Vulnerabilities Found • 4,892 Attacks Blocked</text>
+      <text y="80" fill="#F0B90B">[0.0015s] High-Frequency Database Engine: Redis 7 In-Memory 1,850,000 TPS [STABLE]</text>
 
       <animateTransform attributeName="transform" type="translate" values="25, 50; 25, -50" dur="3.2s" repeatCount="indefinite" />
     </g>

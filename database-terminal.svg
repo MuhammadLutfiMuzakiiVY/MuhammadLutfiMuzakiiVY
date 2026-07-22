@@ -14,10 +14,6 @@
       <feGaussianBlur stdDeviation="4" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
-    <filter id="glowRed" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-    </filter>
 
     <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
       <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#2B313A" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.4" />
@@ -30,116 +26,100 @@
   <!-- TOP TITLE BAR -->
   <rect x="14" y="14" width="872" height="36" rx="6" fill="#181A20" stroke="#2B313A" stroke-width="1" />
   <text x="30" y="36" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#F0B90B" letter-spacing="1">
-    ⚡ BINANCE LIVE ORDER BOOK (ASKS &amp; BIDS) <tspan fill="#EAECEF">| DATABASE CLUSTER TELEMETRY</tspan>
+    ⚡ DATABASE ENGINE &amp; QUERY READ/WRITE I/O BUFFER TERMINAL
   </text>
   <circle cx="865" cy="32" r="4" fill="#0ECB81" filter="url(#glowGreen)">
     <animate attributeName="opacity" values="1;0.2;1" dur="0.4s" repeatCount="indefinite" />
   </circle>
 
-  <!-- LEFT: BINANCE LIVE ORDER BOOK PANEL (WIDTH 360) -->
+  <!-- LEFT: LIVE QUERY BUFFER PANEL (WIDTH 350) -->
   <g transform="translate(25, 65)" font-family="'JetBrains Mono', monospace">
     <rect x="0" y="0" width="350" height="380" rx="6" fill="#181A20" stroke="#2B313A" stroke-width="1" />
-    <text x="15" y="22" font-size="11" font-weight="900" fill="#F0B90B">⚡ BINANCE FUTURES ORDER BOOK</text>
+    <text x="15" y="22" font-size="11" font-weight="900" fill="#F0B90B">⚡ DATABASE QUERY BUFFER (QPS/TPS)</text>
 
-    <!-- Table Column Headers -->
+    <!-- Column Headers -->
     <g font-size="9" font-weight="bold" fill="#848E9C" transform="translate(15, 38)">
-      <text x="0" y="0">PRICE (USDT)</text>
-      <text x="120" y="0">SIZE (QPS)</text>
-      <text x="240" y="0">TOTAL (TPS)</text>
+      <text x="0" y="0">METRIC NAME</text>
+      <text x="130" y="0">QUERIES (QPS)</text>
+      <text x="240" y="0">TRANSACTIONS</text>
       <line x1="0" y1="6" x2="320" y2="6" stroke="#2B313A" stroke-width="1" />
     </g>
 
-    <!-- ASKS (RED SELL ORDERS - TOP HALF) -->
+    <!-- WRITE SPECTRUM (TOP HALF) -->
     <g transform="translate(15, 54)" font-size="10" font-weight="bold">
-      <!-- Ask 1 -->
-      <rect x="0" y="0" width="220" height="14" fill="#F6465D" opacity="0.25">
+      <!-- Item 1 -->
+      <rect x="0" y="0" width="220" height="14" fill="#F0B90B" opacity="0.25">
         <animate attributeName="width" values="220;250;180;220" dur="0.6s" repeatCount="indefinite" />
       </rect>
-      <text x="0" y="11" fill="#F6465D">99,120.40</text>
-      <text x="120" y="11" fill="#EAECEF">480,000</text>
-      <text x="240" y="11" fill="#848E9C">145.2K</text>
+      <text x="0" y="11" fill="#F0B90B">Write Buffer</text>
+      <text x="130" y="11" fill="#EAECEF">480,000/s</text>
+      <text x="240" y="11" fill="#848E9C">145.2K TPS</text>
 
-      <!-- Ask 2 -->
+      <!-- Item 2 -->
       <g transform="translate(0, 18)">
-        <rect x="0" y="0" width="180" height="14" fill="#F6465D" opacity="0.25">
+        <rect x="0" y="0" width="180" height="14" fill="#F0B90B" opacity="0.25">
           <animate attributeName="width" values="180;210;150;180" dur="0.5s" repeatCount="indefinite" />
         </rect>
-        <text x="0" y="11" fill="#F6465D">99,080.10</text>
-        <text x="120" y="11" fill="#EAECEF">320,000</text>
-        <text x="240" y="11" fill="#848E9C">98.4K</text>
+        <text x="0" y="11" fill="#F0B90B">Index Update</text>
+        <text x="130" y="11" fill="#EAECEF">320,000/s</text>
+        <text x="240" y="11" fill="#848E9C">98.4K TPS</text>
       </g>
 
-      <!-- Ask 3 -->
+      <!-- Item 3 -->
       <g transform="translate(0, 36)">
-        <rect x="0" y="0" width="260" height="14" fill="#F6465D" opacity="0.25">
+        <rect x="0" y="0" width="260" height="14" fill="#F0B90B" opacity="0.25">
           <animate attributeName="width" values="260;280;230;260" dur="0.7s" repeatCount="indefinite" />
         </rect>
-        <text x="0" y="11" fill="#F6465D">99,010.00</text>
-        <text x="120" y="11" fill="#EAECEF">650,000</text>
-        <text x="240" y="11" fill="#848E9C">210.0K</text>
-      </g>
-
-      <!-- Ask 4 -->
-      <g transform="translate(0, 54)">
-        <rect x="0" y="0" width="140" height="14" fill="#F6465D" opacity="0.25" />
-        <text x="0" y="11" fill="#F6465D">98,990.50</text>
-        <text x="120" y="11" fill="#EAECEF">210,000</text>
-        <text x="240" y="11" fill="#848E9C">65.0K</text>
+        <text x="0" y="11" fill="#F0B90B">WAL Commit</text>
+        <text x="130" y="11" fill="#EAECEF">650,000/s</text>
+        <text x="240" y="11" fill="#848E9C">210.0K TPS</text>
       </g>
     </g>
 
-    <!-- MID PRICE TICKER BAR -->
+    <!-- MID TICKER BAR -->
     <g transform="translate(15, 145)">
       <rect x="0" y="0" width="320" height="28" rx="4" fill="#1E2329" stroke="#0ECB81" stroke-width="1" />
       <text x="15" y="19" font-size="13" font-weight="900" fill="#0ECB81">
-        $98,962.40 🚀 <tspan font-size="10" fill="#848E9C">(Mark Price)</tspan>
+        1,850,000 TPS 🚀 <tspan font-size="10" fill="#848E9C">(Redis Peak)</tspan>
       </text>
     </g>
 
-    <!-- BIDS (GREEN BUY ORDERS - BOTTOM HALF) -->
+    <!-- READ SPECTRUM (BOTTOM HALF) -->
     <g transform="translate(15, 185)" font-size="10" font-weight="bold">
-      <!-- Bid 1 -->
+      <!-- Item 1 -->
       <rect x="0" y="0" width="280" height="14" fill="#0ECB81" opacity="0.25">
         <animate attributeName="width" values="280;300;250;280" dur="0.4s" repeatCount="indefinite" />
       </rect>
-      <text x="0" y="11" fill="#0ECB81">98,940.00</text>
-      <text x="120" y="11" fill="#EAECEF">1,850,000</text>
-      <text x="240" y="11" fill="#848E9C">1.85M</text>
+      <text x="0" y="11" fill="#0ECB81">Read Cache</text>
+      <text x="130" y="11" fill="#EAECEF">3,200,000/s</text>
+      <text x="240" y="11" fill="#848E9C">1.85M TPS</text>
 
-      <!-- Bid 2 -->
+      <!-- Item 2 -->
       <g transform="translate(0, 18)">
         <rect x="0" y="0" width="240" height="14" fill="#0ECB81" opacity="0.25">
           <animate attributeName="width" values="240;270;210;240" dur="0.6s" repeatCount="indefinite" />
         </rect>
-        <text x="0" y="11" fill="#0ECB81">98,910.20</text>
-        <text x="120" y="11" fill="#EAECEF">920,000</text>
-        <text x="240" y="11" fill="#848E9C">350.0K</text>
+        <text x="0" y="11" fill="#0ECB81">Key-Val Lookup</text>
+        <text x="130" y="11" fill="#EAECEF">920,000/s</text>
+        <text x="240" y="11" fill="#848E9C">350.0K TPS</text>
       </g>
 
-      <!-- Bid 3 -->
+      <!-- Item 3 -->
       <g transform="translate(0, 36)">
         <rect x="0" y="0" width="300" height="14" fill="#0ECB81" opacity="0.25">
           <animate attributeName="width" values="300;315;280;300" dur="0.5s" repeatCount="indefinite" />
         </rect>
-        <text x="0" y="11" fill="#0ECB81">98,870.00</text>
-        <text x="120" y="11" fill="#EAECEF">1,100,000</text>
-        <text x="240" y="11" fill="#848E9C">420.0K</text>
-      </g>
-
-      <!-- Bid 4 -->
-      <g transform="translate(0, 54)">
-        <rect x="0" y="0" width="190" height="14" fill="#0ECB81" opacity="0.25" />
-        <text x="0" y="11" fill="#0ECB81">98,820.80</text>
-        <text x="120" y="11" fill="#EAECEF">410,000</text>
-        <text x="240" y="11" fill="#848E9C">110.0K</text>
+        <text x="0" y="11" fill="#0ECB81">Vector Search</text>
+        <text x="130" y="11" fill="#EAECEF">1,100,000/s</text>
+        <text x="240" y="11" fill="#848E9C">420.0K TPS</text>
       </g>
     </g>
   </g>
 
-  <!-- RIGHT: DATABASE INFRASTRUCTURE METRICS (WIDTH 490) -->
+  <!-- RIGHT: DATABASE CLUSTER CAPACITY & METRICS (WIDTH 490) -->
   <g transform="translate(400, 65)" font-family="'JetBrains Mono', monospace">
     <rect x="0" y="0" width="475" height="380" rx="6" fill="#181A20" stroke="#2B313A" stroke-width="1" />
-    <text x="15" y="22" font-size="11" font-weight="900" fill="#F0B90B">🗄️ DATABASE CLUSTER ENGINE METRICS</text>
+    <text x="15" y="22" font-size="11" font-weight="900" fill="#F0B90B">🗄️ DATABASE CLUSTER METRICS &amp; REPLICATION</text>
     <line x1="15" y1="30" x2="460" y2="30" stroke="#2B313A" stroke-width="1" />
 
     <g font-size="11" font-weight="bold" transform="translate(15, 48)">
@@ -168,18 +148,18 @@
       <text x="290" y="150" fill="#00E5FF">1.10 ms Latency</text>
     </g>
 
-    <!-- BINANCE DEPTH GRAPH CHART (BOTTOM) -->
+    <!-- DATABASE I/O SPECTRUM CHART -->
     <g transform="translate(15, 230)">
-      <text x="0" y="0" font-size="10" font-weight="900" fill="#848E9C">DEPTH CHART (BIDS VS ASKS LIQUIDITY)</text>
+      <text x="0" y="0" font-size="10" font-weight="900" fill="#848E9C">DATABASE READ VS WRITE I/O CAPACITY</text>
       <rect x="0" y="10" width="445" height="120" rx="4" fill="#1E2329" stroke="#2B313A" stroke-width="1" />
       
-      <!-- Green Bids Area -->
+      <!-- Read Polygon -->
       <polygon points="10,120 10,40 180,60 220,120" fill="#0ECB81" opacity="0.3" />
       <polyline points="10,40 180,60 220,120" fill="none" stroke="#0ECB81" stroke-width="2" />
 
-      <!-- Red Asks Area -->
-      <polygon points="225,120 260,60 435,20 435,120" fill="#F6465D" opacity="0.3" />
-      <polyline points="225,120 260,60 435,20" fill="none" stroke="#F6465D" stroke-width="2" />
+      <!-- Write Polygon -->
+      <polygon points="225,120 260,60 435,20 435,120" fill="#F0B90B" opacity="0.3" />
+      <polyline points="225,120 260,60 435,20" fill="none" stroke="#F0B90B" stroke-width="2" />
     </g>
   </g>
 </svg>

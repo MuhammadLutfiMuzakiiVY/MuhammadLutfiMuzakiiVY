@@ -26,104 +26,104 @@
   <!-- TOP TITLE BAR -->
   <rect x="14" y="14" width="872" height="36" rx="6" fill="#181A20" stroke="#2B313A" stroke-width="1" />
   <text x="30" y="36" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#F0B90B" letter-spacing="1">
-    ⚙️ BINANCE FUTURES ORDER EXECUTION &amp; DEVOPS POSITION RISK PANEL
+    ⚙️ LIVE CI/CD COMPILER CONTROLS &amp; DEVOPS POSITION RISK PANEL
   </text>
   <circle cx="865" cy="32" r="4" fill="#0ECB81" filter="url(#glowGreen)">
     <animate attributeName="opacity" values="1;0.2;1" dur="0.4s" repeatCount="indefinite" />
   </circle>
 
-  <!-- LEFT: BINANCE FUTURES TRADE ORDER FORM (WIDTH 350) -->
+  <!-- LEFT: COMPILER & CI/CD BUILD CONTROL FORM (WIDTH 350) -->
   <g transform="translate(25, 65)" font-family="'JetBrains Mono', monospace">
     <rect x="0" y="0" width="340" height="420" rx="6" fill="#181A20" stroke="#2B313A" stroke-width="1" />
     
-    <!-- Order Type Tabs -->
+    <!-- Build Profile Tabs -->
     <g transform="translate(15, 15)">
       <rect x="0" y="0" width="90" height="24" rx="4" fill="#F0B90B" />
-      <text x="45" y="16" font-size="10" font-weight="900" fill="#0B0E11" text-anchor="middle">LIMIT</text>
+      <text x="45" y="16" font-size="10" font-weight="900" fill="#0B0E11" text-anchor="middle">RELEASE</text>
 
       <rect x="100" y="0" width="90" height="24" rx="4" fill="#2B313A" />
-      <text x="145" y="16" font-size="10" font-weight="bold" fill="#848E9C" text-anchor="middle">MARKET</text>
+      <text x="145" y="16" font-size="10" font-weight="bold" fill="#848E9C" text-anchor="middle">DEBUG</text>
 
       <rect x="200" y="0" width="100" height="24" rx="4" fill="#2B313A" />
-      <text x="250" y="16" font-size="10" font-weight="bold" fill="#848E9C" text-anchor="middle">STOP-LIMIT</text>
+      <text x="250" y="16" font-size="10" font-weight="bold" fill="#848E9C" text-anchor="middle">BENCHMARK</text>
     </g>
 
-    <!-- Price Input Box -->
+    <!-- Target Triple Box -->
     <g transform="translate(15, 55)" font-size="11" font-weight="bold">
-      <text x="0" y="0" fill="#848E9C">Price (Build Speed)</text>
+      <text x="0" y="0" fill="#848E9C">Target Triple</text>
       <rect x="0" y="8" width="310" height="32" rx="4" fill="#1E2329" stroke="#2B313A" stroke-width="1" />
-      <text x="12" y="29" fill="#EAECEF">0.42s (Rust Cargo)</text>
-      <text x="295" y="29" fill="#848E9C" text-anchor="end">USDT</text>
+      <text x="12" y="29" fill="#EAECEF">x86_64-unknown-linux-gnu</text>
+      <text x="295" y="29" fill="#848E9C" text-anchor="end">ARCH</text>
     </g>
 
-    <!-- Size Input Box -->
+    <!-- Optimization Level Box -->
     <g transform="translate(15, 115)" font-size="11" font-weight="bold">
-      <text x="0" y="0" fill="#848E9C">Size (K8s Pods / CPU)</text>
+      <text x="0" y="0" fill="#848E9C">Optimization Level</text>
       <rect x="0" y="8" width="310" height="32" rx="4" fill="#1E2329" stroke="#2B313A" stroke-width="1" />
-      <text x="12" y="29" fill="#EAECEF">128 Pods / 16-Core</text>
-      <text x="295" y="29" fill="#848E9C" text-anchor="end">PODS</text>
+      <text x="12" y="29" fill="#0ECB81">-O3 (Max Speed &amp; LTO)</text>
+      <text x="295" y="29" fill="#848E9C" text-anchor="end">FLAGS</text>
     </g>
 
-    <!-- Slider Leverage bar -->
+    <!-- CPU Threads Slider -->
     <g transform="translate(15, 175)">
-      <text x="0" y="0" font-size="10" font-weight="bold" fill="#848E9C">Leverage Selector: 125x</text>
+      <text x="0" y="0" font-size="10" font-weight="bold" fill="#848E9C">Parallel Compiler Threads: 16 Cores</text>
       <rect x="0" y="8" width="310" height="6" rx="3" fill="#2B313A" />
       <rect x="0" y="8" width="280" height="6" rx="3" fill="#F0B90B" />
       <circle cx="280" cy="11" r="7" fill="#F0B90B" filter="url(#glowYellow)" />
     </g>
 
-    <!-- BUY LONG / SELL SHORT BUTTONS -->
+    <!-- BUILD RELEASE & RUN TESTS BUTTONS -->
     <g transform="translate(15, 215)">
       <rect x="0" y="0" width="148" height="42" rx="4" fill="#0ECB81" />
-      <text x="74" y="26" font-size="13" font-weight="900" fill="#0B0E11" text-anchor="middle">BUY / LONG 🚀</text>
+      <text x="74" y="26" font-size="13" font-weight="900" fill="#0B0E11" text-anchor="middle">BUILD RELEASE 🚀</text>
 
-      <rect x="162" y="0" width="148" height="42" rx="4" fill="#F6465D" />
-      <text x="236" y="26" font-size="13" font-weight="900" fill="#FFFFFF" text-anchor="middle">SELL / SHORT</text>
+      <rect x="162" y="0" width="148" height="42" rx="4" fill="#F0B90B" />
+      <text x="236" y="26" font-size="13" font-weight="900" fill="#0B0E11" text-anchor="middle">RUN TESTS ⚡</text>
     </g>
 
-    <!-- Account Margin Info -->
+    <!-- Deployment Status Info -->
     <g transform="translate(15, 280)" font-size="10" font-weight="bold" fill="#848E9C">
-      <text y="0">Avail Margin: <tspan fill="#EAECEF">64GB DDR5 / 4TB NVMe</tspan></text>
-      <text y="20">Margin Ratio: <tspan fill="#0ECB81">2.14% (SAFE)</tspan></text>
-      <text y="40">Max Position: <tspan fill="#F0B90B">100,000,000 USDT</tspan></text>
+      <text y="0">Resource Allocation: <tspan fill="#EAECEF">64GB RAM / 128 K8s Pods</tspan></text>
+      <text y="20">Cluster Health: <tspan fill="#0ECB81">100% HEALTHY (0.1ms SLO)</tspan></text>
+      <text y="40">Threat Mitigation: <tspan fill="#F0B90B">4,892 Attacks Blocked/Day</tspan></text>
     </g>
   </g>
 
-  <!-- RIGHT: DEVOPS & CYBERSECURITY SENTINEL POSITION RISK MATRIX (WIDTH 500) -->
+  <!-- RIGHT: DEVOPS & CYBERSECURITY POSITION MATRIX (WIDTH 500) -->
   <g transform="translate(385, 65)" font-family="'JetBrains Mono', monospace">
     <rect x="0" y="0" width="490" height="420" rx="6" fill="#181A20" stroke="#2B313A" stroke-width="1" />
-    <text x="15" y="22" font-size="11" font-weight="900" fill="#F0B90B">🛡️ DEVOPS &amp; CYBERSECURITY POSITION RISK MATRIX</text>
+    <text x="15" y="22" font-size="11" font-weight="900" fill="#F0B90B">🛡️ DEVOPS INFRASTRUCTURE &amp; SECURITY MATRIX</text>
     <line x1="15" y1="30" x2="475" y2="30" stroke="#2B313A" stroke-width="1" />
 
     <g font-size="11" font-weight="bold" transform="translate(15, 50)">
-      <text x="0" y="0" fill="#2496ED">Docker Containers:</text>
+      <text x="0" y="0" fill="#EAECEF">Docker Containers:</text>
       <text x="180" y="0" fill="#0ECB81">42 RUNNING</text>
       <text x="330" y="0" fill="#EAECEF">CPU 12.4%</text>
 
-      <text x="0" y="32" fill="#326CE5">Kubernetes Cluster:</text>
+      <text x="0" y="32" fill="#EAECEF">Kubernetes Cluster:</text>
       <text x="180" y="32" fill="#0ECB81">128 PODS HEALTHY</text>
       <text x="330" y="32" fill="#EAECEF">RAM 32GB</text>
 
-      <text x="0" y="64" fill="#FF9900">AWS (us-east-1):</text>
+      <text x="0" y="64" fill="#EAECEF">AWS (us-east-1):</text>
       <text x="180" y="64" fill="#0ECB81">99.99% UP</text>
       <text x="330" y="64" fill="#0ECB81">READY</text>
 
-      <text x="0" y="96" fill="#F38020">Cloudflare Edge:</text>
+      <text x="0" y="96" fill="#EAECEF">Cloudflare Edge:</text>
       <text x="180" y="96" fill="#0ECB81">Global Workers</text>
       <text x="330" y="96" fill="#0ECB81">0.4ms Latency</text>
 
-      <text x="0" y="128" fill="#F6465D">OWASP &amp; Burp Shield:</text>
+      <text x="0" y="128" fill="#EAECEF">OWASP &amp; Burp Shield:</text>
       <text x="180" y="128" fill="#0ECB81">SQLi/XSS Shield</text>
       <text x="330" y="128" fill="#0ECB81">0 CVE VULN</text>
 
-      <text x="0" y="160" fill="#9D00FF">Suricata IDS/IPS:</text>
+      <text x="0" y="160" fill="#EAECEF">Suricata IDS/IPS:</text>
       <text x="180" y="160" fill="#0ECB81">DDoS Filter Active</text>
       <text x="330" y="160" fill="#0ECB81">HARDENED</text>
     </g>
 
-    <!-- BINANCE REALTIME PACKET STREAM BAR (BOTTOM) -->
+    <!-- PACKET STREAM BAR -->
     <g transform="translate(15, 240)">
-      <text x="0" y="0" font-size="10" font-weight="900" fill="#848E9C">PACKET FLOW STREAMING (HIGH-SPEED MATCHING ENGINE)</text>
+      <text x="0" y="0" font-size="10" font-weight="900" fill="#848E9C">NETWORK PACKET STREAM (gRPC / WEBSOCKET / KAFKA)</text>
       <rect x="0" y="10" width="460" height="32" rx="4" fill="#1E2329" stroke="#2B313A" stroke-width="1" />
       
       <g transform="translate(15, 18)">
@@ -133,7 +133,7 @@
         <circle cx="120" cy="8" r="5" fill="#F0B90B" filter="url(#glowYellow)">
           <animate attributeName="cx" values="120;430;10" dur="1.0s" repeatCount="indefinite" />
         </circle>
-        <circle cx="250" cy="8" r="5" fill="#F6465D">
+        <circle cx="250" cy="8" r="5" fill="#0ECB81">
           <animate attributeName="cx" values="250;430;10" dur="1.4s" repeatCount="indefinite" />
         </circle>
       </g>
