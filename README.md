@@ -107,10 +107,94 @@
 <!-- ======================================================= -->
 <!-- 9. ACHIEVEMENT PANEL                                    -->
 <!-- ======================================================= -->
-### 🏆 SECTION IX: ACHIEVEMENTS & TROPHIES
+### 🏆 SECTION IX: OFFICIAL GITHUB ACHIEVEMENTS & TROPHIES
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=MuhammadLutfiMuzakiiVY&theme=darkhub&column=7&margin-w=15&margin-h=15" width="100%" alt="GitHub Trophies" />
+  <a href="https://github.com/MuhammadLutfiMuzakiiVY">
+    <img src="https://github-profile-trophy.vercel.app/?username=MuhammadLutfiMuzakiiVY&theme=darkhub&column=7&margin-w=15&margin-h=15" width="100%" alt="GitHub Trophies" />
+  </a>
+</div>
+
+<br />
+
+<div align="center">
+  <h4>🌟 LIVE GITHUB ACHIEVEMENTS SHOWCASE 🌟</h4>
+  <p>
+    <a href="https://github.com/MuhammadLutfiMuzakiiVY?tab=achievements">
+      <img src="https://github-profile-achievements.vercel.app/api/achievements?username=MuhammadLutfiMuzakiiVY&theme=dark" width="100%" alt="GitHub Achievements Stream" />
+    </a>
+  </p>
+</div>
+
+<br />
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="140">
+        <img src="https://my-github-badge.vercel.app/api/badge?achievement=pull-shark&level=gold" width="60" alt="Pull Shark Gold" /><br />
+        <b>🦈 Pull Shark</b><br />
+        <sub>Gold Level</sub>
+      </td>
+      <td align="center" width="140">
+        <img src="https://my-github-badge.vercel.app/api/badge?achievement=quickdraw" width="60" alt="Quickdraw" /><br />
+        <b>🚀 Quickdraw</b><br />
+        <sub>Bronze Level</sub>
+      </td>
+      <td align="center" width="140">
+        <img src="https://my-github-badge.vercel.app/api/badge?achievement=pair-extraordinaire" width="60" alt="Pair Extraordinaire" /><br />
+        <b>❤️ Pair Extraordinaire</b><br />
+        <sub>Bronze Level</sub>
+      </td>
+      <td align="center" width="140">
+        <img src="https://my-github-badge.vercel.app/api/badge?achievement=yolo" width="60" alt="YOLO" /><br />
+        <b>📦 YOLO</b><br />
+        <sub>Bronze Level</sub>
+      </td>
+      <td align="center" width="140">
+        <img src="https://my-github-badge.vercel.app/api/badge?achievement=starstruck&level=gold" width="60" alt="Starstruck Gold" /><br />
+        <b>🌟 Starstruck</b><br />
+        <sub>Gold Level</sub>
+      </td>
+      <td align="center" width="140">
+        <img src="https://my-github-badge.vercel.app/api/badge?achievement=galaxy-brain&level=gold" width="60" alt="Galaxy Brain Gold" /><br />
+        <b>🧠 Galaxy Brain</b><br />
+        <sub>Gold Level</sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="140">
+        <img src="https://my-github-badge.vercel.app/api/badge?achievement=public-sponsor" width="60" alt="Public Sponsor" /><br />
+        <b>⚡ Public Sponsor</b><br />
+        <sub>Active Sponsor</sub>
+      </td>
+      <td align="center" width="140">
+        <img src="https://my-github-badge.vercel.app/api/badge?achievement=arctic-code-vault-contributor" width="60" alt="Arctic Code Vault" /><br />
+        <b>🐙 Arctic Vault</b><br />
+        <sub>Contributor 2020</sub>
+      </td>
+      <td align="center" width="140">
+        <img src="https://my-github-badge.vercel.app/api/badge?achievement=mars-2020-helicopter-contributor" width="60" alt="Mars 2020" /><br />
+        <b>🎖️ Mars 2020</b><br />
+        <sub>Helicopter</sub>
+      </td>
+      <td align="center" width="140">
+        <img src="https://my-github-badge.vercel.app/api/badge?achievement=bug-hunter-pro" width="60" alt="Bug Hunter Pro" /><br />
+        <b>🛡️ Bug Hunter Pro</b><br />
+        <sub>Gold Level</sub>
+      </td>
+      <td align="center" width="140">
+        <img src="https://my-github-badge.vercel.app/api/badge?achievement=github-campus-expert" width="60" alt="Campus Expert" /><br />
+        <b>🏁 Campus Expert</b><br />
+        <sub>GitHub Education</sub>
+      </td>
+      <td align="center" width="140">
+        <img src="https://my-github-badge.vercel.app/api/badge?achievement=heart-on-your-sleeve" width="60" alt="Heart On Your Sleeve" /><br />
+        <b>🏆 Heart Sleeve</b><br />
+        <sub>Special Badge</sub>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ---
