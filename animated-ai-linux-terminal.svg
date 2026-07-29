@@ -1,66 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" width="100%" height="340">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 340" width="100%" height="340">
   <defs>
     <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020617" />
-      <stop offset="100%" stop-color="#090d16" />
+      <stop offset="0%" stop-color="#030712" />
+      <stop offset="100%" stop-color="#080e1c" />
     </linearGradient>
 
     <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
 
     <clipPath id="clipTermCmd">
       <rect x="0" y="0" width="0" height="30">
-        <animate attributeName="width" values="0; 0; 520; 520; 0" keyTimes="0; 0.1; 0.5; 0.95; 1" dur="7s" repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 520; 520; 0" keyTimes="0; 0.40; 0.90; 1" dur="8s" repeatCount="indefinite" />
       </rect>
     </clipPath>
   </defs>
 
-  <rect width="920" height="340" rx="10" fill="url(#termBg)" stroke="#10B981" stroke-width="1.5" filter="url(#glowGreen)" />
+  <rect width="940" height="340" rx="12" fill="url(#termBg)" stroke="#10B981" stroke-width="1.8" filter="url(#glowGreen)" />
 
-  <!-- Terminal Top Bar -->
-  <rect width="920" height="34" rx="10" fill="#0f172a" />
-  <circle cx="20" cy="17" r="5.5" fill="#EF4444" />
-  <circle cx="36" cy="17" r="5.5" fill="#F59E0B" />
-  <circle cx="52" cy="17" r="5.5" fill="#10B981" filter="url(#glowGreen)" />
-  <text x="460" y="22" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#10B981" text-anchor="middle">root@lutfi-workstation:~# zsh</text>
+  <!-- Terminal Header Bar -->
+  <rect width="940" height="36" rx="12" fill="#0b1329" />
+  <circle cx="22" cy="18" r="6" fill="#EF4444" />
+  <circle cx="40" cy="18" r="6" fill="#F59E0B" />
+  <circle cx="58" cy="18" r="6" fill="#10B981" filter="url(#glowGreen)" />
+  <text x="470" y="23" font-family="'Fira Code', monospace" font-size="12" font-weight="bold" fill="#10B981" text-anchor="middle">root@lutfi-workstation:~# zsh</text>
 
-  <!-- TERMINAL CONTENT WITH REAL TYPING COMMAND -->
-  <g font-family="'Fira Code', 'JetBrains Mono', monospace" font-size="12" font-weight="bold" transform="translate(24, 65)">
+  <!-- TERMINAL CONTENT -->
+  <g font-family="'Fira Code', 'Cascadia Code', monospace" font-size="13" font-weight="bold" transform="translate(24, 70)">
 
-    <!-- Command 1 Static Prompt -->
+    <!-- Command 1 Prompt -->
     <text y="0" fill="#38BDF8">root@lutfi-workstation:<tspan fill="#10B981">~/projects</tspan># </text>
 
-    <!-- Command 1 Typed Text (Char by Char) -->
-    <g transform="translate(230, 0)">
+    <!-- Command 1 Typed Text (Line by line typing top-to-bottom) -->
+    <g transform="translate(240, 0)">
       <g clip-path="url(#clipTermCmd)">
         <text y="0" fill="#F8FAFC">git commit -m "feat: implement deep reasoning LLM pipeline"</text>
       </g>
     </g>
 
-    <!-- Moving Cursor for Command 1 -->
-    <rect x="230" y="-12" width="9" height="16" fill="#10B981" filter="url(#glowGreen)">
-      <animate attributeName="x" values="230; 230; 745; 745; 230" keyTimes="0; 0.1; 0.5; 0.95; 1" dur="7s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="1;0;1" dur="0.4s" repeatCount="indefinite" />
+    <!-- Cursor for Command 1 -->
+    <rect x="240" y="-14" width="10" height="18" fill="#10B981" filter="url(#glowGreen)">
+      <animate attributeName="x" values="240; 760; 760; 240" keyTimes="0; 0.40; 0.90; 1" dur="8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1; 0.2; 1" dur="0.4s" repeatCount="indefinite" />
     </rect>
 
-    <!-- Terminal Execution Outputs -->
-    <g transform="translate(0, 30)">
+    <!-- Command Outputs -->
+    <g transform="translate(0, 32)">
       <text y="0" fill="#10B981">[main a8f921e] feat: implement deep reasoning LLM pipeline</text>
-      <text y="22" fill="#94A3B8"> 4 files changed, 340 insertions(+), 12 deletions(-)</text>
-      <text y="44" fill="#38BDF8">[+] Pushing to origin main (https://github.com/MuhammadLutfiMuzakiiVY)...</text>
-      <text y="66" fill="#10B981">✔ Deploy successful to production server (0.24s)</text>
+      <text y="24" fill="#94A3B8"> 4 files changed, 340 insertions(+), 12 deletions(-)</text>
+      <text y="48" fill="#38BDF8">[+] Pushing to origin main (https://github.com/MuhammadLutfiMuzakiiVY)...</text>
+      <text y="72" fill="#10B981">✔ Deploy successful to production server (0.24s)</text>
     </g>
 
-    <!-- Command 2 Prompt & Output -->
-    <g transform="translate(0, 130)">
+    <!-- Command 2 System Status -->
+    <g transform="translate(0, 138)">
       <text y="0" fill="#38BDF8">root@lutfi-workstation:<tspan fill="#10B981">~/projects</tspan># <tspan fill="#F8FAFC">systemctl status litera-agent.service</tspan></text>
-      <text y="22" fill="#10B981">● litera-agent.service - Litera Autonomous AI Agent Core</text>
-      <text y="44" fill="#94A3B8">   Loaded: loaded (/etc/systemd/system/litera-agent.service; enabled)</text>
-      <text y="66" fill="#10B981">   Active: active (running) since Wed 2026-07-29 16:30:00 UTC</text>
-      <text y="88" fill="#38BDF8">   Tasks: 64 (limit: 49152) | Memory: 1.2G | CPU: 0.12%</text>
-      <text y="110" fill="#F43F5E">   Logs: [OK] Zero Security Advisories Flagged • All 108 PRs Verified</text>
+      <text y="24" fill="#10B981">● litera-agent.service - Litera Autonomous AI Agent Core</text>
+      <text y="48" fill="#94A3B8">   Loaded: loaded (/etc/systemd/system/litera-agent.service; enabled)</text>
+      <text y="72" fill="#10B981">   Active: active (running) since Wed 2026-07-29 16:30:00 UTC</text>
+      <text y="96" fill="#38BDF8">   Tasks: 64 (limit: 49152) | Memory: 1.2G | CPU: 0.12%</text>
+      <text y="120" fill="#F43F5E">   Logs: [OK] Zero Security Advisories Flagged • All 108 PRs Verified</text>
     </g>
 
   </g>
