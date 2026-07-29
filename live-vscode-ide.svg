@@ -1,134 +1,161 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="100%" height="340">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" width="100%" height="420">
   <defs>
-    <linearGradient id="hackerBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020503" />
-      <stop offset="50%" stop-color="#05150A" />
-      <stop offset="100%" stop-color="#010804" />
+    <linearGradient id="ideBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712" />
+      <stop offset="50%" stop-color="#0a0f24" />
+      <stop offset="100%" stop-color="#02040a" />
     </linearGradient>
 
-    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-    </filter>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5FF" />
+      <stop offset="50%" stop-color="#7B61FF" />
+      <stop offset="100%" stop-color="#FF007F" />
+    </linearGradient>
 
     <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feGaussianBlur stdDeviation="3" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
 
-    <pattern id="matrixGrid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00FF66" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.2" />
+    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+
+    <pattern id="matrixGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#00F5FF" stroke-width="0.3" opacity="0.1" />
     </pattern>
   </defs>
 
-  <!-- IDE Window Frame -->
-  <rect width="900" height="340" rx="10" fill="url(#hackerBg)" stroke="#00FF66" stroke-width="1.8" filter="url(#glowGreen)" />
-  <rect width="900" height="340" rx="10" fill="url(#matrixGrid)" />
+  <!-- Outer Window Frame -->
+  <rect width="920" height="420" rx="12" fill="url(#ideBg)" stroke="#00F5FF" stroke-width="1.8" filter="url(#glowCyan)" />
+  <rect width="920" height="420" rx="12" fill="url(#matrixGrid)" />
 
-  <!-- VS CODE HACKER HEADER TAB BAR -->
-  <rect x="14" y="14" width="872" height="36" rx="6" fill="#05150A" stroke="#00FF66" stroke-width="0.8" />
-  <circle cx="36" cy="32" r="5" fill="#FF0055" />
-  <circle cx="53" cy="32" r="5" fill="#FFB000" />
-  <circle cx="70" cy="32" r="5" fill="#00FF66" filter="url(#glowGreen)" />
+  <!-- IDE Header Tab Bar -->
+  <rect x="0" y="0" width="920" height="38" rx="12" fill="#080e1e" stroke="#00F5FF" stroke-width="0.5" />
+  <circle cx="24" cy="19" r="6" fill="#FF5F56" />
+  <circle cx="42" cy="19" r="6" fill="#FFBD2E" />
+  <circle cx="60" cy="19" r="6" fill="#27C93F" filter="url(#glowGreen)" />
 
-  <!-- IDE Window Tabs -->
-  <g font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">
-    <rect x="92" y="20" width="135" height="24" rx="4" fill="#082210" stroke="#00FF66" stroke-width="1" />
-    <text x="106" y="36" fill="#00FF66">💀 kernel_exploit.rs</text>
+  <!-- Active Tabs -->
+  <g font-family="'Fira Code', 'JetBrains Mono', monospace" font-size="11" font-weight="bold">
+    <rect x="90" y="8" width="160" height="30" rx="6" fill="#111c38" stroke="#00F5FF" stroke-width="1" />
+    <text x="104" y="27" fill="#00F5FF">🦀 main_agent.rs</text>
 
-    <rect x="234" y="20" width="130" height="24" rx="4" fill="#041007" stroke="#1E293B" stroke-width="1" />
-    <text x="246" y="36" fill="#00F5FF">⚡ ebpf_filter.c</text>
+    <rect x="256" y="8" width="160" height="30" rx="6" fill="#091124" stroke="#1E293B" stroke-width="1" />
+    <text x="270" y="27" fill="#7B61FF">🧠 deep_reasoning.py</text>
 
-    <rect x="371" y="20" width="125" height="24" rx="4" fill="#041007" stroke="#1E293B" stroke-width="1" />
-    <text x="383" y="36" fill="#7B61FF">🧠 zero_day.py</text>
+    <rect x="422" y="8" width="150" height="30" rx="6" fill="#091124" stroke="#1E293B" stroke-width="1" />
+    <text x="436" y="27" fill="#FF007F">🛡️ ebpf_filter.c</text>
   </g>
 
-  <!-- SIDEBAR SIMULATION -->
-  <g transform="translate(14, 52)">
-    <rect x="0" y="0" width="45" height="274" fill="#020904" />
-    <text x="14" y="35" font-size="14" fill="#00FF66">📁</text>
-    <text x="14" y="75" font-size="14" fill="#00F5FF">🔍</text>
-    <text x="14" y="115" font-size="14" fill="#7B61FF">🌿</text>
-    <text x="14" y="155" font-size="14" fill="#FF0055">💀</text>
-    <text x="14" y="195" font-size="14" fill="#00FF66">⚙️</text>
+  <!-- Sidebar File Explorer -->
+  <rect x="0" y="38" width="48" height="382" fill="#050a17" stroke="#111c3a" stroke-width="1" />
+  <g font-size="15" text-anchor="middle" x="24">
+    <text x="24" y="70" fill="#00F5FF">📁</text>
+    <text x="24" y="110" fill="#7B61FF">🔍</text>
+    <text x="24" y="150" fill="#FF007F">🌿</text>
+    <text x="24" y="190" fill="#00FF66">⚡</text>
+    <text x="24" y="230" fill="#00F5FF">🤖</text>
+    <text x="24" y="270" fill="#FFB000">⚙️</text>
   </g>
 
-  <!-- SCANNING RADAR LASER LINE -->
-  <line x1="60" y1="52" x2="880" y2="52" stroke="#00FF66" stroke-width="1.5" filter="url(#glowGreen)" opacity="0.7">
-    <animate attributeName="y1" values="52;320;52" dur="2s" repeatCount="indefinite" />
-    <animate attributeName="y2" values="52;320;52" dur="2s" repeatCount="indefinite" />
+  <!-- SCANNING LASER BEAM -->
+  <line x1="48" y1="40" x2="920" y2="40" stroke="#00F5FF" stroke-width="1.5" filter="url(#glowCyan)" opacity="0.8">
+    <animate attributeName="y1" values="40;410;40" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="40;410;40" dur="3s" repeatCount="indefinite" />
   </line>
 
-  <!-- RAPIDLY MOVING HACKER CODE STREAM -->
-  <g font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="900" transform="translate(75, 70)">
-
-    <!-- Line Numbers Column -->
-    <g fill="#00FF66" opacity="0.4" font-size="10">
-      <text y="0">01</text>
-      <text y="18">02</text>
-      <text y="36">03</text>
-      <text y="54">04</text>
-      <text y="72">05</text>
-      <text y="90">06</text>
-      <text y="108">07</text>
-      <text y="126">08</text>
-      <text y="144">09</text>
-      <text y="162">10</text>
-      <text y="180">11</text>
-      <text y="198">12</text>
-      <text y="216">13</text>
-      <text y="234">14</text>
+  <!-- LEFT PANE: RUST ASYNC AGENT CODE -->
+  <g font-family="'Fira Code', 'JetBrains Mono', monospace" font-size="11" font-weight="bold">
+    <!-- Line numbers -->
+    <g fill="#334155" font-size="10">
+      <text x="62" y="65">01</text>
+      <text x="62" y="85">02</text>
+      <text x="62" y="105">03</text>
+      <text x="62" y="125">04</text>
+      <text x="62" y="145">05</text>
+      <text x="62" y="165">06</text>
+      <text x="62" y="185">07</text>
+      <text x="62" y="205">08</text>
+      <text x="62" y="225">09</text>
+      <text x="62" y="245">10</text>
     </g>
 
-    <!-- RAPID SCROLLING CODE BLOCK (ANIMATION 3s INFINITE LOOP) -->
-    <g transform="translate(30, 0)">
-      <g>
-        <!-- Line 1 -->
-        <text y="0" fill="#00FF66" filter="url(#glowGreen)">// UNSAFE KERNEL SPACE EXPLOIT &amp; ASLR BYPASS HARNESS</text>
-        
-        <!-- Line 2 -->
-        <text y="18">
-          <tspan fill="#FF0055">pub unsafe fn</tspan> <tspan fill="#00F5FF">inject_ebpf_kernel_filter</tspan>(sock: <tspan fill="#7B61FF">RawFd</tspan>) -&gt; <tspan fill="#00FF66">Result&lt;(), KernelErr&gt;</tspan> {
-        </text>
+    <!-- Code Block 1 (Rust Code Stream) -->
+    <g transform="translate(90, 65)">
+      <text y="0"><tspan fill="#FF007F">pub async fn</tspan> <tspan fill="#00F5FF">spawn_ai_agent</tspan>(config: &amp;<tspan fill="#FFB000">AgentConfig</tspan>) -&gt; <tspan fill="#00FF66">Result&lt;Agent, EngineErr&gt;</tspan> {</text>
+      <text y="20">    <tspan fill="#7B61FF">let</tspan> model = <tspan fill="#FFB000">AutoModel</tspan>::from_pretrained(<tspan fill="#00FF66">"litera-70b-deepseek"</tspan>)?;</text>
+      <text y="40">    <tspan fill="#7B61FF">let</tspan> <tspan fill="#FF007F">mut</tspan> swarm = <tspan fill="#FFB000">SwarmOrchestrator</tspan>::new(config.max_threads);</text>
+      <text y="60">    swarm.<tspan fill="#00F5FF">attach_ebpf_sentinel</tspan>(<tspan fill="#00FF66">"/dev/kmem_filter"</tspan>).<tspan fill="#FF007F">await</tspan>?;</text>
+      <text y="80">    <tspan fill="#7B61FF">tokio::spawn</tspan>(<tspan fill="#FF007F">async move</tspan> {</text>
+      <text y="100">        <tspan fill="#FF007F">while let</tspan> <tspan fill="#FFB000">Some</tspan>(task) = swarm.<tspan fill="#00F5FF">next_task</tspan>().<tspan fill="#FF007F">await</tspan> {</text>
+      <text y="120">            model.<tspan fill="#00F5FF">infer_cot_reasoning</tspan>(&amp;task).<tspan fill="#FF007F">await</tspan>?;</text>
+      <text y="140">        }</text>
+      <text y="160">    });</text>
+      <text y="180">    <tspan fill="#00FF66">Ok</tspan>(<tspan fill="#FFB000">Agent</tspan>::active())</text>
+      <text y="200">}</text>
 
-        <!-- Line 3 -->
-        <text y="36">
-          <tspan fill="#FFFFFF">    let</tspan> payload: [<tspan fill="#7B61FF">u8</tspan>; 32] = [<tspan fill="#00F5FF">0x90, 0x90, 0x31, 0xc0, 0x50, 0x68, 0x2f, 0x2f, 0x73, 0x68</tspan>];
-        </text>
-
-        <!-- Line 4 -->
-        <text y="54">
-          <tspan fill="#FFFFFF">    asm!</tspan>(<tspan fill="#00FF66">"mov rax, 0x59"</tspan>, <tspan fill="#00FF66">"syscall"</tspan>, in(<tspan fill="#00F5FF">"rdi"</tspan>) payload.as_ptr());
-        </text>
-
-        <!-- Line 5 -->
-        <text y="72">
-          <tspan fill="#FF0055">    if</tspan> <tspan fill="#00F5FF">sys_ptr_read</tspan>(<tspan fill="#00FF66">0x7FFF9A8B0000</tspan>) != <tspan fill="#00FF66">0xDEADBEEF</tspan> { <tspan fill="#FF0055">return Err(KernelErr::BypassFailed);</tspan> }
-        </text>
-
-        <!-- Line 6 -->
-        <text y="90" fill="#FFFFFF">}</text>
-
-        <!-- Line 7 -->
-        <text y="112" fill="#00F5FF">[+] MEMORY SCANNER: 0x7FFE00000000 -&gt; HOOKED (0.0001s)</text>
-        <text y="130" fill="#00FF66">[+] ASLR DEFEATED • DEP BYPASSED • SHELLCODE EXECUTED IN KERNEL SPACE</text>
-        <text y="148" fill="#7B61FF">[+] OVERFLOW BUFFER INJECTED: 1,850,000 PACKETS/SEC ROUTED TO RING 0</text>
-
-        <!-- Line 8 -->
-        <text y="170" fill="#00FF66">$ cargo run --bin zero_day --release <tspan fill="#FFFFFF">[EXPLOIT SUCCESSFUL]</tspan></text>
-        <text y="188" fill="#00F5FF">$ nmap -sS -sV -p- 192.168.1.1 <tspan fill="#00FF66">[ALL 65535 PORTS SCANNED IN 0.05s]</tspan></text>
-        <text y="206" fill="#7B61FF">$ msfconsole -x "use exploit/linux/local; run" <tspan fill="#00FF66">[ROOT SHELL GRANTED]</tspan></text>
-        <text y="224" fill="#00FF66">root@kernel-sentinel:~# <tspan fill="#FFFFFF">cat /etc/shadow | grep root [ACCESS GRANTED]</tspan></text>
-
-        <!-- RAPID UPWARD SCROLLING ANIMATION -->
-        <animateTransform attributeName="transform" type="translate" values="0, 0; 0, -40; 0, 0" dur="2.5s" repeatCount="indefinite" />
-      </g>
+      <!-- Scrolling Animation for Rust Code -->
+      <animateTransform attributeName="transform" type="translate" values="90, 65; 90, 55; 90, 65" dur="4s" repeatCount="indefinite" />
     </g>
-
-    <!-- BLINKING HACKER CURSOR -->
-    <rect x="520" y="215" width="10" height="16" fill="#00FF66" filter="url(#glowGreen)">
-      <animate attributeName="opacity" values="1;0;1" dur="0.2s" repeatCount="indefinite" />
-    </rect>
-
   </g>
+
+  <!-- SPLIT DIVIDER -->
+  <line x1="500" y1="38" x2="500" y2="280" stroke="#1E293B" stroke-width="1.5" />
+
+  <!-- RIGHT PANE: PYTHON DEEP LEARNING MODEL -->
+  <g font-family="'Fira Code', 'JetBrains Mono', monospace" font-size="11" font-weight="bold">
+    <!-- Line numbers -->
+    <g fill="#334155" font-size="10">
+      <text x="515" y="65">01</text>
+      <text x="515" y="85">02</text>
+      <text x="515" y="105">03</text>
+      <text x="515" y="125">04</text>
+      <text x="515" y="145">05</text>
+      <text x="515" y="165">06</text>
+      <text x="515" y="185">07</text>
+      <text x="515" y="205">08</text>
+      <text x="515" y="225">09</text>
+      <text x="515" y="245">10</text>
+    </g>
+
+    <!-- Code Block 2 (Python AI Code) -->
+    <g transform="translate(540, 65)">
+      <text y="0"><tspan fill="#FF007F">class</tspan> <tspan fill="#FFB000">LiteraReasoningEngine</tspan>(nn.Module):</text>
+      <text y="20">    <tspan fill="#FF007F">def</tspan> <tspan fill="#00F5FF">__init__</tspan>(self, dim=<tspan fill="#00FF66">8192</tspan>, layers=<tspan fill="#00FF66">80</tspan>):</text>
+      <text y="40">        super().__init__()</text>
+      <text y="60">        self.attn = <tspan fill="#FFB000">FlashAttention3</tspan>(dim, heads=<tspan fill="#00FF66">64</tspan>)</text>
+      <text y="80">        self.cot_decoder = <tspan fill="#FFB000">TransformerBlock</tspan>(layers)</text>
+      <text y="100"></text>
+      <text y="120">    <tspan fill="#FF007F">def</tspan> <tspan fill="#00F5FF">forward</tspan>(self, x, mask=<tspan fill="#7B61FF">None</tspan>):</text>
+      <text y="140">        ctx = self.attn(x, mask)</text>
+      <text y="160">        <tspan fill="#FF007F">return</tspan> self.cot_decoder(ctx)</text>
+      <text y="180"># <tspan fill="#00FF66">STATUS: INFERENCE ACTIVE [850 tokens/sec]</tspan></text>
+      <text y="200"># <tspan fill="#00F5FF">LOSS: 0.00012 | ACCURACY: 99.98%</tspan></text>
+
+      <!-- Scrolling Animation for Python Code -->
+      <animateTransform attributeName="transform" type="translate" values="540, 65; 540, 75; 540, 65" dur="3.5s" repeatCount="indefinite" />
+    </g>
+  </g>
+
+  <!-- BOTTOM INTEGRATED TERMINAL -->
+  <rect x="48" y="280" width="872" height="140" fill="#040814" stroke="#111c3a" stroke-width="1" />
+  <rect x="48" y="280" width="872" height="24" fill="#091124" />
+  <text x="64" y="296" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#00F5FF">🖥️ TERMINAL — cargo run --bin autonomous_system --release</text>
+
+  <!-- TERMINAL LIVE OUTPUT STREAM -->
+  <g font-family="'Fira Code', 'JetBrains Mono', monospace" font-size="11" font-weight="bold" transform="translate(64, 320)">
+    <text y="0" fill="#00FF66">[+] [0.001s] [INFO] Swarm Engine initialized on 64 CPU Cores &amp; 4x H100 GPUs</text>
+    <text y="18" fill="#00F5FF">[+] [0.003s] [OK]   eBPF Kernel Probe hooked to sys_enter_execve (Ring 0 Active)</text>
+    <text y="36" fill="#7B61FF">[+] [0.008s] [OK]   Litera-70B DeepReasoning model loaded in 4-bit KV Cache</text>
+    <text y="54" fill="#FF007F">[+] [0.012s] [RUN]  Executing autonomous self-healing security loop... <tspan fill="#00FF66">[SUCCESS]</tspan></text>
+
+    <animateTransform attributeName="transform" type="translate" values="64, 320; 64, 310; 64, 320" dur="2s" repeatCount="indefinite" />
+  </g>
+
+  <!-- BLINKING TERMINAL CURSOR -->
+  <rect x="580" y="369" width="8" height="14" fill="#00F5FF" filter="url(#glowCyan)">
+    <animate attributeName="opacity" values="1;0;1" dur="0.5s" repeatCount="indefinite" />
+  </rect>
 </svg>
