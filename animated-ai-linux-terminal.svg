@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" width="100%" height="360">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" width="100%" height="340">
   <defs>
     <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020509" />
-      <stop offset="100%" stop-color="#050e1a" />
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#090d16" />
     </linearGradient>
 
     <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
@@ -10,73 +10,58 @@
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
 
-    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-    </filter>
+    <clipPath id="clipTermCmd">
+      <rect x="0" y="0" width="0" height="30">
+        <animate attributeName="width" values="0; 0; 520; 520; 0" keyTimes="0; 0.1; 0.5; 0.95; 1" dur="7s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
   </defs>
 
-  <rect width="920" height="360" rx="10" fill="url(#termBg)" stroke="#00FF66" stroke-width="1.8" filter="url(#glowGreen)" />
+  <rect width="920" height="340" rx="10" fill="url(#termBg)" stroke="#10B981" stroke-width="1.5" filter="url(#glowGreen)" />
 
-  <!-- Terminal Header -->
-  <rect width="920" height="36" rx="10" fill="#071424" stroke="#00FF66" stroke-width="0.5" />
-  <circle cx="24" cy="18" r="5" fill="#FF5F56" />
-  <circle cx="40" cy="18" r="5" fill="#FFBD2E" />
-  <circle cx="56" cy="18" r="5" fill="#27C93F" filter="url(#glowGreen)" />
-  <text x="460" y="23" font-family="'Fira Code', monospace" font-size="12" font-weight="bold" fill="#00FF66" text-anchor="middle">root@lutfi-cyber-sentinel:~# ./launch_autonomous_agent.sh</text>
+  <!-- Terminal Top Bar -->
+  <rect width="920" height="34" rx="10" fill="#0f172a" />
+  <circle cx="20" cy="17" r="5.5" fill="#EF4444" />
+  <circle cx="36" cy="17" r="5.5" fill="#F59E0B" />
+  <circle cx="52" cy="17" r="5.5" fill="#10B981" filter="url(#glowGreen)" />
+  <text x="460" y="22" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#10B981" text-anchor="middle">root@lutfi-workstation:~# zsh</text>
 
-  <!-- LIVE TYPING COMMAND & STREAMING LOGS -->
-  <g font-family="'Fira Code', 'JetBrains Mono', monospace" font-size="11" font-weight="bold">
-    
-    <!-- Command Line typing -->
-    <g transform="translate(24, 65)">
-      <text fill="#00F5FF">root@lutfi-workstation:~# <tspan fill="#FFFFFF">cargo run --release --bin litera_core</tspan></text>
+  <!-- TERMINAL CONTENT WITH REAL TYPING COMMAND -->
+  <g font-family="'Fira Code', 'JetBrains Mono', monospace" font-size="12" font-weight="bold" transform="translate(24, 65)">
+
+    <!-- Command 1 Static Prompt -->
+    <text y="0" fill="#38BDF8">root@lutfi-workstation:<tspan fill="#10B981">~/projects</tspan># </text>
+
+    <!-- Command 1 Typed Text (Char by Char) -->
+    <g transform="translate(230, 0)">
+      <g clip-path="url(#clipTermCmd)">
+        <text y="0" fill="#F8FAFC">git commit -m "feat: implement deep reasoning LLM pipeline"</text>
+      </g>
     </g>
 
-    <!-- Animated Output Logs -->
-    <g transform="translate(24, 95)">
-      <!-- Log 1 -->
-      <text y="0" fill="#00FF66">[SYSTEM] Initializing Memory Subsystem... <tspan fill="#FFFFFF">[OK - 128GB ECC RAM Allocation]</tspan></text>
-      <!-- Log 2 -->
-      <text y="22" fill="#00F5FF">[NETWORK] Binding Zero-Trust eBPF Packet Filter to eth0... <tspan fill="#00FF66">[ACTIVE - 10Gbps Stream]</tspan></text>
-      <!-- Log 3 -->
-      <text y="44" fill="#7B61FF">[AI MODEL] Loading Litera-70B DeepSeek-R1 Distilled Model into VRAM... <tspan fill="#00FF66">[LOADED - 4x H100 GPU]</tspan></text>
-      <!-- Log 4 -->
-      <text y="66" fill="#FF007F">[SECURITY] ASLR Defeated Probe Verified • Kernel Integrity Check PASSED</text>
-      <!-- Log 5 -->
-      <text y="88" fill="#FFB000">[REASONING ENGINE] Multi-Agent CoT Reasoning Loop Started... <tspan fill="#00FF66">[1,250 Tokens/sec]</tspan></text>
-      <!-- Log 6 -->
-      <text y="110" fill="#00F5FF">[TELEMETRY] Latency: 0.12ms | CPU Load: 12.4% | Memory Leak Check: CLEAN</text>
-      <!-- Log 7 -->
-      <text y="132" fill="#00FF66">[CYBER SENTINEL] 0 Vulnerabilities Detected • All Ports Hardened via eBPF Rings</text>
-      <!-- Log 8 -->
-      <text y="154" fill="#FFFFFF">root@lutfi-workstation:~# <tspan fill="#00F5FF">status --all</tspan> <tspan fill="#00FF66">[OPERATIONAL 24/7]</tspan></text>
-
-      <!-- Upward Scrolling Animation -->
-      <animateTransform attributeName="transform" type="translate" values="24, 95; 24, 85; 24, 95" dur="3s" repeatCount="indefinite" />
-    </g>
-
-    <!-- MATRIX CODE RAIN SIDEBAR DECORATION -->
-    <g transform="translate(760, 55)" opacity="0.6" fill="#00FF66" font-size="10">
-      <text y="0">10101101 01</text>
-      <text y="18">01101001 10</text>
-      <text y="36">11001101 01</text>
-      <text y="54">00101110 11</text>
-      <text y="72">10110100 00</text>
-      <text y="90">01011101 10</text>
-      <text y="108">11100101 01</text>
-      <text y="126">00011011 11</text>
-      <text y="144">10111001 00</text>
-      <text y="162">01100110 10</text>
-      <text y="180">11010101 01</text>
-
-      <animateTransform attributeName="transform" type="translate" values="760, 55; 760, 45; 760, 55" dur="2.5s" repeatCount="indefinite" />
-    </g>
-
-    <!-- BLINKING HACKER CURSOR -->
-    <rect x="440" y="243" width="10" height="16" fill="#00FF66" filter="url(#glowGreen)">
+    <!-- Moving Cursor for Command 1 -->
+    <rect x="230" y="-12" width="9" height="16" fill="#10B981" filter="url(#glowGreen)">
+      <animate attributeName="x" values="230; 230; 745; 745; 230" keyTimes="0; 0.1; 0.5; 0.95; 1" dur="7s" repeatCount="indefinite" />
       <animate attributeName="opacity" values="1;0;1" dur="0.4s" repeatCount="indefinite" />
     </rect>
+
+    <!-- Terminal Execution Outputs -->
+    <g transform="translate(0, 30)">
+      <text y="0" fill="#10B981">[main a8f921e] feat: implement deep reasoning LLM pipeline</text>
+      <text y="22" fill="#94A3B8"> 4 files changed, 340 insertions(+), 12 deletions(-)</text>
+      <text y="44" fill="#38BDF8">[+] Pushing to origin main (https://github.com/MuhammadLutfiMuzakiiVY)...</text>
+      <text y="66" fill="#10B981">✔ Deploy successful to production server (0.24s)</text>
+    </g>
+
+    <!-- Command 2 Prompt & Output -->
+    <g transform="translate(0, 130)">
+      <text y="0" fill="#38BDF8">root@lutfi-workstation:<tspan fill="#10B981">~/projects</tspan># <tspan fill="#F8FAFC">systemctl status litera-agent.service</tspan></text>
+      <text y="22" fill="#10B981">● litera-agent.service - Litera Autonomous AI Agent Core</text>
+      <text y="44" fill="#94A3B8">   Loaded: loaded (/etc/systemd/system/litera-agent.service; enabled)</text>
+      <text y="66" fill="#10B981">   Active: active (running) since Wed 2026-07-29 16:30:00 UTC</text>
+      <text y="88" fill="#38BDF8">   Tasks: 64 (limit: 49152) | Memory: 1.2G | CPU: 0.12%</text>
+      <text y="110" fill="#F43F5E">   Logs: [OK] Zero Security Advisories Flagged • All 108 PRs Verified</text>
+    </g>
 
   </g>
 </svg>
