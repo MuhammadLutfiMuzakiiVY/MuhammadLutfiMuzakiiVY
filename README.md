@@ -54,9 +54,10 @@
 
 ---
 
-### GitHub Activity
+### 📈 GitHub Overview
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=MuhammadLutfiMuzakiiVY&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" height="150" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadLutfiMuzakiiVY&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="150" />
+  <a href="https://github.com/MuhammadLutfiMuzakiiVY?tab=followers"><img src="https://img.shields.io/github/followers/MuhammadLutfiMuzakiiVY?style=flat-square&logo=github&label=Followers&color=238636" alt="Followers" /></a>
+  <img src="https://img.shields.io/badge/Core%20Stack-Rust%20%7C%20Go%20%7C%20C11-dea584?style=flat-square&logo=rust&logoColor=white" alt="Stack" />
+  <img src="https://img.shields.io/badge/Research-Post--Quantum%20Cryptography-blue?style=flat-square" alt="Research" />
 </p>
