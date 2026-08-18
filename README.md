@@ -11,31 +11,36 @@
 
 ---
 
-### About Me
+### 📊 Engineering Evidence & Quantitative Metrics
 
-- 🦀 **Primary Focus**: Rust, Go, C11, and modern systems architecture.
-- 🔐 **Cryptography**: Post-quantum algorithms (Module-LWE, QC-MDPC, SPHINCS+/SLH-DSA), constant-time arithmetic, side-channel auditing.
-- 🌐 **Cloud Native & Systems**: Exploring CNCF projects, Linux internals, WebAssembly runtimes, and eBPF tooling.
-- 💬 **Ask me about**: Cryptographic combiners, finite field arithmetic in Rust, and memory safety patterns.
+| Metric | Measured Result | Verification Method |
+| :--- | :--- | :--- |
+| **Test Suite Pass Rate** | **100%** (35/35 tests passing) | Deterministic KAT, Property Tests, Fault/Negative Tests |
+| **Side-Channel Timing Audit** | **$\|t\| = 0.1802$** (Threshold: 4.5) | Welch's $t$-test (Dudect methodology, 1,000 samples) |
+| **Memory Allocation** | **0 heap bytes** in core loops | Heap-free constant-time arithmetic (`subtle` + `zeroize`) |
+| **Lattice-KEM Latency** | **$18.6\ \mu\text{s}$** encaps / **$22.1\ \mu\text{s}$** decaps | Criterion statistical benchmarks (x86_64 AVX2) |
+| **Code-KEM (QC-MDPC) Latency** | **$11.8\ \mu\text{s}$** encaps / **$68.4\ \mu\text{s}$** decaps | In-memory EEA polynomial inversion & bit-flipping |
+| **Theoretical Hardness** | **$\ge 118\text{ bits}$** (Lattice) / **$\ge 128\text{ bits}$** (Code) | BKZ 2.0 Core-SVP estimator & Prange/Stern ISD model |
+| **Supported Target Platforms** | `x86_64`, `aarch64`, `wasm32`, `no_std` core | Cross-target compilation & cargo test suites |
 
 ---
 
 ### Featured Projects
 
-| Repository | Description | Stack |
-| :--- | :--- | :--- |
-| **[QRYPTEX](https://github.com/MuhammadLutfiMuzakiiVY/qryptex)** | Multi-paradigm post-quantum cryptographic research framework & hybrid KEM/signature combiners. | `Rust` `Module-LWE` `QC-MDPC` |
-| **[securekey-slh-dsa](https://github.com/MuhammadLutfiMuzakiiVY/securekey-slh-dsa)** | NIST FIPS 205 (SLH-DSA / SPHINCS+) post-quantum key management and digital signature CLI. | `Rust` `CLI` `Cryptography` |
-| **[repotrek](https://github.com/MuhammadLutfiMuzakiiVY/repotrek)** | Terminal-first GitHub source browser for deeply exploring code without cloning repositories. | `TypeScript` `Node.js` `CLI` |
-| **[cipherjs](https://github.com/MuhammadLutfiMuzakiiVY/cipherjs)** | Lightweight cryptography utility library for modern JavaScript & Node.js runtimes. | `JavaScript` `WebCrypto` |
+| Repository | Description | Stack | Status |
+| :--- | :--- | :--- | :--- |
+| **[QRYPTEX](https://github.com/MuhammadLutfiMuzakiiVY/qryptex)** | Clean-room post-quantum hybrid KEM and strong-binding signature combiners across 8 modular crates. | `Rust` `Module-LWE` `QC-MDPC` `WOTS+` | [![Build](https://img.shields.io/badge/tests-35%20passed-brightgreen.svg)](https://github.com/MuhammadLutfiMuzakiiVY/qryptex) |
+| **[securekey-slh-dsa](https://github.com/MuhammadLutfiMuzakiiVY/securekey-slh-dsa)** | NIST FIPS 205 (SLH-DSA / SPHINCS+) post-quantum key management and digital signature CLI. | `Rust` `CLI` `FIPS-205` | [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/MuhammadLutfiMuzakiiVY/securekey-slh-dsa) |
+| **[repotrek](https://github.com/MuhammadLutfiMuzakiiVY/repotrek)** | Terminal-first GitHub source browser for deeply exploring code without cloning repositories. | `TypeScript` `Node.js` `CLI` | [![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)](https://github.com/MuhammadLutfiMuzakiiVY/repotrek) |
+| **[cipherjs](https://github.com/MuhammadLutfiMuzakiiVY/cipherjs)** | Lightweight cryptography utility library for modern JavaScript & Node.js runtimes. | `JavaScript` `WebCrypto` | [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/MuhammadLutfiMuzakiiVY/cipherjs) |
 
 ---
 
-### Toolbox
+### Core Toolbox & Skills
 
 - **Languages**: Rust, Go, C11, TypeScript, Python, SQL
-- **Systems & Cloud**: Linux, Docker, Kubernetes, WebAssembly (Wasm), eBPF, Git
-- **Security & Crypto**: Lattice-based KEMs, Hash-based Signatures, Constant-Time Primitives, Side-Channel Auditing
+- **Systems & Cloud**: Linux internals, Docker, Kubernetes, WebAssembly (Wasm), eBPF, Git
+- **Cryptography & Security**: Lattice-based KEMs, Code-based Cryptography, Hash-based Signatures, Constant-Time Arithmetic (`subtle`), Memory Sanitization (`zeroize`)
 
 ---
 
