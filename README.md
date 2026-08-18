@@ -29,7 +29,7 @@
 
 | Repository | Description | Stack | Status |
 | :--- | :--- | :--- | :--- |
-| **[QRYPTEX](https://github.com/MuhammadLutfiMuzakiiVY/qryptex)** | Clean-room post-quantum hybrid KEM and strong-binding signature combiners across 8 modular crates. | `Rust` `Module-LWE` `QC-MDPC` `WOTS+` | [![Build](https://img.shields.io/badge/tests-35%20passed-brightgreen.svg)](https://github.com/MuhammadLutfiMuzakiiVY/qryptex) |
+| **[QRYPTEX](https://github.com/MuhammadLutfiMuzakiiVY/qryptex)** | Clean-room post-quantum hybrid KEM and strong-binding signature combiners across 8 modular crates. | `Rust` `Module-LWE` `QC-MDPC` `WOTS+` | [![CI](https://github.com/MuhammadLutfiMuzakiiVY/qryptex/actions/workflows/ci.yml/badge.svg)](https://github.com/MuhammadLutfiMuzakiiVY/qryptex/actions/workflows/ci.yml) |
 | **[securekey-slh-dsa](https://github.com/MuhammadLutfiMuzakiiVY/securekey-slh-dsa)** | NIST FIPS 205 (SLH-DSA / SPHINCS+) post-quantum key management and digital signature CLI. | `Rust` `CLI` `FIPS-205` | [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/MuhammadLutfiMuzakiiVY/securekey-slh-dsa) |
 | **[repotrek](https://github.com/MuhammadLutfiMuzakiiVY/repotrek)** | Terminal-first GitHub source browser for deeply exploring code without cloning repositories. | `TypeScript` `Node.js` `CLI` | [![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)](https://github.com/MuhammadLutfiMuzakiiVY/repotrek) |
 | **[cipherjs](https://github.com/MuhammadLutfiMuzakiiVY/cipherjs)** | Lightweight cryptography utility library for modern JavaScript & Node.js runtimes. | `JavaScript` `WebCrypto` | [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/MuhammadLutfiMuzakiiVY/cipherjs) |
