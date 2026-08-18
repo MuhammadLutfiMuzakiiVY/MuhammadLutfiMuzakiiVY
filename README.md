@@ -44,6 +44,16 @@
 
 ---
 
+### ⚙️ Engineering Philosophy
+
+1. **Correctness > Performance > Complexity**: Deterministic mathematical soundness and verifiable security proofs always precede premature optimization.
+2. **Explicit Security Assumptions**: Every scheme, parameter set, and security reduction explicitly documents its formal adversary model and bounds.
+3. **Zero Undocumented `unsafe`**: `#![forbid(unsafe_code)]` by default; any low-level hardware or intrinsics path requires strict invariant documentation.
+4. **Reproducible Benchmarks & Empirical Audits**: Performance numbers and side-channel leakage tests ($t$-test) are verifiable via standard tooling (`cargo bench`, `cargo test`), not synthetic assertions.
+5. **Memory Hygiene by Default**: Secret keys, polynomial states, and intermediate secrets strictly implement `ZeroizeOnDrop` and branch-free constant-time execution (`subtle`).
+
+---
+
 ### GitHub Activity
 
 <p align="center">
